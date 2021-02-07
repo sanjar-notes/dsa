@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-03T13:59:37+05:30
+
+====== 4. Utility functions ======
+Created Sunday 03 May 2020
+
+1. swap() is a ubiquitous functions which is used to swap values, deeply.
+2. max(int x, int y)
+3. min(int x, int y)
+4. min_element(first, after end)	returns the iterator of the first occurring minimum element. stdc++.h
+5. max_element(first, after end) returns the iterator of the first occurring maximum element. stdc++.h
+6. find(first, last, key) - returns the first item iterator if found by appropriate search
+7. minmax_element - returns a pair containing minimum and maximum
+--------------------
+Special case:
+1. memset(<type>* arr, <type> value, int length_of_array)

@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-25T05:56:51+05:30
+
+====== 3. Kruskal's Algorithm ======
+Created Saturday 25 April 2020
+
+Idea:
+1. Sort the edges according to weights. **Adjacency list will be better here(as it'll store the weights).** 
+2. Take the edges: source-destination-weight as input.
+3. For storing the MST, make a list of n-1 <edges>.
+
+**No visited required!**
+
+Pseudocode:
+1. Sort the edges according to weights. **Adjacency list will be better here(as it'll store the weights).** 
+2. Take the edges: source-destination-weight as input.
+3. For storing the MST, make a list of n-1 <edges>.
+

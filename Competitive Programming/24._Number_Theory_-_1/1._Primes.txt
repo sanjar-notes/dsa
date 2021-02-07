@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T00:26:17+05:30
+
+====== 1. Primes ======
+Created Sunday 02 August 2020
+

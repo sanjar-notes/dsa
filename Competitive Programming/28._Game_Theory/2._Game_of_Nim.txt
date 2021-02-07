@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T01:35:46+05:30
+
+====== 2. Game of Nim ======
+Created Sunday 02 August 2020
+
+* Rule - Any player can remove any number of stones from a pile.
+* Loser - The first person who has no stones to remove loses.
+
+* Nimsum = XOR of all the stones in the piles, e.g 3 ^ 4 ^ 5.
+
+Theorem of Nim:
+{{{code: lang="cpp" linenumbers="True"
+if(nimsum==0)
+	player 1 loses;
+else
+	player 1 wins;
+// assuming both are playing optimally
+}}}

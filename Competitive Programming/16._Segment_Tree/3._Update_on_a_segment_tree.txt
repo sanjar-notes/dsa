@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-25T18:11:28+05:30
+
+====== 3. Update on a segment tree ======
+Created Saturday 25 July 2020
+
+* Update - O(log N)
+* Go to the required branch.
+* Change the value at index.
+* While coming back, recalculate the nodes. Sum in this case, just by using 2*r, 2*r+1.
+[[../segment_tree_code/updateTree.h|updateTree.h]]

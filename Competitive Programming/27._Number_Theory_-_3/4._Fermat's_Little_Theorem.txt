@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T00:31:14+05:30
+
+====== 4. Fermat's Little Theorem ======
+Created Sunday 02 August 2020
+
+* Used very frequently.
+
+* **For a number 'a' and a prime 'p' **{{./equation.png?type=equation}} a.s.a {{./equation001.png?type=equation}}
+* Where is it used? To find multiplicative inverse in a prime environment, using modular exponentiation.
+{{./equation002.png?type=equation}}
+

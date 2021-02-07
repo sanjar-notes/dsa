@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T00:38:21+05:30
+
+====== 5. Wilson's Theorem ======
+Created Sunday 02 August 2020
+
+If p is a prime number, then (p-1)! mod(p) = -1 or p-1
+* This is used if we need to solve quickly for a given case of (n!)mod(p) when n is p-1

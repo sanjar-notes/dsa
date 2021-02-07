@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-29T00:40:36+05:30
+
+====== 4. Extended Euclidean Algorithm ======
+Created Wednesday 29 July 2020
+
+Statement: If ax+by=gcd(a, b) then we can solve for x and y using extended Euclidean algorithm.
+
+* gcd(a, b) = gcd(b, a%b) = bx_{1}+(a%b)y_{1}
+* gcd(a, b) = bx_{1}+(a-b*floor(a/b))y_{1}
+* ax+by = ay_{1}+b(x_{1}-floor(a/b)*y_{1}), comparing coefficients, we can solve for x and y x=y_{1}, y=x_{1}-floor(a/b)*y_{1}
+* We may have to do this step mant times, till we get equation of the form gcd(1, x).
+* Then we solve backwards.

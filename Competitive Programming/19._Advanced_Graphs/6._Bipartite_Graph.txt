@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-27T10:56:21+05:30
+
+====== 6. Bipartite Graph ======
+Created Monday 27 July 2020
+
+When a graph can be divided into two parts such that all edges are between the two parts.
+{{./pasted_image.png}}
+Question: Given a graph, check whether it is bipartite or not?
+
+* A useful property of a bipartite graph - A graph is bipartite iff it has no odd lengthed cycle. 
+Proof: A graph = tree with cycles. Trees are always bipartite. The only thing left are cycles. A cycle is never bipartite, so a graph with cycle is never bipartite. And a graph with no cycle(a tree) is always bipartite.
+
+Algorithm:
+1. Do DFS and put vertices in a queue
+2. Put a vertex in set1, and try to put all it's neigbours in set2.

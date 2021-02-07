@@ -1,0 +1,45 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-10T19:17:58+05:30
+
+====== Lecture 1 - Shallow and Deep copy ======
+Created Friday 10 January 2020
+
+Shallow vs deep copy?
+* Shallow copy refers to the default copying scenario, which is bit by bit in C++.
+* Deep copy means copying the contents of the object. Obviously, what is copied deeply is decided by the programmer.
+
+==== Need for deep copy ====
+* For primitive types, shallow copy is okay. But if an object stores pointer to a data structure, and we just copy the pointer(without creating a copy of the data structure), then both objects will refer to the same place in memory when reading/writing to the data structure.
+* This is **not good**, as we actually a clone.
+
+==== Context ====
+* Both copy constructor and copy assignment operator do shallow copy.
+* Hence we **need** to overload **both** the copy constructor and copy assignement operator if we wish to perform deep copy.
+
+Example - A dynamic array. Assume extra code is present wherever necessary.
+{{{code: lang="cpp" linenumbers="True"
+class DynamicArray
+{
+	int size, capacity;
+	int * arr;
+	...
+	
+	DynamicArray(const& A) // deep copy
+	{
+		size = A.size, capacity = A.capacity;
+		arr = new int[capacity]; // allocate new memory
+		for(int i=0; i<size; i++)
+			arr[i] = A.arr[i];
+	}
+	
+	void operator=(const& B) // A = B
+	{
+		size = B.size, capacity = B.capacity;
+		delete[] arr; // delete current memory
+		arr = new int[capacity];
+		for(int i=0; i<size; i++)
+			arr[i] = A.arr[i];
+	}
+}
+}}}

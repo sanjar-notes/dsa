@@ -1,0 +1,20 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-02-16T00:15:32+05:30
+
+====== Lecture 7 - Inbuilt priority queue ======
+Created Sunday 16 February 2020
+
+* Inbuilt priority queue is used for heaps.
+* Present in STL in C++
+* Required header: #include<queue>
+* class name is ''priority_queue''
+* It is a max_priority queue.
+The interface(implemented using vector):
+1. bool empty() - returns true if empty, else false
+2. int size() - returns the current size of the queue
+3. void push(data) - inserts a new node in the heap
+4. top() - returns the maximum in the heap, same as getMax() 
+5. void pop() - removes the maximum from the queue
+
+Call the functions only within bounds.

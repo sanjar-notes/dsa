@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-12-11T00:23:02+05:30
+
+====== 6. Selection Sort ======
+Created Wednesday 11 December 2019
+
+**Name:** Select the minimum from the right hand unsorted side, swap with the starting element of the unsorted side.

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-17T19:13:53+05:30
+
+====== 4. How is the data stored ======
+Created Thursday 17 October 2019
+
+How are float stored?
+For the decimal equivalent, we store the mantissa and the corresponding exponent.
+**Typecasting:**
+* The least significant bytes are just copied to the memory location. This is observable when the new type is of lesser size than the original variable.
+e.g1 int x = 19920; char p = x; // the compiler will just copy the last byte of the integer as the value of the char. 
+e.g2 char a = 'c'; int x = a; // here the byte for the char is copied as the least significant byte of the integer. The remaining 3 bytes in the left are kept zero.   
+* float to int, here the decimal is **dropped(truncated)**, whether it be positive or negative.

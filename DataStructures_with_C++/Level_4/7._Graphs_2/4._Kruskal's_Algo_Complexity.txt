@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-04-25T20:24:17+05:30
+
+====== 4. Kruskal's Algo Complexity ======
+Created Saturday 25 April 2020
+
+* Time Complexity is O(VE) using union find.
+{{./Selection_101.png}}
+* We can make it O(E logV) by using Union by rank and Path Compression, i.e we try to make a balanced tree. 
+{{./Selection_102.png}}s

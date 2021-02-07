@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-12-21T22:13:15+05:30
+
+====== 2. Pointer Arithmetic ======
+Created Saturday 21 December 2019
+
+Addition and subtraction of integers is allowed with pointer variables(except **null** and **void** pointers). Other arithmetic operations such as multiplication and division are not allowed.
+**Reason:** As we don't know the memory they reference and the jump, respectively. void* are increased by 1 in some compilers, but this is not allowed if the ''-pedantic'' flag is used.
+* When we do +2, we actually do start_address+2*(data_type) . Similarly for subtraction.
+* Variables declared together need not be continuos. Memory is actually allocated as per availability.
+* Array elements are always contiguos, that's the reason they are called arrays.
+* Each +-1 adds/subtracts by the sizeof(data_type).
+* Everthing in pointer-land is about offsets, not just about the addresses themselves.
+Note: Pointers may be **compared** by using relational operators, such as ==, <, and >. If p1 and p2 point to variables that are **related** to each other, such as elements of the same array, then p1 and p2 can be meaningfully compared.
+
+
+
+

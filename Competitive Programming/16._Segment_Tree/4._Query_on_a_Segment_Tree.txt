@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-25T18:12:00+05:30
+
+====== 4. Query on a Segment Tree ======
+Created Saturday 25 July 2020
+
+* Query - O(log N)
+* Return the value.
+
+There are 3 cases:
+1. Completey outside, i.e need 3,3 have 1,2. No calls further, return 0.
+2. Completely inside - e.g 2,4 need 1-5, no calls further, return the answer.
+3. Partial - e.g 2,4 need 3-4, return left and right ones:
+	a. Left inside - start, mid
+	b. Right inside - mid+1, end
+	return a+b;
+[[../segment_tree_code/queryTree.h|queryTree.h]]

@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T00:07:28+05:30
+
+====== 2. Matrix Expo Fibonacci Sum ======
+Created Sunday 02 August 2020
+
+* Given m, n. Find fib(m)+fib(m+1)+...+fib(n)
+* Find the first two - logn, then add them. O(m) Not Accepted.
+* If we algebra, we can see that sum from start to nth, S(n) = F(n+2)-1
+* We need S(m)-S(n-1) = which is log(m)+log(n+1). Accepted
+
+Bring any problem down to fibonacci, which is always solvable in f(n)

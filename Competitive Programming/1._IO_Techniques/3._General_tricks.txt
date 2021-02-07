@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-21T20:23:37+05:30
+
+====== 3. General tricks ======
+Created Friday 21 August 2020
+
+==== Unknown number of inputs ====
+* If we have many test cases or don’t know how many test cases (or until you reach the end of the file) you can use **while(cin >> x)**
+* If we don’t know how many test cases but we know that the file end with zero we may use this statement: **while(cin >> x && x)** 

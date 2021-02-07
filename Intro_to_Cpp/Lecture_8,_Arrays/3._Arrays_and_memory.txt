@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-12T20:53:45+05:30
+
+====== 3. Arrays and memory ======
+Created Tuesday 12 November 2019
+
+* Zero Indexing is preferred, coz it decreases an operation on the CPU(Really) 
+* Hence index is the same as "distance from the first element".
+* Address  = root addrress + (size_of_datatype)*index
+* Except for strings, couting arr_name returns the root address. For a char array, it looks for a '\0' and hence prints the string.
+
+**You were right, there's no way that we pass an array as arg without it's size. We need to explictly pass the size, as the head is merely a pointer.**
+* When we write paramaters, we write (data_type name[]), although data_type* name would have worked too.
+* But when we call the function, we pass only the array name.

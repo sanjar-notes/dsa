@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-22T12:22:52+05:30
+
+====== 5. Language Tools and Time Complexity ======
+Created Monday 22 June 2020
+
+1. Largest conseutive subarry - hash the data. Try to find the consecutive mark - O(n)
+2. Rotation - Observation that buckets are formed when trying directly.

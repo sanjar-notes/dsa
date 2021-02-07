@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-18T13:04:43+05:30
+
+====== 1. Hasan and Trip ======
+Created Saturday 18 July 2020
+
+{{./pasted_image.png}}
+{{./pasted_image001.png}}
+Write All.

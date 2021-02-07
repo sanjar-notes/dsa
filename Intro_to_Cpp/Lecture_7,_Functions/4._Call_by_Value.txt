@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-11-09T09:49:49+05:30
+
+====== 4. Call by Value ======
+Created Saturday 09 November 2019
+Just another name for **pass by value**.
+* This is a concept in Computer Science, where parameters are given a copy(value) of the argument, rather than giving them the memory location of the variable passed in the function call. 
+* So the param and the argument, both, remain independent.

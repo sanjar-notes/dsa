@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-12-28T10:40:26+05:30
+
+====== Lecture 1 - Introduction to Recursion ======
+Created Saturday 28 December 2019
+
+* Recursion: When a **problem** can be expressed as the **same** problem with a **smaller** input input(until an anchor point obviously).
+(Don't say that a function calls itself)
+e. g factorial: i.e f(n) = n * f(n-1) , f(0) = 1.
+* The anchor point is just a trivial instance of the problem. Whose answer is known to us.
+* Recursion works by making a stack ofactivation records.
+**Note: **We don't have to make activation records, as this is tedious. We'll see better representation in the next lecture.
+* It's very intuitive and helpful in solving many problems.

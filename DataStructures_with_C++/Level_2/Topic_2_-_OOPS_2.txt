@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-10T19:17:38+05:30
+
+====== Topic 2 - OOPS 2 ======
+Created Friday 10 January 2020
+
+This is very powerful, evolving over procedural programming.
+
+[[./exercises.md]]

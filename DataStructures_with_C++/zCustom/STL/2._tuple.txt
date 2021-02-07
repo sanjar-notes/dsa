@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-06T00:58:59+05:30
+
+====== 2. tuple ======
+Created Thursday 06 February 2020
+
+* #include<tuple>
+* make using tuple
+* get<index>(tuple_name);

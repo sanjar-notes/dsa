@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-07T16:03:51+05:30
+
+====== Lecture 2 - Print in range ======
+Created Friday 07 February 2020
+

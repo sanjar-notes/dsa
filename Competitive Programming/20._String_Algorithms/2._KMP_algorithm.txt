@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-27T14:02:17+05:30
+
+====== 2. KMP algorithm ======
+Created Monday 27 July 2020
+
+Knuth-Morris-Pratt algorithm
+Does efficient pattern searching.
+T.C O(m)+O(n)
+How → It selects a prefix(from the pattern) and marks it's occurrences throughout the pattern, this way, we can start the search somewhere midway instead of the start. This also ensures that we don't have to backtrack in the original string. This way we can search out pattern in one pass.
+{{./pasted_image.png}}  
+Building the pi table:
+{{{code: lang="cpp" linenumbers="True"
+for(int i=0; i<l; i++)
+{
+	while(char at i!=char at j)
+		j = arr[j -1];
+	arr[i] = ++j;
+}
+}}}

@@ -1,0 +1,31 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-18T00:04:07+05:30
+
+====== 6. Operators ======
+Created Friday 18 October 2019
+
+* int/int gives an int, not a float.
+* any operation using a float/double gives a float/double.
+* Remember, = is also an operator just like =,-,* etc. if we write (a=2) where 'a' has been previously been defined/declared, then assignment occurs, and then the left hand value is the result of the expression, which is two in this case.
+Types of operators:
+* **Arithmetic operator:**
+	* +
+	* -
+	* *
+	* /
+	* % can be used only when both operands are int.
+* **Relational operator:**
+	* ==
+	* !=
+	* <
+	* >
+	* <=
+	* >=
+* **Logical operator:**
+	* &&
+	* ||
+	* !
+	* there's no logical XOR in C++. We can do bitwise to achieve the same.
+https://en.wikipedia.org/wiki/Short-circuit_evaluation
+* Easy and quick: http://www.cplusplus.com/doc/tutorial/operators/ 

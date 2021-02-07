@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-29T01:18:42+05:30
+
+====== 3. Multiplicative Modulo Inverse ======
+Created Wednesday 29 July 2020
+
+Multiplicative Inverse: For **a**!=0, multiplicative inverse is 1/a
+
+Multiplicative Modulo Inverse: For **a**, multiplicative inverse **under** m is a number **b** such that (a*b)mod(m)=1
+a.b + mQ = 1. Both a, m need to be coprime.
+* b is calcuated using extended Euclid algorithm.
+

@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T00:27:36+05:30
+
+====== 2. Euclid's Algo ======
+Created Sunday 02 August 2020
+

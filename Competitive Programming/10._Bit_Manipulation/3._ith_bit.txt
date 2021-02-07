@@ -1,0 +1,41 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-29T01:18:16+05:30
+
+====== 3. ith bit ======
+Created Monday 29 June 2020
+
+1. **Return** ith bit.
+A simple way to do this would be
+{{{code: lang="cpp" linenumbers="True"
+N = 100010101 // suppose we need 2nd bit - zero based counting
+}}}
+
+Approach 1 - Shift+Modulus:
+	a. Shift by k to the right
+	b. Check last bit
+{{{code: lang="cpp" linenumbers="True"
+return (n >> i)%2; // Booth's algorithm - O(n)
+}}}
+
+Approach 2 - Shift and AND:
+	We can produce pow(2, i) using the left shift operator
+{{{code: lang="cpp" linenumbers="True"
+return (n >> i) & 1; // returns 1 if set and 0 if unset
+}}}
+
+==== ---- ====
+2. **Set** ith bit - OR
+{{{code: lang="cpp" linenumbers="True"
+// 01101 to set 2nd bit we need 00100 i.e 2^i
+// to set we use OR
+n|=(1<<i); // O(1)
+}}}
+
+==== ---- ====
+3. **Unset** ith bit - AND and NOT
+{{{code: lang="cpp" linenumbers="True"
+// the
+n&=~(1<<i);
+}}}
+

@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-29T08:22:12+05:30
+
+====== 4. Flipping a specific bit ======
+Created Monday 29 June 2020
+
+* Flipping a single bit, negation.
+* Flipping a bit at a position.
+e.g 111011, i = 2
+We can XOR this with 000100. This is 2^i
+{{{code: lang="cpp" linenumbers="True"
+n^=(1<<i); // flip ith bit O(1)
+}}}

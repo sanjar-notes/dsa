@@ -1,0 +1,26 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-30T01:46:14+05:30
+
+====== 7. First Set bit ======
+Created Tuesday 30 June 2020
+
+* Find the first set bit and return it with the LSB's
+e.g 101010**1**00 ⇒ **1**00
+
+We don't now where the first 1 is, do manips, and we don't
+{{{code: lang="cpp" linenumbers="True"
+n =    101010100
+n-1;// 101010011 // useless
+-n; // 010101101
+n & -n
+}}}
+
+* n & n-1
+--------------------
+Turn off first set bit
+{{{code: lang="cpp" linenumbers="True"
+n =    101010100
+n-1;// 101010011 
+n & (n-1);// nothing was affected on the left
+}}}

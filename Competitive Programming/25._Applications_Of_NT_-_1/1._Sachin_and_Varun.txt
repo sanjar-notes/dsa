@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-29T12:38:58+05:30
+
+====== 1. Sachin and Varun ======
+Created Wednesday 29 July 2020
+
+We need number of pairs.
+{{./equation.png?type=equation}}
+Two for loops, O(d^{2}/a.b) ~ 10^{18} **not accepted**
+--------------------
+Only one loop, check divisibility, One y for one x.
+O(d/b) ~ 10^{9} **not accepted**
+--------------------
+ax+by=d ⇒ 

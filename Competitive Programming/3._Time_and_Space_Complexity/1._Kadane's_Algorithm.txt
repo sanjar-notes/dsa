@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-27T08:43:12+05:30
+
+====== 1. Kadane's Algorithm ======
+Created Monday 27 April 2020
+
+* Largest Sum Subarray - return the maximum sum.

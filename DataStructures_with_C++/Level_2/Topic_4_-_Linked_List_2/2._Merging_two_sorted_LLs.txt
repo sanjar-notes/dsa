@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-18T14:18:14+05:30
+
+====== 2. Merging two sorted LLs ======
+Created Saturday 18 January 2020
+
+* Need 4 variables, 2 iterators. 1 head of the merged list. 1 last node.
+* Add elements to the end of the array.

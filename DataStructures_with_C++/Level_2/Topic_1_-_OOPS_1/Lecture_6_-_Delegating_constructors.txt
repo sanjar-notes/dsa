@@ -1,0 +1,59 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-09T04:47:16+05:30
+
+====== Lecture 6 - Delegating constructors ======
+Created Thursday 09 January 2020
+
+Delegating constructors - reusing constructors to avoid code duplication.
+This is not obvious unlike Java where we can freely call ''this''() and ''super''() at will. - __OPTIONAL__
+
+Suppose we have the following code:
+{{{code: lang="cpp" linenumbers="True"
+class A
+{
+	public:
+    	A()
+    	{
+     		// code to do X
+    	}
+ 
+    	A(int value)
+    	{	
+    		// code to do x // duplicate code
+      	  	// code to do y
+    	}
+};
+}}}
+
+
+The following solution will not work in C++:
+{{{code: lang="cpp" linenumbers="True"
+class A
+{
+	public:
+    	A()
+    	{
+     		// code to do X
+    	}
+    	
+    	A(int value)
+    	{	
+    		A(); // OK - but useless - temp object created and destroyed
+      	  	// code to do y
+    	}
+};
+}}}
+
+
+C++ way to do this is called "constructor delegation".
+**Syntax** -  Just include extra constructor calls in the intializer list.
+{{{code: lang="cpp" linenumbers="True"
+A(int value): Foo{}
+{	
+	// code to do y
+}
+};
+}}}
+
+**Important** - a constructor that delegates to another constructor is not allowed to do member initialization in the initialization list. So constructors can either delegate or use initialization lists for member initialization, but not both.

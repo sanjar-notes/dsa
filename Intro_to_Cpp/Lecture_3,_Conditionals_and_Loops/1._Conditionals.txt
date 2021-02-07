@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-10-18T10:42:03+05:30
+
+====== 1. Conditionals ======
+Created Friday 18 October 2019
+* if
+* if else
+* if else if ladder.
+* if else if nested.
+* if if if 
+* if if if else
+
+This is a loop which runs until the condition is true.
+Checking if prime is really a tricky problem, accepted.

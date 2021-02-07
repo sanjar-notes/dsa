@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T14:11:21+05:30
+
+====== 6. MinMax Algorithm ======
+Created Sunday 02 August 2020
+
+There are two players in the game.
+1. Maximizer - wants their score to be maximum.
+2. Minimizer - wants the score of opponent to be minimum.

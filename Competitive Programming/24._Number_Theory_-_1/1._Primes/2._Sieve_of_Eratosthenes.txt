@@ -1,0 +1,16 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-28T21:06:46+05:30
+
+====== 2. Sieve of Eratosthenes ======
+Created Tuesday 28 July 2020
+
+1. We write all the numbers in a bool array.
+2. All are true initially.
+3. We start from 2, mark all its multiples as false.
+4. Then continue for the rest till √n i.e highest factor.
+--------------------
+Tweaks:
+1. As we go to multiples, we can start from the current one i.e start from i*i
+2. We can skip a number if number % is multiple of any of the previous numbers. Skip 4 because 2 is already over.
+3. We go till √n, and not till n. Everything has been covered.

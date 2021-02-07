@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-23T16:15:26+05:30
+
+====== 3. Various Types of Errors ======
+Created Thursday 23 April 2020
+
+Verdicts on platforms:
+1. Accepted - Done
+2. TLE - Time Limit Exceeded 
+	a. Unchecked while loop
+	b. Too slow - some change or major change in code
+3. Compilation Error
+	a. Spelling error of some type.
+	b. Header file problems
+	c. std:: problem
+4. Runtime Error
+	a. Divide By Zero
+	b. Segmentation Fault - Accessing out of bounds or deleted memory location.
+	c. Array size > 10^{8 }coz maximum array size 256MB
+	d. In a function, we can make an make a static array of maximum size 10^{6}(4 MB).
+5. Wrong Answer:
+	a. Check the code - Dry run it
+	b. Are corner cases missing.
+	c. If there is some doubt we'll likely get a Wrong Answer.
+	d. Code-wise wrong answers:
+		1. Integer multiplication overflow.
+		2. Float or doubles overflow or precision error.
+		3. Uninitialized variables.
+	e. Anything else is a logical error.

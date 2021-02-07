@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-11-12T23:24:47+05:30
+
+====== 5. Assignments ======
+Created Tuesday 12 November 2019
+
+A1: [[./soln_files/A1.cpp|Find Unique]]
+A2: [[./soln_files/A2.cpp|Find Duplicate]]
+A3: [[./soln_files/A3.cpp|Array Intersection]]
+A4: [[./soln_files/A4.cpp|Pairwise Sum]]
+A5: Triplet sum
+A6: [[./soln_files/A5.cpp|Sort 1 and 0, constant T.C and S.C]]

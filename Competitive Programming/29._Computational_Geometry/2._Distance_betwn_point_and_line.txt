@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-20T00:49:32+05:30
+
+====== 2. Distance betwn point and line ======
+Created Thursday 20 August 2020
+
+* Point to line: AB to C = ABxAC/|AB| = (area of triangle)/base
+	{{./pasted_image.png?width=400}}
+* Line segment to point: Find nearby point(using dot product, obtuse-acute)
+	Try both AB.AC and AB.BC, if anyone is negative, then find using cartesian distance.
+	Else(both + ve) find the perpendicular distance using the area formula.
+	{{./pasted_image001.png?width=400}}
+	

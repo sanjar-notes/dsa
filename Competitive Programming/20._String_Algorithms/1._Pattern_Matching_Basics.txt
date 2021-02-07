@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-27T13:39:11+05:30
+
+====== 1. Pattern Matching Basics ======
+Created Monday 27 July 2020
+
+We need to tell if a given pattern exists in a given string.
+{{./pasted_image.png}}
+
+==== Naive Approach ====
+We search one by one. We traverse the patter only if the starting letters match first. O(n*m) - This is the naive approach.

@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-14T04:30:41+05:30
+
+====== Home ======
+Created Tuesday 14 January 2020
+
+header files know:
+1. cstring and functions
+http://www.cplusplus.com/doc/tutorial/ntcs/

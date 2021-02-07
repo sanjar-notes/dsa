@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-17T00:36:02+05:30
+
+====== 4. Largest of N numbers ======
+Created Thursday 17 October 2019
+
+Problem: finding the maximum value for a given number of integers.
+A:{{./p3.jpg}}
+Q) Check if number is prime.
+A:{{./p3001.jpg}} t  
+To further minimize number of calculations, we check the number till sqrt(N). Because it's the largest factor N can have. 

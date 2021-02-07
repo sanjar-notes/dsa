@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-25T18:55:33+05:30
+
+====== 5. Size of a segment tree ======
+Created Saturday 25 July 2020
+
+* Approximately 4N. This is always sufficient.

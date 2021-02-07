@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-19T11:13:08+05:30
+
+====== 2. Isosceles Triangle ======
+Created Saturday 19 October 2019
+
+Very interesting.
+Insights: Here each row has three phases:
+1. The spaces. (_). Make a variable called space. Keep space and j as counters as far as possible. No need to foolishly mathematicize.
+2. Increasing numbers. Avoid writing ++ or — directly in cout.	
+3. Decreasing numbers.
+e.g (ignore the spaces between underscore) 
+_ _ 1 _ _
+_ 1 2 1 _
+1 2 3 2 1
+Solution: Let's write code for this first,
+_ _ 1
+_ 1 2
+1 2 3
+Then we'll se about the decreasing thing in each row.
+Conclusion: Try to keep things as independent as you can between the phases, saved time in debugging.
+**Analogies are **//too//** important to be ignored, what you already know to do is very important too.** **That's it. Good confidence increased.**

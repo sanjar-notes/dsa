@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T01:17:04+05:30
+
+====== 6. Income on the Nth day ======
+Created Sunday 02 August 2020
+
+F(n) = F(n-1)+F(n-2)+F(n-1)*F(n-2)
+
+Uses all 4:
+1. Matrix Exponentiation
+2. Modular Exponentiation
+3. Fermat's Little theorem
+4. Recurrence Relations

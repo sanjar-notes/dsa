@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-28T15:58:44+05:30
+
+====== 1. What is bitmasking ======
+Created Tuesday 28 July 2020
+
+Mask - A collect of bits which represents something.
+e.g subsets of elements of an array. Represent absence/presence by a bit. There are 2^{n} subsets.
+{{./pasted_image.png}}
+* Bitmasking means representing things as binary numbers.

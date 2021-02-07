@@ -1,0 +1,58 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-25T06:03:37+05:30
+
+====== 0. Sorting w.r.t a data member of a class ======
+Created Saturday 25 April 2020
+
+Using lambda functions: https://www.drdobbs.com/cpp/lambdas-in-c11/240168241
+{{{code: lang="cpp" linenumbers="True"
+// sort(iterator_start, iterator_end, [](const cust_type &x, const cust_type &y){ // return x.property < y.property});	// keep < for normal sort
+sort(vec.begin(), vec.end(), [](const pair<int, int> &x, const pair<int, int> &y){return x.second > y.second;});
+}}}
+
+
+Old method:
+{{{code: lang="cpp" linenumbers="True"
+#include <bits/stdc++.h>
+using namespace std;
+
+// write the comparator function here.
+/*
+    1. Specify the property to be used for the sort
+    2. Also Specify asc or descending. Return a < b for ascending. i.e it's okay if a <b
+*/
+
+template <typename T>	// not useful generally
+inline bool mysort(const T &x, const T &y)
+{
+    return x < y;
+}
+
+inline bool mycomp(const pair<int, int> &x, const pair<int, int> &y)
+{
+    return x.second > y.second;
+}
+
+int main()
+{
+    vector<int> pq;
+    pq.push_back(1);
+    pq.push_back(1);
+    pq.push_back(9);
+
+    // comparator name with type if templated
+    sort(pq.begin(), pq.end(), mysort<int>);
+
+    vector<pair<int, int>> pr;
+    pr.push_back({1, -34});
+    pr.push_back({1, -3});
+    pr.push_back({9, 40});
+
+    // pass the name without type if untemplated
+    sort(pr.begin(), pr.end(), mycomp);
+    for (auto x : pr)
+        cout << x.second << " ";
+}
+}}}
+

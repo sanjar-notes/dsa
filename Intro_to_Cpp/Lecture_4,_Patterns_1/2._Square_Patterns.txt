@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-18T16:41:06+05:30
+
+====== 2. Square Patterns ======
+Created Friday 18 October 2019
+
+What matters in this is the 3 questions.
+Analyze the pattern, trial and error will only cause frustration here.

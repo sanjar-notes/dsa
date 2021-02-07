@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-22T19:05:00+05:30
+
+====== 2. Inversion Count ======
+Created Monday 22 June 2020
+
+{{./Jun 22 19h07.svgz?width=300}}
+* Simply calculate the problems in the array while sorting. We do the comparisons anyway. Same as that for merge sort.
+* A simple method is to sort and iterate. Easier to code.
+* Another method is to a variable which counts the inversions. Implementing merge sort again.

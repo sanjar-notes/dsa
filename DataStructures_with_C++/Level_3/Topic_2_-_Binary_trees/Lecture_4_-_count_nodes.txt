@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-01T11:58:50+05:30
+
+====== Lecture 4 - count nodes ======
+Created Saturday 01 February 2020
+
+f(root) = 1 + f(root->left) + f(root->right); 0 if root is nULL;

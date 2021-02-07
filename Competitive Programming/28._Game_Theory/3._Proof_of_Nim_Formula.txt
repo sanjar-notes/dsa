@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T01:42:37+05:30
+
+====== 3. Proof of Nim Formula ======
+Created Sunday 02 August 2020
+
+* Make the cumulative XOR zero. This ensures our win.

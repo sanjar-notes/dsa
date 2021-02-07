@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-18T02:50:48+05:30
+
+====== 2. decltype ======
+Created Monday 18 May 2020
+
+* Very simple, this is like a copy constructor. But it does not initialize values, it initializes only the **data type**.
+* **decltype** does **not **call the function, while **auto **would need to do that.
+* It can be used with literals, too. Good for experimenting, without an ide.
+
+
+

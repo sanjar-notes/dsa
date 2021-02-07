@@ -1,0 +1,18 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-16T05:58:08+05:30
+
+====== 2. Largest Common Subsequence ======
+Created Monday 16 March 2020
+
+[[../Codes/LCS.cpp|LCS.cpp]]
+
+In LCS we use the basic methodology of string recursion. This works like a charm because at the end of the day. We can see only an atomic part of the string. 
+
+Either the letter is present or it is not.
+
+If  
+	return 1 + LCS(a.substring(1), b.substr())
+else
+	return max(LCS(a.substr(1), b), LCS(a, b.substr(1))
+

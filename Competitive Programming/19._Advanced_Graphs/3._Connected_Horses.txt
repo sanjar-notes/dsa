@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-26T11:41:19+05:30
+
+====== 3. Connected Horses ======
+Created Sunday 26 July 2020
+
+**Question**
+* We are given a chessboard with horses on it.
+* Using Euclid equivalence principle, we can say that two horses are changeable. If they share a 3rd common equivalent horse.
+--------------------
+**Answer**
+* Change representation from chessboard to graph.
+* Return component size factorial.

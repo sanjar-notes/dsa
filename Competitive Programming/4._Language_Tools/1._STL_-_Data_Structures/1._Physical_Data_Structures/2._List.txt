@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-05-03T11:56:56+05:30
+
+====== 2. List ======
+Created Sunday 03 May 2020
+
+* Doubly linked list

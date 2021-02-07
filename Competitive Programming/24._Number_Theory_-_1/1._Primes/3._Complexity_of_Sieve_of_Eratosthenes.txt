@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-28T22:14:19+05:30
+
+====== 3. Complexity of Sieve of Eratosthenes ======
+Created Tuesday 28 July 2020
+
+{{./pasted_image.png}}
+The answer for the above series is log(logn) for n primes. **Merten's Theorem**.
+So the time complexity is nloglog(√n) = O(n*log(log(n))) **Accepted.**

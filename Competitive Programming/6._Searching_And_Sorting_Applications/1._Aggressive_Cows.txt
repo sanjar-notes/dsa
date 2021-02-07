@@ -1,0 +1,19 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-22T12:51:47+05:30
+
+====== 1. Aggressive Cows ======
+Created Monday 22 June 2020
+
+* Given some cows and stalls(number of stalls > cows).
+The solution:
+Observations:
+	The minimum number of cows possible are two: 
+	a. The range of distance is 0(all in one stall) vs x_{max }- x_{min}(only 2 cos present) - This is true for any input.
+	b. To find out Largest minimum distance, we need to be able to arrange the cows with gaps of atleast that value.
+	c. Suppose we are at the answer, d, we can arrange the cows where atleast one distance is d.
+	d. For d+1, we won't be able to arrange the cows, not enough stalls.
+	e. For d-1, we should still be able to arrange the cows, because stalls are remaining.
+	f. This means that starting from the ends is a waste of time. We can instead start in the middle.
+	g. The middle of what? If we just take the case of 2 cows. The solution works out in ClogD. Remember we are sorting. So the solution is nlon.
+	h. Is a better solution possible - maybe. But this is it for now.

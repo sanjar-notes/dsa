@@ -1,0 +1,43 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-07T23:40:49+05:30
+
+====== Lecture 5 - Check BST 3 ======
+Created Friday 07 February 2020
+
+Better than all this, let us do an even simpler approach:
+According to the definiton, we can do the following. We can do this very easily. We restrain the left and right restrain. We can code it easily.
+
+Top-down approach.
+If a node violates the BST principle: It should be on either side of min and max, if not return false;
+
+{{{code: lang="cpp" linenumbers="False"
+bool isBST_h(BinaryTreeNode<int>* root, int min, int max)
+{
+	if(root==NULL)
+		return true;
+	   // check if the node is okay
+	// node's data should be in range of either side of min or max
+	if(root->data > min && root->data < max) // only possible scenario
+		return isBST_h(root->left, root->data, max) && isBST_h(root->right, min, root->data);
+	return false;
+}
+
+#include<climits>
+
+bool isBST(BinaryTreeNode<int> *root)
+{
+	// top down approach
+	// simulating the creation if the tree
+	if(root==NULL)
+		return true;
+    
+	// initially we have no restrain
+	return isBST_h(root, INT_MAX, INT_MIN); // need to start from -infinity and +infinity` 
+}
+
+// We did nothing for left and rigtht.
+}}}
+
+
+**Insights: **BST is only making the bound for min and max for the left and right subtrees.

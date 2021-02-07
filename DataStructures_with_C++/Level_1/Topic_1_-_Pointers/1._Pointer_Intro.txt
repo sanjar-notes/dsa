@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-12-21T22:13:25+05:30
+
+====== 1. Pointer Intro ======
+Created Saturday 21 December 2019
+
+Pointers exhaustive from scratch: [[https://www.youtube.com/watch?v=h-HBipu_1P0&list=PL2_aWCzGMAwLZp6LMUKI3cc7pgGsasm2_]]
+
+Pointers are variables which hold memory addresses. 
+* Size of a pointer variable is system dependent. A memory address is considered as an integer value. Size of a pointer does not depend on the data type it is pointing to. We can use ''sizeof'' operator to get the size of a pointer.
+* How Ankush wants you to think: All variables are on RAM. 
+* Jump is decided  by using a **symbol table**. It has atleast 3 columns. (Name, type, starting_address). Here type is used to get the jump.
+* Symbol table can have two differently named variables for the same address. (Same type will cause a problem for one of the variables - wrongly read in case of big endian). This is the motivation for **references(i.e the same memory address can be referred to by two different names).**
+* It is wrong to assume that a 32 bit architecture will have 4 Bytes of pointer and * bytes for 32bit. This is mostly true, but not guaranteed, so we should not make assumptions about this.
+
+__Declaration__: 
+* for single pointer variable. ''data_type *_variable1;''
+* for multiple pointers on the same line, ''data_type *v1, *v2 ...''
+* This means that we can declare //data_type //and pointers variables on the same line.
+NOTE: Beware of garbage pointer. Initialize pointer to nullptr or NULL or 0. nullptr is recommended. NULL and 0 are same as false.
+
+__Assignment__: We use ''*p_variable'' for declaration, but we use ''p_variable = r_value'' for assignment.
+* & is called the "address of" operator, it looks up the ''starting_address'' of the given variable(acc to its name in the symbol table).
+* We can declare pointer to pointer by using 2 asterisks. Remember that a variable of type pointer to pointer ... to pointer is the same as a pointer variable(if we look at the lookup table). The content is context specific.
+
+__Dereference__: Interacting(i.e //accessing //and //modifying//) the value of the variable using a pointer variable is called a dereference. It **needs **to have a valid address and a jump size, which is indicated using the jump(i.e type) column in the symbol table.
+* void pointers cannot be derefenced(jump size is undefined). Also a pointer which has an invalid address(i.e NULL or nullptr) cannot be dereferenced.
+
+__Jargon__: https://www.youtube.com/watch?v=uvw5bZZT3pM
+* "points to" means that a pointer variable holds the starting_address and jump for the memory location(used interchangeably with **address**).
+* **wild pointer** means a pointer that is uninitialized. It becomes "non-wild" when we assign it a value.
+* **dangling pointer** refers to a pointer that has an address of a variable which has been **deallocated or destroyed or has gone out_of_scope. ** This can lead to segmentation faults/crashes. **Another **scenario is with a static variable. Here due to the declaration static, the statement is ignored, and the value is not initialized(everytime). 
+* **void pointer** means a pointer whose type field(in the symbol table) is undefined. So it cannot be dereferenced(coz we don't know how much to jump). **They are used for storing addresses alone. **
+* **NULL pointer**, has a value of zero, which may be character or integer or long depending on the compiler. So it's better to use nullptr. NULL can be safely assumed to be false and numerical zero and EOS character.
+
+
+

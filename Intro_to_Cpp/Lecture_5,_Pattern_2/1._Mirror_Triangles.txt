@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-19T11:00:31+05:30
+
+====== 1. Mirror Triangles ======
+Created Saturday 19 October 2019
+
+Solve the three given questions and then code the solution, just be wary of the spaces that need to be inserted
+before printing the things on the i'th row.
+ * * * *
+ * * *
+ * *
+ * 
+

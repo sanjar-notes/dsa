@@ -1,0 +1,65 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-01-15T20:03:07+05:30
+
+====== 4. Insert node at the ith position ======
+Created Wednesday 15 January 2020
+
+There are 2 variables:
+1. Existence: head==NULL or not
+2. Index: wether 0 or not
+	a. 0
+	b. >0
+* Wrote the general algorithm, then the exceptions. Only requirements, no need for optimizations here.
+
+1. index 0 is always valid, heads need to be updated.
+2. index > 0 has two cases: 
+	a. Within bound
+	b. Greater than length
+	c. negative indices
+--------------------
+void insertNode(Node *&head, int index, int data)
+{
+	/* cases possible
+
+	1. Empty list
+		a. Index at 0, i.e make the first node
+		b. Index != 0 do nothing
+	2. Non Empty list
+		a. index at 0, Make the node shift the head
+		how to prevent negative indices ?
+		b. index < length -1, reach the (i-1)th node, create a node
+		c. index > length - 1 , do nothing
+
+	Conclusion: 1. 1.a and 2. a are the same thing, create a node at the beginning
+				2. 1.b is different // impossible
+				3. 2.b and 2.c are intertwined  //
+	*/
+
+	if (index == 0) // case 1.a and 2.a done
+	{
+		Node *newnode = new Node(data);
+		newnode->next = head; // handles both cases, i.e empty and non-empty lists
+		head = newnode;
+		return;
+	}
+
+	if (head == NULL) // case 1. b done
+		return;
+
+	// case 2.b and 2.c
+	Node *trav = head;
+	for (int i = 0; i < index - 1 && trav != NULL; i++, trav = trav->next) // also prevents negative indices
+		;
+
+	// 2.c handled
+	if (trav == NULL) // the construction site is null, this is possible if index > length-1
+		return;
+
+	Node *newnode = new Node(data);
+	newnode->next = trav->next;
+	trav->next = newnode;
+	return;
+}--------------------
+
+

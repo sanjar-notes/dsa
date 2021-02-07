@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-19T23:13:20+05:30
+
+====== 2. Minimum Absolute difference in an array ======
+Created Sunday 19 July 2020
+
+* Sort the array. Now consecutive difference is the minimum difference if any.
+* This creates an optimal substructure - going all the way from left to right.
+* Greedy works out - minimum is the minimum consecutive difference.

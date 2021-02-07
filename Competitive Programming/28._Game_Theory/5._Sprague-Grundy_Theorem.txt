@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-08-02T13:17:14+05:30
+
+====== 5. Sprague-Grundy Theorem ======
+Created Sunday 02 August 2020
+
+Take cumulative XOR of grundy value of each pile.
+if cumXOR == 0:
+	player 1 loses;
+else
+	player 1 wins;
+Proof omitted.
+

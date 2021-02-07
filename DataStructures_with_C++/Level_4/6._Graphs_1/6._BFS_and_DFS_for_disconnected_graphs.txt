@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-31T05:54:43+05:30
+
+====== 6. BFS and DFS for disconnected graphs ======
+Created Tuesday 31 March 2020
+
+Just check if visited.size()<V. If yes, run BFS/DFS on the remaining nodes. Repeat until true.

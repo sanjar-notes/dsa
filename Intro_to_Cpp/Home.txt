@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-10-16T17:04:37+05:30
+
+====== Home ======
+Created Wednesday 16 October 2019
+
+https://stackoverflow.com/questions/388242/the-definitive-c-book-guide-and-list/388282#388282
+CPP resources
+Header files known:
+1. **iostream** -  std input output + new library
+2. **algorithm** - for sorting etc
+3. **array** - template class for array
+4. **sstream** for int to string and viceversa

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-03-12T05:16:18+05:30
+
+====== Conclusion ======
+Created Thursday 12 March 2020
+
+With a basic observation of what was happening vs what should happen, we can do wonders. Dynamic Programming is really very clever and easy programming.
+
+* Make a bruteforce recursive solution.
+* Make a memoized.
+
+Steps to follow:
+1. Make an array.
+2. Initialize it if required, i.e for visited or unvisited mostly.
+3. Enter the concrete values into the array
+4. Decide the relationship between the answers and the question.
+	a. What is the dependency.
+	b. Is it counting or optimum. Here we check for the min or just add in case of counting.
+	c. Are there multiple ways to reach the same answer, does it give the wrong thing, duplicacy etc. **Partly covered in counting vs optimum.**
+	d. Can values be skipped, this will drastically reduce the array size.
+	e. Write it iteratively.
+	f. Most solutions give O(n) both space and time. Time is O(kn) in most case for some case/constraint dependent n;

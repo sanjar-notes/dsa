@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-02-14T15:43:16+05:30
+
+====== Lecture 5 - Insert and delete in Heaps ======
+Created Friday 14 February 2020
+
+=== Reiteration ===
+We have two kinds of priority queues: i.e min-heap and max-heap. 
+* min heap: pops out the minimum when asked.
+* max heap: pops out the maxiumum when asked.
+
+Heap order property: The parent is **smaller** than its children. MinHeap. The parent is **greater** than its children. MaxHeap.
+
+* Remember, this is not a BST. So we care only for the parent and children.
+* BST cares about left and right, while heap cares only one direction, down.
+--------------------
+
+=== Insertion ===
+* Insert data after the last node. 
+* Then **sift-it-up**, until heap order property is satisfied.
+* At root it is going to hold by default. Proved.
+
+Sifting up - it is the process where we exchange data from the parent of the current node and keep doing it until the heap-order property is finally satisfied. Also known as bubbling-up.
+--------------------
+
+=== Deletion ===
+We know that one node has to go and that it has to be the last node. We cannot delete any other node.
+1. We copy the value of the last node at the root. i.e the root is effectively deleted.
+2. We delete the last node. CBT property OK!
+3. We to **sift-down** the root/
+	Q. But how to decide whether to go left or right. Assume a max-heap for the answer.
+	R. We swap with the minimum of the children as which ensures that the heap property is staisfied with the other child. If **this is **not done, then we will have max over min. **Don't **worry about the swapped value, whether it is final or not. Because min and ma wont be satisfied anyway.
+4. When we sift like this, we will reach the end, as the last node is the largest. 

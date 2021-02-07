@@ -1,0 +1,14 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-02-01T11:59:55+05:30
+
+====== Lecture 5 - Binary Tree Traversals ======
+Created Saturday 01 February 2020
+
+1. PreOrder traversal: Node LeftSubtree RightSubtree.
+2. InOrder traversal:  LeftSubTree Node  RightSubtree. Binary tree exclusive.
+3. Postorder traversal: LeftSubtree RightSubtree Node.
+4. LevelOrder traversal: use a queue.
+
+[[./BinaryTreeNode.h|BinaryTreeNode.h]]
+[[./treeMain.cpp|treeMain.cpp]]

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-19T12:43:19+05:30
+
+====== 2. Nikunj and Donuts ======
+Created Sunday 19 July 2020
+
+{{./pasted_image.png}}{{./pasted_image001.png}}
+* WA
+
+Solution: Sort the array. Eat the largest cake, first, mult=1. Then the second largest mult=2 etc. This will solve the problem. Because we can only control j and not i.

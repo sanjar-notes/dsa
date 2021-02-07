@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-07-19T12:43:19+05:30
+
+====== 5. Weighted Job Scheduling ======
+Created Sunday 19 July 2020
+
+{{./pasted_image.png}}{{./pasted_image001.png}}
+* WA
+Solution: Sort the array based on finishing time.
+Next apply DP and find which jobs will give the maximum profit using binary search.

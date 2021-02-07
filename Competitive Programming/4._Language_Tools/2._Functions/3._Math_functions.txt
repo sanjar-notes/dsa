@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-05-03T13:53:48+05:30
+
+====== 3. Math functions ======
+Created Sunday 03 May 
+
+1. abs() - absolute value  **stdlib iostream**
+2. __gcd(a,b) - Greatest common divisor of a and b. **algorithm**
+3. pow(a, b) returns a double a^{b }returns a long double. **cmath**
+

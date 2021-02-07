@@ -1,0 +1,98 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-12-26T13:43:37+05:30
+
+====== Lecture 6 - Inline and Default Arguments ======
+Created Thursday 26 December 2019
+
+Some more helpul things in cpp.
+
+=== Ternary operator ===
+This is used to write if else loop(s) in a concise way.
+{{{code: lang="cpp" linenumbers="True"
+logical_expression ? value1 : value2;
+}}}
+
+* [[https://www.geeksforgeeks.org/c-nested-ternary-operator/|Nesting]] is possible.
+**Use-cases: 	**
+	a. During assignment;
+	b. For general cases, in cout, cin etc. Prefer to use parentheses to avoid confusion.
+**Disadvantage: **The readability decreases, while performance is the same as using if else. It should be used only for simple statements.
+
+=== Inline functions ===
+{{{code: lang="cpp" linenumbers="True"
+inline f(int a)
+{
+	// some code
+}
+}}}
+
+**Case**: Suppose we the maximum of two integers, but for such a small thing, calling a function would be an unnecessary overhead. 
+There's something called inline functions, where our code is expanded at the place of the function call(called **in-place expansion**).
+**Expansion criteria: **The compiler decides if the function is suitable for expanding inline or performing a normal function call. If the function is bulkier, then the compiler will treat the function as a normal function, and no in-place expansion will take place. So using **inline **is only a **request**, and does not guarantee if the compiler will perform in-place expansion for the function.
+* worth reading https://www.geeksforgeeks.org/inline-functions-cpp/
+**Q) **Why don't we use all functions as inline irrespective of size, i.e why to use normal functions.
+**A) **This is logic not helpful, because in-place expansion **does **increase the **size of the executable **file, which can be a bottleneck at many platforms. Like Arduino etc, where memory is **expensive/less**.
+	* Functions have their own significance, i.e to improve readability, optimize performance and executable size, easy debugging etc. **Inline **functions cannot take their place.
+
+=== Default arguments ===
+* We can make arguments optional by providing some value. Achieved using default arguments.
+* The value can be anything, literal or otherwise.
+**Rules**
+* The formal parameters are assigned from left to right during call.
+* The default parameters are **must be at end(rightmost)** of the argument list. Else the program will **not **compile.
+{{{code: lang="cpp" linenumbers="True"
+int f(int x =0, int y = 0, int z) # error
+}}}
+ 
+**Syntax:**
+* If prototyped, default args should be mentioned **only** in the function **declaration**. Writing them again is an error.
+{{{code: lang="cpp" linenumbers="True"
+void f(int=2, int=23); // omitting variable name is OK
+
+int main(){	f(); return 0}
+
+void f(int x, int y){} 		// OK
+void f(int x=2, int y=23){} // error
+}}}
+
+If no prototyping is done, then include the default args.
+
+**Caution**
+* When overloading a function, make sure that there's no ambiguity.
+{{{code: lang="cpp" linenumbers="True"
+int sum(int x, int y, int z = 0);
+int sum(int x, int y, float z = 0.0);
+
+int main()
+{
+	sum(1,2,3); // ambiguos - int(3) or float(3), can't decide
+}
+}}}
+
+{{{code: lang="cpp" linenumbers="True"
+int f(int x=2, int y=3) {}
+int f(){}
+
+int main()
+{
+	f(); // ambiguous f(x=2, y=3) or f() 
+}
+}}}
+
+* Default arguments cannot be the previous parameters, but global variables may be used as default. This is allowed though, for template parameters.
+ 
+Examples of default aguments
+{{{code: lang="cpp" linenumbers="True"
+// global variables
+int glob = 2;
+void i(int x=glob){}
+
+// other functions
+int g(){ return 2;};
+void f(int h=g()){} // another function - OK
+}}}
+
+
+
+

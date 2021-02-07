@@ -1,0 +1,17 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-10T04:43:17+05:30
+
+====== z Assignment - Fractions ======
+Created Friday 10 January 2020
+
+Fraction class:
+1. Simplify function, find gcd and divide both numerator and denominator.
+2. Add function. This is actually like f1 = f1+f2. i.e we are making **changes **to f1. As there's nothin to return, no new object is created.
+3. We should use references, i.e int & wherever possible, to avoid the copying overhead.
+4. Also it should be const, so that no change is made to the argument. This is not followed by mutators, because their very objective is to change the value.
+5. We should take care as to what is the use case, and use variables according to that.
+
+Read why const and references are together. http://www.cplusplus.com/doc/tutorial/functions/
+
+Complex Numbers [[./complex_numbers.cpp]]

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2020-04-26T10:38:29+05:30
+
+====== 2. Inheritance ======
+Created Sunday 26 April 2020
+
+* Child is the same as Derived class.
+* Parent is the same as Base Class.
+
+[[../Codes|Codes]]

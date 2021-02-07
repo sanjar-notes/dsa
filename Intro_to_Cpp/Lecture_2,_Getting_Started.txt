@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2019-10-17T15:50:48+05:30
+
+====== Lecture 2, Getting Started ======
+Created Thursday 17 October 2019
+
+[[./0000000000000025 (1).pdf|Official Notes]] this lecture.
