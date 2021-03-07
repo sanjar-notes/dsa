@@ -29,8 +29,7 @@ Invariants and Properties:
 --------------------
 Finding MST for a given weighted, connected and undirected graph.
 
-Naive Approach: 
+Naive Approach:
 1. Find all the Spanning trees.
 2. Find weight of each(i.e sum of edges)
 3. Trees with minium values of weight are MSTs.
-

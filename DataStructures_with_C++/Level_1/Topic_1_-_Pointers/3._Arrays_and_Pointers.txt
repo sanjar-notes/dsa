@@ -5,14 +5,20 @@ Creation-Date: 2019-12-22T13:30:45+05:30
 ====== 3. Arrays and Pointers ======
 Created Sunday 22 December 2019
 
-Arrays save the address of the first element.
-* Array name is functionally pointer to the the first element's address. There are some differences,
+Arrays same as pointer?
+
+=== Short answer ===
+An array uses a pointer to save the address of the first element.
+The notation [] is just syntactic sugar.
+
+=== Long answer ===
+* Array variable is functionally a pointer to the the first element's address.
 What are the differences:
-1. sizeof() gives the size of the array, in the local scope. This happens because the type is set as int[] and not int*. But + works on the int* part, hence arithmetic operation is the same as a pointer. i.e no new variable of 8 bytes is stored for an array. 
-* **Advantage:	Symbol table is therefore able to differentiate between a pointer and an array.** 
-2. & operator is the same for both 'arr' and '&arr'. Coz 'arr' is linked to the address of the first head. arr is not the name of a pointer variable. value of 'a' is just the address of a. It does not need to go to the RAM for reading(no traversal required).
+1. ''sizeof()'' gives the size of the array, in the local scope. This happens because the type is set as int[] and not int*. But + works on the int* part, hence arithmetic operation is the same as a pointer. i.e no new variable of 8 bytes is stored for an array. 
+* **Important: **Symbol table is able to differentiate between a pointer and an array. 
+2. ''&'' operator is the same for both 'arr' and '&arr'. Value of 'a' is just the address of a. It does not need to go to the RAM for reading(no traversal required).
 * While &p and p is different if p is a pointer, the first is the address of the pointer variable and the second is the address of the variable that p points to, respectively.
-* An observation: We can learn from here that **only the left part of the declaration** takes part in writing the values of the symbol table, **it is absolutely independent of the rvalue**. **This is important **because it makes C++ more intuitive and eases operator overloading and definition criteria. **It is one of the **only places, i.e in static arrays, that we see the sizeof() value is different as compared to the jump value. 
+* An observation: We can learn from here that **only the left part of the declaration** takes part in writing the values of the symbol table, **it is absolutely independent of the rvalue**. **This is important **because it makes C++ more intuitive and eases operator overloading and definition criteria. It is **only** in case of static arrays, that we see the sizeof() value is different as compared to the jump value.
 		**Q) **Can it not be that sizeof is stored differently?
 		**A) **No, because sizeof is the same for all. And it has to be in the table, as array names are in reality just names.
 1. Pointer arithmetic is invalid for array names(yeah, exactly names), as **no changes can be made to the symbol table, we can only change the value of the memory of the variable. This means that array names cannot be reassigned ( &x is an rvalue and cannot act as an lvalue). **Hence prefix and postfix increment/decrement are also illegal.

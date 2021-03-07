@@ -11,14 +11,14 @@ We discussed in Kruskal's algorithm, that we need to check if a cycle exists, ju
 One **simple** way is to traverse the graph and keep a **visited** **bag**, if we encounter a duplicate vertex, we skip that edge. **But this has a flaw. **If A and B, C and D are connected, does this mean that BC is not possible, **no, **it could be a valid non cyclic edge(i.e AB and CD are in two disconnected graphs), but our bag will reject this. **This is not a foolproof way. i.e IT is WRONG.**
 
 2. A simple approach, before connecting A and B, check is A is reachable from B(i.e hasPath(A, B)), if it is not connected add them. **This takes too much time though.**
-	Time Complexity: hasPath(A, B) has complexity O(V+E) and at max E = V^{2}, so T.C O(V^{2}).
-	
+	Time Complexity: hasPath(A, B) has complexity O(V+E).
+
 3. Union Find algorithm:
-	In 1. We were keeping track of vertices only. We change this idea. We somehow need to keep track of connected components, using which we can check if an edge is being drawn between connected components or not. If they are in connected component the edge is **not **made, else it added(made). 
+	In 1., We were keeping track of vertices only. We to change this idea. We somehow need to keep track of connected components, using which we can check if an edge is being drawn between connected components or not. If they are in a connected component the edge is **not **made, else it added(made).
 	
 	We assume, initially, that all components are disjoint(only individual points):
 		a. We maintain an array of these points(from 1 to N). We store the parent of these points at each element.
-		b. We initialize every element to be equal to i, i.e i is the parent of itself, this ensures that all are disconnected. **We need to maintain that for a connected graph has all the parents the same. (we implement this by keeping keeping all lvals, rvals as superparent. Remember that a super_parent is always reflexive)**
+		b. We initialize every element to be equal to i, i.e i is the parent of itself, this ensures that all are disconnected. **We need to maintain that for a connected graph, all the parents the same. (we implement this by keeping keeping all lvals, rvals as superparent. Remember that a super_parent is always reflexive)**
 		c. To safeConnect i and j, we find their superparents, if they are different, we assign one to the other(any way would do). This essentially does the union operation on the two graphs, making them a connected one. Assignment works both ways coz union is commutative.
 {{{code: lang="cpp" linenumbers="True"
 void safeConnect(int i, int j, int arr[], int &edges)

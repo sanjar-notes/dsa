@@ -28,7 +28,7 @@ int main()
         edges[y][x] = true;
     }
 
-    unordered_set<int> *visited = new unordered_set<int>; // we should use if self loop is allowed or for a multigraph
+    // Input completed
 
     // looping to handle disconnectedness
     // vertex 0 0 is unvisited
@@ -54,6 +54,8 @@ int main()
 
 void dfs(bool **edges, int V, int sv, unordered_set<int> *visited)
 {
+    static unordered_set<int> *visited = new unordered_set<int>; // we should use if self loop is allowed or for a multigraph
+
     // sv is unvisited print it - for the root node
     cout << sv << " ";
     visited->insert(sv); // added to the visited set

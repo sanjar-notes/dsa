@@ -5,16 +5,8 @@ Creation-Date: 2019-12-28T12:13:38+05:30
 ====== Lecture 3 - Fibonacci Number ======
 Created Saturday 28 December 2019
 
+=== Extended PMI ===
 * An extended, or obvious extension of PMI is to assume that f(k) is true for all values i<=k.(i.e if step 2 holds for all the The other steps stay the same)
-* Number of jumps = Number of base case conditions. Because jumps are potentially unstoppable, hence we need to care of them.
-* Solve any recursive problem:
-	1. Solve the problem using extended PMI.
-		Revision, how to do PMI.
-			1. Find the base case(s).
-			2. Propose a hypothesis, i.e the expression. Assume f(k-1) to be true. 
-			3. Prove that it is true for a step k.
-	2. Write the code.
-	3. Dry run it using trees.
-	4. Done!! 
+Note: This is equivalent to PMI, but is easier to use.
 
 https://youtu.be/3vbHTi6sID0 Fibonacci subdued. We have an explicit formula now.

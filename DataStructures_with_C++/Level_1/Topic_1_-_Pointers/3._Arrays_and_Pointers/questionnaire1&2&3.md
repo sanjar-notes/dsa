@@ -157,7 +157,7 @@
 <details> <summary><strong>Correct Answer</strong></summary>
 
     c. 20 8
-    sizeof(a) = size of the array, sizeof(c) = 8 bytes(ust the pointer size)
+    sizeof(a) = size of the array, sizeof(c) = 8 bytes(pointer size)
 
 </details>
 
@@ -210,8 +210,8 @@
 
 <details> <summary><strong>Correct Answer</strong></summary>
 
-    200
-    jump = 4, 200 + 2*(4) = 20. Jump is decided based on data type.
+    208
+    jump = 4, 200 + 2*(4) = 208. Jump is decided based on data type.
 
 </details>
 

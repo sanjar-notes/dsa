@@ -9,7 +9,7 @@ Created Saturday 25 April 2020
 * Greedy algorithm: We select the myopically best option.
 * As it is a greedy algorithm, it is easy to implement.
 * We have a table with three columns, (vertex, parent, weight(from parent to weight)).
-* We also need two lists **visited **and** unvisited. **Better to keep an array. Space O(V). Initially unvisited ha all the vertex and visited has none. Meaning of visited: The vertex where we have went and explored it's neighbours. Vertex which are encountered as a result of the exploration are still unvisited.
+* We also need two lists **visited **and** unvisited. **Better to keep an array. Space O(V). Initially unvisited has all the vertex and visited has none. Meaning of visited: The vertex where we have went and explored its neighbours. Vertex which are encountered as a result of the exploration are still unvisited.
 
 Implementation:
 1. Keep a 2 tuple array with i as the vector. (i.e we store parent and weight). Initially parent of start is -1, (no parent) and it's weight is zero. All other parents are blank and weight is INT_MAX(infinity).

@@ -12,13 +12,13 @@ In C++, we can read and write from a file using stdin and stdout.
 * File Handling
 {{{code: lang="cpp" linenumbers="True"
 freopen("in.txt", "r", stdin);	// read mode
-freopen("out.txt", "w", stdout); //can also use append mode "a"
+freopen("out.txt", "w", stdout); // there's the append mode "a" too
 
 cin >> x; // writes to x from stdin, i.e the file
 cout << x; // writes the value of x to the file
 }}}
 
-
+* You can output simutaneously to multiple output files, but input is taken from one stream only.
 For Python:
 {{{code: lang="python3" linenumbers="True"
 # Below is Python3 code for input/output

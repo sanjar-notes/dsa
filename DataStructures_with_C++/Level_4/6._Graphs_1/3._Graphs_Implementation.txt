@@ -18,14 +18,14 @@ There are 3 types of implementations:
 	Store a list of vertex. Also, store a table containing vertiex-{neighbours of vertex}. Neighbours are a vector of the neigbhouring vertices. This is very nice.
 	* V = {v1, v2, v3 ...}
 	* E = An array of neighbour lists for each vertex.
-	* Checking A is a neigbour of B is O(V) for a children array, or we can use a hashmap O(1).
+	* Checking A is a neigbour of B is O(V) for a children array, or we can use a hashmap O(1) whp.
 	* It is space efficient - takes into account sparsity of the graph.
 	* Really fast.
 	* But difficult to implement.
 3. **Adjacency Matrix**
 	We don't need to store the vertices seperately. Both V, E are stored in the same structure.
-	* We'll make a square matrix(i.e 2D array) of size |V|*|V| with each element storing true or false or number of edges(form multigraphs), corresponding to the point "are neighbours" (A,B).
-	* The fastest - pure O(1). Just access G[A][B] for checking if A and B are neighbours.
+	* We'll make a square matrix(i.e 2D array) of size |V|*|V| with each element storing true or false or number of edges(for multigraphs), corresponding to the value of isNeighbour(A,B).
+	* The fastest - O(1). Just access G[A][B] for checking if A and B are neighbours.
 	* The most space **in**efficient. Any graph occupies the same space as a complete graph.
 	* Bad for sparse graphs. i.e where edges ~ V. Very few trues and many falses.
 

@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-04-25T05:56:51+05:30
 
 ====== 3. Kruskal's Algorithm ======

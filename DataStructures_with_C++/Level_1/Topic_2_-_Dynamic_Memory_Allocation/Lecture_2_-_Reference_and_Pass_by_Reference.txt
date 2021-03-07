@@ -30,6 +30,33 @@ int x = 10;
 2. No extra storage required. Good for memory.
 3. Code is short and clean.
 
+=== Normal variable and a reference are interchangeable ===
+{{{code: lang="cpp" linenumbers="True"
+void f(int val)
+{
+	val++;
+}
+
+void g(int &val)
+{
+	val++;
+}
+
+main()
+{
+	int a = 5;
+	int &b = a;
+	
+	f(a); // OK	
+	f(b) ; // OK
+	
+	g(a); // OK
+	g(b); // OK
+	
+	// all combinations are OK
+}	
+}}}
+
 **Note: **As we can send values(by reference), we can **recieve **values as well. Called **return by reference. **
 **Caution: **//Return by reference// and //return by address// are very dangerous, as they can sometimes return reference and address of local variables, which may have gone out of scope. **It's a bad practice.**
 https://www.bogotobogo.com/cplusplus/memoryallocation.php
