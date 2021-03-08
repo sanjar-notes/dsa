@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-05-03T12:13:55+05:30
 
 ====== 1. Sorting ======
@@ -11,10 +11,10 @@ int arr[] = {1,3,4,23,4,4};
 sort(arr, arr+len);
 }}}
 
-0. Library is <algorithm>
+0. Library is ''<algorithm>''
 1. Requires begin and end iterator.
-2. For array: sort(arr_head, arr_head+length).
-3. Pass the functor greater<int>, i.e greater is okay. Decreasing order.
+2. For array: ''sort''(arr_head, arr_head+length).
+3. For reverse, pass the functor ''greater<int>'', i.e greater is okay. Decreasing order.
 4. Sorting on the basis of some object. Custom, write a custom function. Just overload the function(). We'll write our own comparator. Pass in a lambda.
 	a. Sorting automatically calls the function and passes the elements(by value or reference).
 	b. We just need to pass in the name or lamda.
