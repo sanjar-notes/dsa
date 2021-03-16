@@ -1,9 +1,9 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-11-09T09:13:39+05:30
 
 ====== 2. How function calling works ======
 Created Saturday 09 November 2019
 
 * Scoping is important
-* Function call use LIFO philosophy, i.e stack. Each part of the RAM having a function is called an activation record. 
+* Function call use LIFO philosophy, i.e stack. Each part of the RAM having a function is called an activation record.

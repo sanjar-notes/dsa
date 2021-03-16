@@ -9,7 +9,7 @@ BST has the following disadvantages:
 1. Balancing factor, we have to check if it is balanced, after every insertion/deletion.
 2. Storing is difficult, i.e nodes->data + nodes*pointers, i.e as Binary Tree. Too much size requirement.
 
-So we mak a new data structure - called heap.
+So we make a new data structure - called heap.
 --------------------
 A heap must satisify 2 properties at all times:
 1. **Complete Binary Tree **property -  it has 2^{h}-1 spaces. Complete - all levels are filled completely, except the last one(although it must be filled from left to right).
