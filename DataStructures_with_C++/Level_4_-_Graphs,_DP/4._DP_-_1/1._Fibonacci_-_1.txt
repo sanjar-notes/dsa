@@ -1,13 +1,13 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-03-08T22:07:37+05:30
 
 ====== 1. Fibonacci - 1 ======
 Created Sunday 08 March 2020
 
-Let us first discuss a problem, finding the nth fibonacci number.
-Here if we write a recursion;
-f(n) = f(n-1) + f(n-2); f(1) = 0, f(2) = 1
+Let us first discuss a problem: finding the nth fibonacci number.
+It can be written like a recursion;
+{{./equation002.png?type=equation}}
 {{./Selection_081.png}}
 i.e here we do two recursions blindly, this is very costly in terms of time.
 Solving using recursive tree.
