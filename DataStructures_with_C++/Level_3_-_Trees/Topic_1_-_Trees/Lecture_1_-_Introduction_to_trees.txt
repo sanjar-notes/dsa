@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2020-01-24T20:10:18+05:30
 
 ====== Lecture 1 - Introduction to trees ======
