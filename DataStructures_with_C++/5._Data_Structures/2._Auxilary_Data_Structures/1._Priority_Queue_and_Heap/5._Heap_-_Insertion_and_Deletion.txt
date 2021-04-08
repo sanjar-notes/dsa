@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-02-14T15:43:16+05:30
+
+====== 5. Heap - Insertion and Deletion ======
+Created Friday 14 February 2020
+
+=== Insertion ===
+* Append the newValue to the array.
+* Then keep **sifting-it-up**, until heap order property is violated or you reach the root.
+* If root is reached, set its value as newVal.
+
+{{./pasted_image.png?width=400}}→{{./pasted_image001.png?height=349}}→{{./pasted_image002.png?height=349}}→{{./pasted_image003.png?height=349}}→ Done
+Sifting up - it is the process where we exchange data from the parent of the current node and keep doing it until the heap-order property is finally satisfied. Also known as bubbling-up.
+--------------------
+
+=== Deletion ===
+We know that one node has to go and that it has to be the last node. We cannot delete any other node.
+1. We copy the value of the last node at the root. i.e the root is effectively deleted.
+2. We delete the last node. CBT property OK!
+3. We **sift-down ''from''** the root/
+	Q. How to decide whether to go left or right. Assume a max-heap for the answer.
+	R. Just pick the largest, you don't have an option anyway. Do sifting starting from the root: Swap the currentIndex value with larger of the children. This ensures the root has a maximum value. Continue sifting until both children are smaller or you become a leaf.
+		Why does this work? - As we are keeping the larger values on top, the heap order property always holds. And as we are just swapping values, and not creating/deleting nodes, the CBT property also holds.
+	Q. What happens if both children are larger and I select the smaller of them?
+	R. You cannot, because of the heap order property. Suppose you swap properly for the root, but try to pick the smaller one for the second level. You continue sifting, there can be two cases:
+		1. You cannot sift further. Heap property violated.
+		2. You can sift further, and you do it. You'll never coming back to the second level, and the heap property stays violated.
+5. When we sift like this, we will reach the end, as the last node is the largest. 
+{{./pasted_image004.png?height=349}}→{{./pasted_image005.png?height=349}}→{{./pasted_image006.png?height=349}}→{{./pasted_image007.png?height=349}}→{{./pasted_image008.png?height=349}}→{{./pasted_image009.png?height=349}}→ Done

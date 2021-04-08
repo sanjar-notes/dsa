@@ -1,0 +1,52 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T19:45:04+05:30
+
+====== 5. this keyword ======
+Created Thursday 08 April 2021
+
+=== 'this' keyword ===
+A class may need to refer to itself.
+**Solve this problem** - Making setters/core functions.
+Approaches:      
+1. To avoid naming issues, we have to come up with new parameter names for data members in all our member functions.
+{{{code: lang="cpp" linenumbers="True"
+class A{
+	String name;
+	void sayHello(String name_for_hello) // this name has to be invented for every attribute in all functions, which is a pain
+	{
+		cout << "Hi, " << name_for_hello << "\nI am " << name << endl;
+	}
+};
+}}}
+
+2. If we use the same name, then our data members will be shadowed by the formal parameters of the function.
+{{{code: lang="cpp" linenumbers="True"
+class A{
+	String name;
+	void sayHello(String name)
+	{
+		cout << "Hi, " << name << "\nI am " << name << endl; // both refer to the argument, not A.name
+	}
+};
+}}}
+
+3. If we use the object name to differentiate the data members, it will be absurd, because
+	a. The class does not know an object before creation.
+	b. The object name will have to be changed for each instance.
+{{{code: lang="cpp" linenumbers="True"
+class A{
+	String name;
+	void sayHello(String name_for_hello)
+	{
+		cout << "Hi, " << obj.name << "\nI am " << name << endl; // this is absurd, object name can be anything
+	}
+};
+}}}
+
+**Solution**: We have a keyword '**this**' which stores the pointer to the current object. This solves all the problems.
+**Syntax**: this -> //data_member/function//
+About **this: **It is available only inside the class, and only for non-static methods.
+Note:
+* using **this** for referring to class attributes is not compulsory.
+* We can still use //name //instead of //this->name//. But it will be useful only if there's no overshadowing, which we need to lookout for.

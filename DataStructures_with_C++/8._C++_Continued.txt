@@ -1,0 +1,13 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T20:16:47+05:30
+
+====== 8. C++ Continued ======
+Created Thursday 08 April 2021
+
+Coding Ninjas course had the following sections:
+1. [[+2. STL|STL basics]]
+2. [[+3. Exception Handling|Exception handling]]
+3. [[+1. OOPS Continued]]
+
+You can skip other sections, for //now//.

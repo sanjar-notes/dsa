@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-02-16T12:18:50+05:30
+
+====== 8. STL priority queue ======
+Created Sunday 16 February 2020
+
+* The priority_queue is actually a max priority queue.
+* The only difference is in the remove and insert functions, i.e < becomes > and vice-versa, i.e sifting condition.
+* void ''pop''() to ''remove''(), ''push''() to insert.
+* p.''empty''() - returns true if empty.
+* p.''top''() - returns root of the heap.
+* p.''size''() - returns the size.
+* priority_queue<int, vector<int>, greater<int>> for min priority queue.
+* **No need to include<vector>, as queue has it already.**
+* By **default**, the **functor** is ''less<int>''.
+* By **default**, priority_queue<int, vector<int>, less<int>>
+* We will see the details afterwards.
+
+{{{code: lang="cpp" linenumbers="True"
+priority_queue< int, vector<int>, greater<int>> min_pq;
+priority_queue<int> max_heap;
+}}}

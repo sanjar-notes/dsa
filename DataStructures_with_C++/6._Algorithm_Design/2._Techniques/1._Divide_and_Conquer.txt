@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T20:19:45+05:30
+
+====== 1. Divide and Conquer ======
+Created Thursday 08 April 2021
+
+FIXME: Not in CN course

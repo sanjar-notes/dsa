@@ -1,0 +1,84 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-08T14:50:13+05:30
+
+====== 3. Objects ======
+Created Wednesday 08 January 2020
+
+=== Syntax ===
+{{{code: lang="cpp" linenumbers="True"
+class_name object_name; // this allocates memory. variable of type student in the stack.
+class_name * object_name = new class_name; 	// this creates a pointer in stack to a memory location in heap.
+}}}
+
+* This is **exactly **like we do for in-built data types.
+* Memory allocated for an object = sum of the memory of the attributes. **No meta data is stored in the objects, viz functions, static variables.**
+
+**Q**) Can we create an object anywhere we like?
+**A**) We can create anywhere after the class has been defined.
+* To include classes from other files, use this syntax.
+{{{code: lang="cpp" linenumbers="True"
+#include "absolute_path/class_file_name.extnsn" // different directory
+#include "file.extnsn" // file in the current directory
+}}}
+
+* #include just copies text from the //class_file_name.extnsn //to the current file.
+--------------------
+
+=== Accessing members of an object ===
+* Variable
+{{{code: lang="cpp" linenumbers="True"
+obj.name; // access 'name' attribute of 'obj' object
+obj.fact() // call fact() function of 'obj'
+// . is called the selector operator
+}}}
+
+* Pointer
+{{{code: lang="cpp" linenumbers="True"
+(*p).name; 
+(*p).fact();
+
+// C++  has a better way, a simple expression. Does exactly the same thing.
+p->name;
+p->fact();
+}}}
+
+--------------------
+
+=== **Concept of Access Specifier in C++** ===
+* Access Specifiers are keywords associated with members(attributes, functions) which modify the level of access.
+* They are applicable only outside the class, i.e they have no meaning inside the class.
+* There are three: //public//, //private// and protected.
+Syntax:
+{{{code: lang="cpp" linenumbers="True"
+class A{
+	public:
+		int a;
+		int b;
+	private:
+		void f();
+};
+}}}
+
+* We can have multiple sections of the same specifier too.
+{{{code: lang="cpp" linenumbers="True"
+class A{
+	public:
+		int a;
+		int b;
+	private:
+		void f();
+	public: //allowed
+		int c;
+};
+}}}
+
+**Notes: **
+* When not specified, all things are **private **by default in a class.
+{{{code: lang="cpp" linenumbers="True"
+class Car{
+	int a; // a is private
+};
+}}}
+
+* [[https://stackoverflow.com/questions/4117002/why-can-i-access-private-variables-in-the-copy-constructor|The access modifiers work on class level, and not on object level]] i.e, two objects of the same class can access each others private data.

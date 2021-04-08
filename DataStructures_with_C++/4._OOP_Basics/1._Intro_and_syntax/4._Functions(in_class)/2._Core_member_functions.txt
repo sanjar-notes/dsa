@@ -1,0 +1,46 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-11-29T00:10:55+05:30
+
+====== 2. Core member functions ======
+Created Sunday 29 November 2020
+
+* Member functions of a class can be defined in two ways:
+1. Inside the class - this makes them **inline**, even if you don't use the keyword.
+{{{code: lang="cpp" linenumbers="True"
+class Box {
+   public:
+      double length;      // Length of a box
+      double breadth;     // Breadth of a box
+      double height;      // Height of a box
+   
+      double getVolume(void) {
+         return length * breadth * height;
+      }
+};
+}}}
+
+2. Outside the class - they are normal functions. The full name of the functions must be provided, using the scope resolution operator(::).
+{{{code: lang="cpp" linenumbers="True"
+class Box {
+   public:
+      double length;      // Length of a box
+      double breadth;     // Breadth of a box
+      double height;      // Height of a box   
+};
+double Box::getVolume(void) {
+   return length * breadth * height;
+}
+}}}
+
+--------------------
+In C++, a class generally consists of two files:
+* ''.h'' file - contains headers
+* ''.cpp'' file - contains definitions
+
+==== Why use two(or multiple) files ====
+There are many reasons:
+1. [[https://stackoverflow.com/questions/38030754/what-is-the-intention-of-odr/#answer-38031103|ODR]] rule - C++ demands all entities be declared only once.
+2. Big programs compile faster, i.e compile only the files that have changed.
+3. Version control and collaboration is easy.
+4. Headers can be used as public facing API, i.e ''.cpp'' is obfuscated in proprietary software.

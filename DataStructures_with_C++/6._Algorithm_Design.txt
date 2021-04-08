@@ -1,0 +1,10 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T20:19:30+05:30
+
+====== 6. Algorithm Design ======
+Created Thursday 08 April 2021
+
+=== Important ===
+* Algorithm design was not taught in the Coding Ninjas course, except for the [[+2. Techniques:3. Dynamic Programming|Dynamic Programming]] section.
+* If you are learning data structures for the first time, I advise you to should skip all subsections of this section, except Dynamic Programming, for //now👍️.//

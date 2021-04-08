@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T20:25:06+05:30
+
+====== 3. NP Completeness ======
+Created Thursday 08 April 2021
+
+FIXME: I haven't studied this properly. Study it.

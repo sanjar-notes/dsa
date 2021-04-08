@@ -1,0 +1,39 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-13T17:57:06+05:30
+
+====== 4. Approach for writing a class ======
+Created Monday 13 January 2020
+
+How to make a class:
+1. Decide **data** members. Check if there is a need for **static** and **constants**. If yes, include them.
+2. Constructors and Destructors.
+	a. Provide a default constructor, set it as per contextual defaults.
+	b. Check if a parameterized constructor is required.
+	c. Check if any level 2 memory(i.e DS) requirement is present, if yes, provide a //deepened// **copy constructor** and //deepened// **copy assignment operator**.
+	d. Destructors: check if a level 2 memory is present, if yes, free it.
+3. Grouping functions is important, write their names and objectives only:
+		a. Getters aka **Accessors**
+		b. Setters aka **Mutators**
+		c. Checkers aka **Inspectors**. is_fff()  __ignorable__
+		d. Overloaded **Operators.	**__ignorable__
+		e. Content aka **Facilitators. // logic part	**
+4. Decide the operators to be overloaded, if required. Add them to the list of of functions.
+5. For each function, write skeleton, then:
+	1. **Return type and qualifier**: 
+		a. Does it need to returns a copy or changes the same object. **Return by **reference/value?
+		b. Nestability in operators. **Return by **reference/value?
+		c. If it works with static data members **only** (i.e no this parts are accessed). Write the **static **qualifier. 
+	2. **Parameters:**
+		a. For the parameters which don't need a change, take them as const references.
+		b. For the objects where we do need a change, take them as references.
+	3. If any const data members are present, initialize them using the **initialization list**.
+	4. **For **__operators__** only**, check if it is a post or pre. For unary post operators, write (int) in the param list.
+	5. Write the code.
+		a. Make sure objects **to be returned** are created inside the function. Return by value. If we need to return **this**, then return by reference. Buffer(rvalue optimization) will handle the rest.
+		b. Use copy constructor as much as possible. If a deepened version is present.
+	6. Check if returned value is at par with the return type.
+	7. Finally, mark the function **const**, if it's possible do so. (This is not allowed for constructor, destructors and static functions).
+6. Leave notes for initializing any static data members.
+
+

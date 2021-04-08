@@ -1,0 +1,34 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T19:48:33+05:30
+
+====== 2. Classes ======
+Created Thursday 08 April 2021
+
+* Idea of a class - It is just a blueprint of our custom data type. It has the data(variables) and functions.
+* Idea of an object:
+	An **object **is an instance of a class, and **occupies** some memory. On the other hand, class is a blueprint, so it does not occupy any memory(except on the code-section, of course).
+--------------------
+Syntax to create a class:
+{{{code: lang="cpp" linenumbers="True"
+class class_name
+{
+	data_type_1 attrib1;
+	data_type_2 attrib2;  
+	// only declarations, we can even do int marks[], i.e data structures/ other classes are also allowed
+};
+}}}
+
+* Idea of a class - It is just a blueprint of our custom data type. It has the data(variables) and functions.
+* Idea of an object:
+	An **object **is an instance of a class, and **occupies** some memory. On the other hand, class is a blueprint, so it does not occupy any memory(except on the code-section, of course).
+--------------------
+Syntax to create a class:
+{{{code: lang="cpp" linenumbers="True"
+class class_name
+{
+	data_type_1 attrib1;
+	data_type_2 attrib2;  
+	// only declarations, we can even do int marks[], i.e data structures/ other classes are also allowed
+};
+}}}
