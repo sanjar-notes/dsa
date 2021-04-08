@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-01-08T14:29:55+05:30
-
-====== Level 2 - OOP and Linear DS ======
-Created Wednesday 08 January 2020
-

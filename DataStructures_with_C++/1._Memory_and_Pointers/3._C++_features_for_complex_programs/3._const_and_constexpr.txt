@@ -1,0 +1,116 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-12-26T17:56:24+05:30
+
+====== 3. const and constexpr ======
+Created Thursday 26 December 2019
+
+**Constant variables: **It's weird, we are apparently interested making variables, whose the value is unchangeable. **This is not the case.**
+
+* ''const'' when treated as constant is a misnomer.
+* This is not constant, as in mathematics. Memory, read and write is involved here.
+* ''const'' means roughly ‘‘I promise not to change this value’’. We are speaking of the future here.
+
+**Syntax**
+{{{code: lang="cpp" linenumbers="True"
+const int p = 2; // instant initialization is necessary - results in error
+}}}
+
+
+**How does it works?**
+In the symbol table, we have many fields like**:**
+* Data type modifier are together with the data type. They are not a different field - (signed, unsigned, long, short).
+* Access specifiers are useful only in OOP - (public, private, friend)
+* Variable type specifier - These restrict operation on the variables(i.e read only, restricted write etc), hence qualifies them for different treatment w.r.t modification - (**const**, volatile, extern, auto).
+
+**What does it do?**
+	const means **read only** for the variable, this is what is put in the symbol table.
+	They cannot be changes after they have been declarized.
+
+=== Important concepts ===
+* If we use a const int* to make a** pointer to a const integer**(i.e we will not change it), or by using **constant** **reference**, then the value in RAM can be changed(by other variables only), coz only the **path **was made const, not the memory storage.
+{{{code: lang="cpp" linenumbers="True"
+int x = 2;
+const int *p = &x;
+x = 3;	// can change memory- OK
+*p = 23; // error - change not allowed at using p
+cout << *p; // prints 3
+}}}
+
+* const reference
+{{{code: lang="cpp" linenumbers="True"
+int a = 12;
+const int &k = a; // k is alias for integer constant(same as constant integer)
+a++;       // OK
+k++;       // error
+cout << k; // 13
+}}}
+
+
+**Reason: **When we made a const int &, we copied the address to a new tuple in the symbol table, changed the name to k, and made the type qualifier as const. This makes it look as if k is a const variable. Hence no operations are allowed **through **it.
+* 'a' is not const, so changes are possible **through **it.
+* **const only bind the read/write access. Nothing else.**
+* const pointer behaves the same as const reference. We cannot change the value(i.e memory location) through the pointer.
+
+=== Questions ===
+**Q) **Does the compiler allow ''const int* p = int*''(and vice-versa), why?
+**A) **''const int* p = int*'', yes. Because **const** just makes a promise of immutability for a new variable, i.e we cannot restrict existing variables. In this case, we'll not be able to change the contents using the 'p'. In other words, **making a promise is allowed**.
+The converse, i.e int * = const int*, no. // i.e this is **not allowed**. Because this will actually break the promise, i.e **breaking a promise is not allowed**.
+
+**Q) **Is this allowed?
+{{{code: lang="cpp" linenumbers="True"
+int i = 10, j = 12;
+int const *p = &i; // change not allowed through p
+p = &j; // but p can itself be changed.
+}}}
+
+**A) Yes,**valid because const restricts writing at the **address**. But changing the address itself **is** allowed, because we never promised about it. In step 3, we should read from right to left, for the declaration, "I am p, i will not make change at the address I store, **but **I can change the address itself.
+
+Note
+* For restricting change to the pointer, but allow writing to address
+{{{code: lang="cpp" linenumbers="True"
+int * const p = &i; // p is a pointer(which we won't change) to an integer
+// Here p itself is unchangeable
+// But we can change the value at p.
+}}}
+
+* If we want to keep both the pointer and the value immutable, do this:
+{{{code: lang="cpp" linenumbers="True"
+int const * const p = &i; // Neither address nor value at address changeable.
+}}}
+
+* **Verdict : **''const'' is very intuitive when seen from a symbol table. But it's not required.
+Concise.
+1. Only paths(through) are blocked. Storage can never be tagged constant.
+2. We can make promises of immutability, but not do something that will break them. **Remember that** the compiler does not track memory, it only has the symbol table.
+3. [[https://developerinsider.co/what-is-the-difference-between-const-int-and-int-const/|Read]] the declaration from right to left.(One const can only put one restriction).
+4. Use east const style.
+5. //const data_type// and //data_type const// is the same. For any case. Even if you use & and *.
+**Advantages: **
+1. We used reference to decrease the argument copy overhead. by avoiding a pointer. By using const data_type, we protect it further. **Hence **we find const int at [[https://stackoverflow.com/questions/162480/const-int-vs-int-const-as-function-parameter-in-c-and-c|many places]] in headers like iostream and STL.
+2. Point 1 helps immensely in funtion calling.
+
+===== constexpr =====
+Consider the following code - here there's no optimizations that the compiler can make to age. This is because its value is known only at run-time.
+{{{code: lang="cpp" linenumbers="True"
+int ageInput;
+cin >> ageInput;
+const age = ageInput; // age cannot be changed
+}}}
+
+
+But if we are sure of a value at compile time, then use ''constexpr''
+{{{code: lang="cpp" linenumbers="True"
+int ageInput;
+cin >> ageInput;
+constexpr age = ageInput; // age cannot change
+// compiler optimization possible
+}}}
+
+
+**Note:**
+* Difference
+	* ''constexpr'' indicates a value that's constant and known during compilation.
+	* ''const'' indicates a value that's only constant; it's not compulsory to know during compilation.
+* All constexpr objects are const, but not all const objects are constexpr.
+* constexpr just enables compiler optimization.

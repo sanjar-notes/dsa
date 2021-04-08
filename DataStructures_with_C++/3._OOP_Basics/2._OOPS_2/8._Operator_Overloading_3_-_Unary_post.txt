@@ -1,0 +1,38 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-12T20:59:07+05:30
+
+====== 8. Operator Overloading 3 - Unary post ======
+Created Sunday 12 January 2020
+
+Q. Both pre and post use the same symbol, how to differentiate pre and post in code?
+R. Write ''data_type'' in parentheses. This indicates that the operator is a post(i.e appears on the right side of the operand).
+
+* Rember that we don't need nesting in post operations, i.e return type ''void''.
+
+Example
+{{{code: lang="cpp" linenumbers="True"
+class A
+{
+    public:
+        int a;
+        A(int a)
+        {
+            this->a = a;
+        }
+        
+        void operator++(int) // ++ as postfix
+        {
+            a++;
+            cout << "post\n";
+            return a;
+        }
+        
+        A& operator++() // ++ as prefix, nesting is present return reference
+        {
+            cout << "pre\n";
+            ++a;
+            return a;
+        }
+};
+}}}

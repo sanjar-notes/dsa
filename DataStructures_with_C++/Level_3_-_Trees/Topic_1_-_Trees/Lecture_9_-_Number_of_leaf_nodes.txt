@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-01-29T20:02:45+05:30
-
-====== Lecture 9 - Number of leaf nodes ======
-Created Wednesday 29 January 2020
-
-* f(root) = sum of f(root->children.at(i));
-* return 1 if root->children.size()==0.

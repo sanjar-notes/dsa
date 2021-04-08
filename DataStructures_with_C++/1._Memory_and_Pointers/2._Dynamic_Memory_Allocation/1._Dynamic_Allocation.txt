@@ -1,0 +1,42 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2019-12-25T11:50:19+05:30
+
+====== 1. Dynamic Allocation ======
+Created Wednesday 25 December 2019
+
+**Q) **What is the biggest problem we face when working with arrays?
+**A) **Arrays need to have their size decided at compile time, doing ''int n; cin >> n; int a[n];'' was not allowed, until recently. As 'n' is known only at run time.
+Remember compile time and run times are actually phases which roughly specify the how(and where) of the program.
+
+* This type of allocation is called **static memory allocation**. i.e size must decided at compile time. The memory location is in an area of memory called **stack**.
+* Our solution to this "fixed" size array, is **dynamic memory allocation**. i.e size can be specified at run time. This memory location is in an area of memory called **heap**.
+* Generally heap > stack in size, it is also much more flexible. But stack is faster than heap.
+* All the declaration, are stored in the stack. Except global/static variables.
+
+=== new ===
+The ''new'' keyword is used to access free memory from the heap. This switches the memory's tag from free to "in use" and returns a pointer corresponding to the requested data type. This address may be stored in a pointer for doing work on the requested memory. This pointer is stored on **stack**. **This shows that heap is not directly accessible. We always need a pointer when working with heaps.**
+* So total data consumption = (pointer) + (data requested).
+**Syntax: **//''data_type''//'' * ''//''variable_name''//''  = new ''//''data-type;''//
+* For arrays, it is: ''int n; cin >> n; int * arr = new int[n];''. **Note: **As ''new'' returns an address(and not an array), sizeof() will return 8. The sizeof() shows the whole array size **only** for static arrays..
+* Accessing the elements in a dynamic array is the same as that for static arrays.
+	**note: [**new int] in and of itself is useless, coz we can't access the address, what's the use of this address then?
+**Scope** of dynamic memory: When we declare variables and arrays on stack, they automatically get deallocated, but dynamically allocated memory is not. **Manual release of memory is required.**
+**An experiment:** can be done by using an unending while loop. In case 1 an integer is declared using int x = 10. Case 2 does DMA but no deallocation. Compile the program. Open the resource manager, run the
+program and see the memory consumption. In case 1, there's only 4 bytes(which is not visible), and constant. But in case 2, memory starts filling, until, if you wait for a long time, the system crashes, due to continuous allocation of new 4 bytes each time. **Confidence increased, I tried it on my own, way. It's great. **Every piece of data that is declared** statically **is automatically** deallocated**, on the basis of** scope. **But** dynamic data is not cleared, unless explicitly **done, irrespective of scope**.**
+* Heap does get when the program ends, this is done by the OS(most often, can't say about embedded systems though). Even if this happens, what's the use if deallocation happens after program ends, we need memory when program is running. And this cannot save us from crashing, coz the program is still running and all the memory is made to "in use", hence the OS will not free it. 
+**Advantages of DMA:**
+	1. We take only the space as it is required. No more, no less.
+	2. Makes it easy for us to implemenyt very efficient data 
+**delete:**
+	Used to deallocate heap memory. 
+**syntax: **delete //to_heap_pointer_name;	// single element//
+		delete [] //to_heap_pointer_name;		//e.g int *x = new int; delete x;// takes care of memory allocated.
+**note: **delete deallocates the heap memory, but the memory for the pointer(which is in the stack) is **not **deallocated. **Don't worry about it, **as stack memory is taken care of by the compiler(block scoping).
+[[https://stackoverflow.com/a/197699/11392807|How does delete[] know the length of the array?]]
+**But **do remember deallocate the heap memory, as it won't be deallocated on it's own.
+* This is the most common reasons apps crashed in old iOS apps, as Apple fixed limit for heap allocations for all apps. 
+* The error that occurs when the programmer doesn't free the heap memory is called a memory leak. [leak as seen from the OS's perspective, i.e the free memory pool's size has been diminished, until the program is running].					
+
+How heap memory works: https://www.bogotobogo.com/cplusplus/assembly.php#heap_memory
+How stack memory works: https://www.bogotobogo.com/cplusplus/assembly.php#stacks

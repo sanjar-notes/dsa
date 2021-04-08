@@ -1,0 +1,7 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T17:37:00+05:30
+
+====== 5. Linear Data Structures ======
+Created Thursday 08 April 2021
+

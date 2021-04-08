@@ -1,0 +1,29 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-11T11:20:52+05:30
+
+====== 5. Static members ======
+Created Saturday 11 January 2020
+
+Here, we'll study about use of ''static'' w.r.t OOP in C++ .
+When we declare a member of a class as static it means no matter how many objects of the class are created, there is only one copy of the static member.
+
+==== STATIC DATA MEMBERS ====
+* A static member is shared by all objects of the class.
+* They are not associated with any object, i.e they don't occupy an objects memory.
+* They are **present** even if no objects have been made. i.e they can be called/accessed using ''class_name::member'' even before any object is made.
+* They can be const, i.e ''static const'' variables are possible.
+* They **had to be** initialized outside the class(before C++11), using the scope resolution operator. i.e ''data_type class_name :: static_variable_name = value;''. This was done to avoid duplicate initializations at place wherever the class header has been copied. The static data member may be a private one. 
+* But in C++11 we can initialize them [[https://en.cppreference.com/w/cpp/language/static#Static_data_members|inside]], by using the ''inline'' modifier.
+{{{code: lang="cpp" linenumbers="True"
+inline static int x = 2;
+}}}
+**Complete vs Incomplete **declaration.
+* Changes can be made using the objects too, but should be **avoided**.
+* A constructor can be used to keep track of number of objects created. This is an appilcation.
+
+==== STATIC MEMBER FUNCTIONS ====
+* Static member functions can work only on ''static'' values and hence don't need an object to be invoked(you can do so if you wish). They can be invoked using the class_name itself(if public).
+* Static objects/functions **don't have access to 'this'**. But can create their own non-static objects if required. i.e They cannot make changes to the caller object.
+* static member functions [[https://stackoverflow.com/questions/7035356/c-why-static-member-function-cant-be-created-with-const-qualifier|cannot]] be tagged ''const''. Because ''const'' will need to generate a const T* = ''this'', but ''this'' is inaccessible for static functions. **Pretty useless too.**
+* C++ does not support static constructor.

@@ -1,0 +1,11 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-01-14T01:18:40+05:30
+
+====== 1. Linked List Basics ======
+Created Tuesday 14 January 2020
+
+[[./Codes|Codes]]
+[[./Quizzes&Exercises/Exercises.md|Exercises]]
+[[./Quizzes&Exercises/CodingExercises.md|Coding Exercises]]
+[[./zAssignments/Assignments.md|Assignments.md]]

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-01-24T19:51:06+05:30
-
-====== Level 3 - Trees ======
-Created Friday 24 January 2020
-

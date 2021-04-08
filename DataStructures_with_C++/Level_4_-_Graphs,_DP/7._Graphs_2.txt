@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-04-19T13:05:30+05:30
-
-====== 7. Graphs 2 ======
-Created Sunday 19 April 2020
-
-[[./Codes|Codes]]
