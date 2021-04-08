@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-22T12:48:00+05:30
+
+====== 13. Computational Geometry ======
+Created Monday 22 June 2020
+
+Vectors are represented.

@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-04-23T15:11:45+05:30
+
+====== 2. Why CP ======
+Created Thursday 23 April 2020
+
+We are doing competitive programming to:
+1. Enhance our coding and algorithmic skills.
+2. It's an opportunity.
+3. To get comfortable with logic and programming.
+4. It makes our profile in the world, as a programmer.
+5. To have fun.
+6. Makes us fast and accurate.
+7. Get a feel for practical programming.
+8. Remove the fear of problems/algorithms design/logic.
+ 9. Guaranteed brain exercise.
+10. Teaches us to work in teams.
+11. It's actually fun. Competition all around the world.
+
+We are not doing it:
+1. For the sake of doing it.
+2. For just doing it.

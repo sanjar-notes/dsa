@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-04-27T08:42:42+05:30
+
+====== 2. Time and Space Complexity ======
+Created Monday 27 April 2020
+
+Being comfortable with analysis of algorithms is extremely important in CP and CS in general.

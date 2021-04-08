@@ -5,4 +5,5 @@ Creation-Date: 2020-05-13T10:47:26+05:30
 ====== Home ======
 Created Wednesday 13 May 2020
 
+Course notes made from Coding Ninjas course - Competitive Programming Ninja Track.
 [[../book.pdf]]

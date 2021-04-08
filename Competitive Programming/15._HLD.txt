@@ -1,0 +1,9 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-22T12:48:15+05:30
+
+====== 15. HLD ======
+Created Monday 22 June 2020
+
+Heavilide decomposition.
+FIXME

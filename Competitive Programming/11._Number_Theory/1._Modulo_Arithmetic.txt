@@ -1,0 +1,24 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2020-06-22T12:44:13+05:30
+
+====== 1. Modulo Arithmetic ======
+Created Monday 22 June 2020
+
+**Modular arithmetic** is a **system of arithmeti**c for __integers__, which considers the remainder. In modular arithmetic, numbers "wrap around" upon reaching a given fixed quantity (this given quantity is known as the modulus) to leave a remainder.
+
+* An intuitive usage of modular arithmetic is with a 12-hour clock. If it is 10:00 now, then in 5 hours the clock will show 3:00 instead of 15:00. 3 is the remainder of 15 with a modulus of 12.
+* Remainders are always whole numbers. Very important.
+	15 mod(9) = 6
+	(-15) mod 9 = 3
+
+--------------------
+Applications of the % operator:
+1. To avoid overflow.
+	e.g long long is 8 bytes, i.e 2^{63}-1 is the maximum number it can store. 
+	* If our answer is 2^{32 }* 2^{40}, it cannot be stored even in long long. 
+	* To verify the solution, we use the modulo operator to avoid, and hence get a mapping which we can represent. 
+	* The modulo is generally taken w.r.t to a number which is:
+		a. Very large  - so that there are many mappings, available.
+		b. It is prime, so that distribution is uniform.
+	* Mostly 10^{9}+7 is taken, as it satisfies both the criteria(big and prime).
