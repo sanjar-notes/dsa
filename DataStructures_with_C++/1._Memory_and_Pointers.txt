@@ -7,6 +7,6 @@ Created Thursday 08 April 2021
 
 === Note ===
 The course had two small topics after "[[+2. Dynamic Memory Allocation|Dynamic Memory Allocation]]":
-1. [[8. C++ Continued:1. Macros and Global Variables|Macros and Global Variables]]
-2. [[8. C++ Continued:2. Inline and Default Arguments|Inline and Default Arguments]]
+1. [[7. C++ Continued:1. Macros and Global Variables|Macros and Global Variables]]
+2. [[7. C++ Continued:2. Inline and Default Arguments|Inline and Default Arguments]]
 I've moved them elsewhere. They are very important(and easy) in general, but are not required for coding data structures.
