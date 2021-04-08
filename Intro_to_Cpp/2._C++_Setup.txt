@@ -1,0 +1,8 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-04-08T17:26:53+05:30
+
+====== 2. C++ Setup ======
+Created Thursday 08 April 2021
+
+FIXME: ''vscode'' + ''g++'' + ''Code Runner(enable run in integrated terminal)''

@@ -1,8 +1,8 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-12-10T23:51:58+05:30
 
-====== Lecture 9, Searching and Sorting ======
+====== 8. Searching and Sorting ======
 Created Tuesday 10 December 2019
 
 A1

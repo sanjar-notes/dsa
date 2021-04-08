@@ -1,8 +1,8 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2019-10-16T16:21:53+05:30
 
-====== Lecture 1, Flowcharts ======
+====== 1. Flowcharts ======
 Created Wednesday 16 October 2019
 
 How to solve a problem?
