@@ -31,4 +31,4 @@ Here we need to search for the data, but how do we indicate our root, this we do
 T.C = O(h)
 Doubt: Delete data works for the case of non leaf as well because we are always keeping the property of BST intact. 
 --------------------
-
+[[./BinaryTreeNode.h]]

@@ -7,12 +7,12 @@ Created Sunday 03 May 2020
 
 1. For sorted arrays, do **binary_search**(begin_it, end_it, key) - returns true if found, else false.
 2. Find the index of the key, we use **lower_bound**(arr, arr+l, key) - returns the iterator if found. Iterator is arr.end() if not found. **Search from left side.**
-	a. For finding the index as integer, do lower_bound() - arr.begin()
+	a. For finding the index as integer, do ''lower_bound() - arr.begin()''
 	b. ''lower_bound'' - first element that is greater or equal.
 		1. If key > maximum, then .end() is returned.
 		2. If key exists, iterator to first occurrence of is returned.
 	c. ''higher_bound'' returns the iterator to an element > key.
-		1. If key is the last, returns .''end''()
+		1. If key is the last, returns ''.end()''
 	Note: The names are correct and to the point.
 	{{./pasted_image.png?href=https%3A%2F%2Fstackoverflow.com%2Fa%2F12159150%2F11392807}}
 3. **equal_range(**begin_it, end_it, key**) **returns a pair of iterators to the first and the last item equal to the key. This can be used to get the number of repeated key values. **It is used for getting the first iterator to a key(even if there's just one key)**

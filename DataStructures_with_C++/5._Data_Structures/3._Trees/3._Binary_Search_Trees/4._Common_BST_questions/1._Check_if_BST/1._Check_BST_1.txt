@@ -7,8 +7,8 @@ Created Friday 07 February 2020
 
 * From the definition we know that if all the nodes on the left are smaller than the root, and all the nodes on the right are greater than the root.
 i.e leftMax < root->data && rightMin > root->data
-* Is this enough? Yes. Think recursively with the base case being a leaf node. We return the true, as leaves are true. 
-* For a NUll return ax as INT_MIN and min as INT_MAX. return true here too. as NULL can also be taken as BST. This is to be used when we have a NULL)
+* Is this enough? Yes. Think recursively with the base case being a leaf node. We return true, as a leaf is a BST.
+* For a NUll return as as INT_MIN and min as INT_MAX. return true here too. as NULL can also be taken as BST. This is to be used when we have a NULL)
 
 * We need to return min and max, if we make two seperate functions which find the maximum and the minimum. This takes O(n) time.
 
