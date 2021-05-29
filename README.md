@@ -7,3 +7,4 @@ To open a notebook, run the `notebook.zim` file with [zim-wiki](https://zim-wiki
 
 These notes were created while doing a course from CodingNinjas.com.
 I've added many more topics since.
+Don't worry🤗️, the recent additions have been clearly demarcated.
