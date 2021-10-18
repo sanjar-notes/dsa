@@ -6,7 +6,7 @@ Creation-Date: 2021-04-08T20:16:47+05:30
 Created Thursday 08 April 2021
 
 Coding Ninjas course had the following sections:
-1. [[+4. STL|STL basics]]
+1. [[5. Data Structures:5. C++ STL|STL basics]]
 2. [[+5. Exception Handling|Exception handling]]
 3. [[+3. OOPS Continued]] till friend functions.
 
