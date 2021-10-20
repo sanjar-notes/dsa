@@ -13,3 +13,5 @@ Resources for STL:
 1. [[https://www.youtube.com/watch?v=mOzPZ3hWFVQ&t=328s|STL in one video, quick]]
 2. [[https://youtube.com/playlist?list=PLauivoElc3gh3RCiQA82MDI-gJfXQQVnn|STL playlist, for CP]]
 3. [[https://youtube.com/playlist?list=PLZ9NgFYEMxp5oH3mrr4IlFBn03rjS-gN1|STL playlist, in detail]] Didn't do.
+
+FIXME - have to write down about the structures
