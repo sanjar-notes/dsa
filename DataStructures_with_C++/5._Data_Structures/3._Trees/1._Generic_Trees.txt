@@ -10,5 +10,4 @@ Created Friday 24 January 2020
 [[./zAssignments/Assignments.md|Assignments]]
 
 Remember this visualization. Tame the chaos.
-{{./Lecture_6_-_Number_of_nodes/Selection_023.png}}
 
