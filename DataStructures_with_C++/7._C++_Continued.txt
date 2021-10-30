@@ -8,6 +8,6 @@ Created Thursday 08 April 2021
 Coding Ninjas course had the following sections:
 1. [[5. Data Structures:5. C++ STL|STL basics]]
 2. [[+5. Exception Handling|Exception handling]]
-3. [[+3. OOPS Continued]] till friend functions.
+3. [[+3. OOP Continued]] till friend functions.
 
 You can skip other sections, for //now//.
