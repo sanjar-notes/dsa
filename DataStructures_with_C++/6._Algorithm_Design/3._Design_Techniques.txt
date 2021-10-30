@@ -2,6 +2,6 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2021-04-08T20:22:52+05:30
 
-====== 2. Techniques ======
+====== 3. Design Techniques ======
 Created Thursday 08 April 2021
 
