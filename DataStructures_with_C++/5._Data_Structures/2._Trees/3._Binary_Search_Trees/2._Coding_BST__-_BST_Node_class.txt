@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-02-09T11:14:30+05:30
 
-====== 2. Coding BST  - BST Node class ======
+====== 2. --Coding BST  - BST Node class ======
 Created Sunday 09 February 2020
 
 * We will store a tree in a class;
