@@ -6,3 +6,4 @@ Creation-Date: 2019-12-21T19:50:26+05:30
 Created Saturday 21 December 2019
 
 [[./0000000000000035.pdf|Official pointer Notes]] 
+[[https://youtu.be/UCWWObpNUZw|Tip]]: Pointer use must be minimized, there's almost always better alternatives in C++.
