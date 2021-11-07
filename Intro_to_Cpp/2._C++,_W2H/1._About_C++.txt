@@ -1,0 +1,23 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.6
+Creation-Date: 2021-11-07T14:23:06+05:30
+
+====== 1. About C++ ======
+Created Sunday 07 November 2021
+
+=== History of C++ ===
+* C++ is a general purpose programming language.
+* It was created by Bjarne Stroustrup in 1985
+
+=== Why C++ ===
+It is used if the software needs to be:
+* Reliable
+* Fast
+* Less energy consuming
+* Hardware oriented
+Examples of use:
+1. Cars - conventional cars, self-driving cars
+2. Cameras
+3. Phones, smartwatches.
+4. Networking devices
+5. Graphics
