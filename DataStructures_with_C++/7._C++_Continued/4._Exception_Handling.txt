@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-04-27T07:55:56+05:30
 
-====== 5. Exception Handling ======
+====== 4. Exception Handling ======
 Created Monday 27 April 2020
 
 [[./Exception_Handling.pdf|Exception_Handling CN Official Notes]]
