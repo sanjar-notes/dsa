@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-01-09T04:47:16+05:30
 
-====== Feature - Delegating constructors ======
+====== 2. Feature - Delegating constructors ======
 Created Thursday 09 January 2020
 
 Delegating constructors - reusing constructors to avoid code duplication.

@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-01-13T17:57:06+05:30
 
-====== 4. Approach for writing a class ======
+====== 5. Approach for writing a class ======
 Created Monday 13 January 2020
 
 How to make a class:

@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.6
 Creation-Date: 2020-01-10T20:07:45+05:30
 
-====== 2. The Copy constructor ======
+====== 1. The Copy constructor ======
 Created Friday 10 January 2020
 
 The compiler provided copy constructor does **shallow **copying.
