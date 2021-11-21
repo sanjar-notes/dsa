@@ -49,7 +49,7 @@ class A
 C++ way to do this is called "constructor delegation".
 **Syntax** -  Just include extra constructor calls in the intializer list.
 {{{code: lang="cpp" linenumbers="True"
-A(int value): Foo{}
+A(int value): A()
 {	
 	// code to do y
 }
