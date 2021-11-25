@@ -10,3 +10,11 @@ Dynamic programming is all about smart work.
 [[./Quizzes&Exercises/Exercises.md|Exercises.md]]
 [[./Quizzes&Exercises/CodingExercises.md|CodingExercises.md]]
 [[./zAssignments/Assignments.md|Assignments.md]]
+
+FIXME - everything here is BS, revamp everything
+Some resources for DP
+1. https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns
+2. CLRS chapter on DP
+3. cpbook.net book.
+4. https://atcoder.jp/contests/dp/tasks
+5. DP on various things like strings, trees, with bitmasks.
