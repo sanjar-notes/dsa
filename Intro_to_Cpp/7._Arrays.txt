@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2019-11-12T19:00:26+05:30
-
-====== 7. Arrays ======
-Created Tuesday 12 November 2019
-
-http://www.cplusplus.com/doc/tutorial/arrays/

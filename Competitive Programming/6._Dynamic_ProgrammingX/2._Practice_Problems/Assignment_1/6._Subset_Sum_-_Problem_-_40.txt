@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-07-19T12:35:05+05:30
-
-====== 6. Subset Sum - Problem ======
-Created Sunday 19 July 2020
-
-{{./pasted_image.png}}
-* WA

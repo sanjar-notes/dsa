@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-01-03T16:47:15+05:30
-
-====== zAssignments ======
-Created Friday 03 January 2020
-
-[[./after_assignments.md|After Assignments]]
-./after_assignments.md

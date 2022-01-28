@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-01-01T20:11:48+05:30
-
-====== 2. Recursion Practice ======
-Created Wednesday 01 January 2020
-

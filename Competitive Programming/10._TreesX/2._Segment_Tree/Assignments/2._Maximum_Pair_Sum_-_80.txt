@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-07-25T14:45:42+05:30
-
-======= 2. Maximum Pair Sum =======
-Created Saturday 25 July 2020
-

@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-03-16T05:57:57+05:30
-
-====== 1. Min Cost Path ======
-Created Monday 16 March 2020
-
-[[../Codes/minCostPath.cpp|minCostPath.cpp]]

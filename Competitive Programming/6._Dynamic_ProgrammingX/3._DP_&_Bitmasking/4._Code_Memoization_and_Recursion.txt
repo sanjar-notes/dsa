@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-07-28T16:18:39+05:30
-
-====== 4. Code Memoization and Recursion ======
-Created Tuesday 28 July 2020
-
-We are going to code minimum cost jobs.

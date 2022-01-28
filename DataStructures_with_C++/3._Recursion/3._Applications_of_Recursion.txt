@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2019-12-31T17:53:00+05:30
-
-====== 3. Applications of Recursion ======
-Created Tuesday 31 December 2019
-
-* Remove duplicates, using write head.

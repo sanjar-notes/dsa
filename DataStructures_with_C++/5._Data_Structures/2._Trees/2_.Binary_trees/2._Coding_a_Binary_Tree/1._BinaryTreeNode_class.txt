@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-04-08T18:34:57+05:30
-
-====== 1. BinaryTreeNode class ======
-Created Thursday 08 April 2021
-

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-05-18T02:27:12+05:30
-
-====== 2.2 Automatic Type Deductions ======
-Created Monday 18 May 2020
-

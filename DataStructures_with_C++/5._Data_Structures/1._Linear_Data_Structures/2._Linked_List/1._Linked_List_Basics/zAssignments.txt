@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-01-18T00:04:36+05:30
-
-====== zAssignments ======
-Created Saturday 18 January 2020
-
-[[./Assignments.md|Assignments]]
-Uni or empty clear all the corner cases. Optimize the code too.

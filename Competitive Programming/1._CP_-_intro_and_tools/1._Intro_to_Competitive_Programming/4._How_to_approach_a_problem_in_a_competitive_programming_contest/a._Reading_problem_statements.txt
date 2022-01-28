@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-04-23T15:34:33+05:30
-
-====== a. Reading problem statements ======
-Created Thursday 23 April 2020
-
-We have to read line by line... :)

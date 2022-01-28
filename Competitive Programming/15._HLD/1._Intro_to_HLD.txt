@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-08-04T22:00:01+05:30
-
-====== 1. Intro to HLD ======
-Created Tuesday 04 August 2020
-
-We have a chain, we are being asked queries like max or sum etc. We can do this using Fenwick Tree or Segment tree.

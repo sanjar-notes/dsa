@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2019-10-23T19:29:31+05:30
-
-====== 6. Functions ======
-Created Wednesday 23 October 2019
-
-[[./attach_ments/functions.pdf|Functions Official Notes]]
-Quick Reads: http://www.cplusplus.com/doc/tutorial/functions/

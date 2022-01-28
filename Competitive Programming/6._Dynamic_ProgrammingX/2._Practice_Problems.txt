@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2020-06-22T12:44:32+05:30
-
-====== 2. Practice Problems ======
-Created Monday 22 June 2020
-

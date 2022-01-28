@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-11-19T07:15:39+05:30
-
-====== 3. Bitset ======
-Created Friday 19 November 2021
-
-https://www.interviewbit.com/courses/fast-track-cpp/topics/advanced-cpp/

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2019-12-24T17:40:09+05:30
-
-====== 2. Dynamic Memory Allocation ======
-Created Tuesday 24 December 2019
-

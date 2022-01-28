@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2019-10-18T02:47:31+05:30
-
-====== 4. Conditionals and while loops ======
-Created Friday 18 October 2019
-
-* Only zero means false, all other values are treated as true on C++.
-* Undertstanding the don't care condition in the ladder and nested if else loops.

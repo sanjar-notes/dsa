@@ -1,8 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-01-18T20:16:10+05:30
-
-====== 7. Reverse LL Iterative ======
-Created Saturday 18 January 2020
-
-The classic.

@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-04-08T19:10:25+05:30
-
-====== 4. Common BST questions ======
-Created Thursday 08 April 2021
-

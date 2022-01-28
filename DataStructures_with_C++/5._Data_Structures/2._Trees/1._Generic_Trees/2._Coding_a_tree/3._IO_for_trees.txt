@@ -1,7 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.6
-Creation-Date: 2021-04-08T18:07:40+05:30
-
-====== 3. IO for trees ======
-Created Thursday 08 April 2021
-

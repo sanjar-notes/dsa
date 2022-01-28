@@ -1,9 +1,0 @@
-Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
-Creation-Date: 2020-04-25T08:07:41+05:30
-
-====== 3. Serialization ======
-Created Saturday 25 April 2020
-
-* Serialization is the process of storing and retrieving the state of an object from a file.
-* We can overload the << and >> operators in our classes in order to read and write objects from files. 
