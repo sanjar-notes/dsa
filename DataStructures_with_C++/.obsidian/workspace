@@ -1,0 +1,94 @@
+{
+  "main": {
+    "id": "5421bb65e84e38c8",
+    "type": "split",
+    "children": [
+      {
+        "id": "b75f406eb0aaa8fd",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "9b22db862c46abd0",
+    "type": "split",
+    "children": [
+      {
+        "id": "d8703a4b6e57ec40",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3fb7c10b540fb446",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "e58f1417c5c58f84",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "495b23394330cc5d",
+    "type": "split",
+    "children": [
+      {
+        "id": "c5227b179108f0c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "eaafd76e6c301584",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b75f406eb0aaa8fd",
+  "lastOpenFiles": [
+    "3._Dynamic_Programming/zAssignments/Assignments.md",
+    "6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming.md",
+    "6._Algorithm_Design.md",
+    "4._OOP_Basics.md",
+    "3._Recursion.md",
+    "1._Memory_and_Pointers.md"
+  ]
+}
