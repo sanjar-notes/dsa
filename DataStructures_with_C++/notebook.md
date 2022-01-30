@@ -66,7 +66,7 @@
 		* [2. Unary post](./4._OOP_Basics/4._Operator_overloading/2._Unary_post.md)
 		* [3. Unary pre](./4._OOP_Basics/4._Operator_overloading/3._Unary_pre.md)
 		* [zAssignment - Polynomial class](./4._OOP_Basics/4._Operator_overloading/zAssignment_-_Polynomial_class.md)
-	* [5. Approach for writing a class](./4._OOP_Basics/5._Approach_for_writing_a_class.md)
+	* [5. Approach for writing a class](6._Approach_for_writing_a_class.md)
 * [5. Data Structures](./5._Data_Structures.md)
 	* [1. Linear Data Structures](./5._Data_Structures/1._Linear_Data_Structures.md)
 		* [1. Vector aka Dynamic Array](./5._Data_Structures/1._Linear_Data_Structures/1._Vector_aka_Dynamic_Array.md)
