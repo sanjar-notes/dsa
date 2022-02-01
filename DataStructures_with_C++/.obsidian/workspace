@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "8._OOP_Continued/2._Inheritance/6._Hybrid_Inheritance.md",
+            "file": "8._OOP_Continued/2._Inheritance/2._Access_specifiers_in_inheritance.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8._OOP_Continued/2._Inheritance/6._Hybrid_Inheritance.md",
+                "file": "8._OOP_Continued/2._Inheritance/2._Access_specifiers_in_inheritance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "7c4799936e0fdea2",
   "lastOpenFiles": [
-    "8._OOP_Continued/2._Inheritance/6._Hybrid_Inheritance.md",
-    "8._OOP_Continued/2._Inheritance/3._Syntax.md",
     "8._OOP_Continued/2._Inheritance/2._Access_specifiers_in_inheritance.md",
+    "8._OOP_Continued/2._Inheritance/3._Syntax.md",
     "8._OOP_Continued/2._Inheritance/4._Order_Of_ConstructorsDestructors.md",
     "8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md",
+    "8._OOP_Continued/2._Inheritance.md",
+    "8._OOP_Continued/2._Inheritance/6._Hybrid_Inheritance.md",
     "8._OOP_Continued/2._Inheritance/Selection_106.png",
     "8._OOP_Continued/2._Inheritance/Selection_105.png",
     "8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept/Selection_104.png",
-    "8._OOP_Continued/2._Inheritance/2._Syntax/inheritance_access_control.png",
-    "8._OOP_Continued/2._Inheritance/5._Types_of_Inheritance.md"
+    "8._OOP_Continued/2._Inheritance/2._Syntax/inheritance_access_control.png"
   ]
 }
