@@ -240,7 +240,7 @@
 	* [2. Inheritance](./8._OOP_Continued/2._Inheritance.md)
 		* [1. Inheritance - Concept](./8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md)
 		* [2. Syntax](3._Syntax.md)
-		* [3. Order Of ConstructorsDestructors](4._Order_Of_ConstructorsDestructors.md)
+		* [3. Order Of ConstructorsDestructors](5._Order_Of_ConstructorsDestructors.md)
 		* [4. Hybrid Inheritance](6._Hybrid_Inheritance.md)
 		* [5. Types of Inheritance](./8._OOP_Continued/2._Inheritance/5._Types_of_Inheritance.md)
 	* [3. Polymorphism](./8._OOP_Continued/3._Polymorphism.md)
