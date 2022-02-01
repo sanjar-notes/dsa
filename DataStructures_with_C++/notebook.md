@@ -236,7 +236,7 @@
 	* [3. const and constexpr](./7._C++_Continued/3._const_and_constexpr.md)
 	* [4. Exception Handling](./7._C++_Continued/4._Exception_Handling.md)
 * [8. OOP Continued](./8._OOP_Continued.md)
-	* [1. Abstraction and Encapsulation](./8._OOP_Continued/1._Abstraction_and_Encapsulation.md)
+	* [1. Abstraction and Encapsulation](1._Relations_between_classes.md)
 	* [2. Inheritance](./8._OOP_Continued/2._Inheritance.md)
 		* [1. Inheritance - Concept](./8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md)
 		* [2. Syntax](./8._OOP_Continued/2._Inheritance/2._Syntax.md)
