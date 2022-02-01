@@ -4,11 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "b75f406eb0aaa8fd",
+        "id": "7c4799936e0fdea2",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -49,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 247
   },
   "right": {
     "id": "495b23394330cc5d",
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,13 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b75f406eb0aaa8fd",
+  "active": "7c4799936e0fdea2",
   "lastOpenFiles": [
-    "3._Dynamic_Programming/zAssignments/Assignments.md",
-    "6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming.md",
-    "6._Algorithm_Design.md",
+    "8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md",
+    "8._OOP_Continued/2._Inheritance/3._Order_Of_ConstructorsDestructors.md",
+    "8._OOP_Continued/2._Inheritance/2._Syntax.md",
+    "8._OOP_Continued/2._Inheritance.md",
+    "8._OOP_Continued/1._Relations_between_classes.md",
+    "4._OOP_Basics/1._Intro_and_syntax/1._Principles_of_OOP.md",
     "4._OOP_Basics.md",
-    "3._Recursion.md",
-    "1._Memory_and_Pointers.md"
+    "4._OOP_Basics/1._Intro_and_syntax.md",
+    "4._OOP_Basics/5._Separate_Compilation.md",
+    "4._OOP_Basics/Pasted_image_20220130111806.png"
   ]
 }
