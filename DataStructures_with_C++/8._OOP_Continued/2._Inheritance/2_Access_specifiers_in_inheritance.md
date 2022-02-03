@@ -13,7 +13,7 @@ Protected example: Only vehicles and it's children can access the vehicle class'
 
 
 ### Access specifier mode of inheritance
-As said [[1._Inheritance_-_Concept |earlier]], *all* members(other than selected exceptions) of the parent class are available in the derived class. **But what is happens to their access specifier?**
+As said [[1_Inheritance_-_Concept |earlier]], *all* members(other than selected exceptions) of the parent class are available in the derived class. **But what is happens to their access specifier?**
 - This is where access specifier mode needs to be specified.
 - So we need to specify the access specifier of the inherited members.
 
@@ -21,7 +21,7 @@ This is specified in the syntax.
 
 The access mode specifies access specifier of the inherited members.
 
-The rule is discussed [[3._Syntax |here]].
+The rule is discussed [[3_Syntax |here]].
 
 
 ### What happens to private members of parent class

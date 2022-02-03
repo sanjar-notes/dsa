@@ -6,7 +6,7 @@ Created Sunday 26 April 2020
 - Essentially, inheritance is a code reuse mechanism in OOP. It is used to avoid redundant code.
 
 For example, if we can specify the concept (class actually) of a `Car` from a more general concept of `Vehicle`,`Car` will have all/most properties of `Vehicle`, although more information will be added to really make it a `Car`.
-![](./1._Inheritance_-_Concept/Selection_104.png)
+![](Selection_104.png)
 Some more examples are Shape <-- Circle, Person <-- Student.
 - Due to reuse, one doesn't have to write the Horse again from scratch. And it's really useful if there are many animal classes that need to be derived from the class `Animal`.
 

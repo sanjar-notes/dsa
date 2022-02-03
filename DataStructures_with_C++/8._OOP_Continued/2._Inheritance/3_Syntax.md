@@ -22,7 +22,7 @@ class Smartphone : Camera, private Telephone
 
 ### Rule for access specifier
 * Inheritance access controls follows a simple rule - accessibility cannot be increased.
-![](./2._Syntax/inheritance_access_control.png)
+![](inheritance_access_control.png)
 
 
 ### Selective Inheritance

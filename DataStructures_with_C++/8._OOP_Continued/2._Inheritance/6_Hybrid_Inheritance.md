@@ -8,9 +8,9 @@ Hybrid = Using more than 2 types of inheritances.
 * A well known problem(called the diamond problem) arises if we use hierarchical and then multiple inheritance.
 * The Bus class here gets a copy of functions in Vehicle, through Car and Track.
 
-![](./4._Hybrid_Inheritance/Selection_116.png)
+![](Selection_116.png)
 Order of constructors/destructors:
-![](./4._Hybrid_Inheritance/Selection_117.png)
+![](Selection_117.png)
 
 1. Bus calls Car 
 2. Car calls Vehicle

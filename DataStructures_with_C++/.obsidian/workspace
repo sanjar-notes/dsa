@@ -7,9 +7,19 @@
         "id": "7c4799936e0fdea2",
         "type": "leaf",
         "state": {
+          "type": "image",
+          "state": {
+            "file": "8._OOP_Continued/2._Inheritance/zassets/Selection_115.png"
+          }
+        }
+      },
+      {
+        "id": "4964ac450a3e3d37",
+        "type": "leaf",
+        "state": {
           "type": "markdown",
           "state": {
-            "file": "8._OOP_Continued/2._Inheritance/4._Overriding,_Overloading,_Delegation.md",
+            "file": "8._OOP_Continued/2._Inheritance/6_Hybrid_Inheritance.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8._OOP_Continued/2._Inheritance/4._Overriding,_Overloading,_Delegation.md",
+                "file": "8._OOP_Continued/2._Inheritance/6_Hybrid_Inheritance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +97,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "7c4799936e0fdea2",
+  "active": "4964ac450a3e3d37",
   "lastOpenFiles": [
-    "8._OOP_Continued/2._Inheritance/4._Overriding,_Overloading,_Delegation.md",
-    "8._OOP_Continued/2._Inheritance/5._Types_of_Inheritance.md",
-    "8._OOP_Continued/2._Inheritance/5._Order_Of_ConstructorsDestructors.md",
-    "8._OOP_Continued/2._Inheritance/1._Inheritance_-_Concept.md",
-    "8._OOP_Continued/2._Inheritance/6._Hybrid_Inheritance.md",
-    "8._OOP_Continued/2._Inheritance/2._Access_specifiers_in_inheritance.md",
-    "8._OOP_Continued/2._Inheritance/3._Syntax.md",
-    "8._OOP_Continued/2._Inheritance.md",
-    "8._OOP_Continued/2._Inheritance/Selection_106.png",
-    "8._OOP_Continued/2._Inheritance/Selection_105.png"
+    "8._OOP_Continued/2._Inheritance/6_Hybrid_Inheritance.md",
+    "8._OOP_Continued/2._Inheritance/5_Types_of_Inheritance.md",
+    "8._OOP_Continued/2._Inheritance/4_Overriding,_Overloading,_Delegation.md",
+    "8._OOP_Continued/2._Inheritance/3_Syntax.md",
+    "8._OOP_Continued/2._Inheritance/2_Access_specifiers_in_inheritance.md",
+    "8._OOP_Continued/2._Inheritance/1_Inheritance_-_Concept.md",
+    "8._OOP_Continued/2._Inheritance/zassets/Selection_115.png",
+    "8._OOP_Continued/2._Inheritance/zassets/Selection_114.png",
+    "8._OOP_Continued/2._Inheritance/zassets/Selection_104.png",
+    "8._OOP_Continued/2._Inheritance/zassets/inheritance_access_control.png"
   ]
 }
