@@ -7,8 +7,12 @@
         "id": "d8c4556e9fd3dcdf",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "8._OOP_Continued/1._Relations_between_classes.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -65,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "8._OOP_Continued/1._Relations_between_classes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,10 +89,10 @@
   },
   "active": "d8c4556e9fd3dcdf",
   "lastOpenFiles": [
+    "8._OOP_Continued/1._Relations_between_classes.md",
     "8._OOP_Continued/4._Virtual_Functions_and_Abstract_Classes.md",
     "8._OOP_Continued/3._Polymorphism.md",
     "8._OOP_Continued/2._Inheritance.md",
-    "8._OOP_Continued/1._Relations_between_classes.md",
     "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/7_Liskov_Substitution_Principle 1.md",
     "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/7_Liskov_Substitution_Principle.md",
     "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/5_2_Types_of_Inheritance_(level).md",
