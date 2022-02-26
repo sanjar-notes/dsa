@@ -8,4 +8,4 @@ I don't know. FIXME
 I don't understand. FIXME
 
 ### What
-Liskov Substitution Principle states that "an object of a superclass should be replaceable by an object of any of its subclasses, without breaking the program".
+Liskov Substitution Principle states that "an object of a superclass should be replaceable by an object of any of its subclasses without altering any property of the superclass".
