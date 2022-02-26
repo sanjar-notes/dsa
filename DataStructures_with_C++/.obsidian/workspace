@@ -7,12 +7,8 @@
         "id": "d8c4556e9fd3dcdf",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "8._OOP_Continued/2._Inheritance/5_2_Types_of_Inheritance_(level).md",
-            "mode": "source",
-            "source": false
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -40,7 +36,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "relations",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8._OOP_Continued/2._Inheritance/5_2_Types_of_Inheritance_(level).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +84,15 @@
   },
   "active": "d8c4556e9fd3dcdf",
   "lastOpenFiles": [
-    "8._OOP_Continued/2._Inheritance/5_2_Types_of_Inheritance_(level).md",
-    "8._OOP_Continued/2._Inheritance/5_1_Types_of_Inheritance_(specifier).md",
-    "8._OOP_Continued/2._Inheritance/3_Syntax.md",
-    "8._OOP_Continued/2._Inheritance/7_Liskov_Substitution_Principle.md",
-    "8._OOP_Continued/2._Inheritance/4_Overriding,_Overloading,_Delegation.md",
-    "8._OOP_Continued/2._Inheritance/6_Hybrid_Inheritance.md",
-    "8._OOP_Continued/2._Inheritance/2_Access_specifiers_in_inheritance.md",
-    "8._OOP_Continued/2._Inheritance/1_Inheritance_-_Concept.md",
-    "8._OOP_Continued/2._Inheritance/7_Hybrid_Inheritance 1.md",
-    "8._OOP_Continued/2._Inheritance.md"
+    "8._OOP_Continued/2._Inheritance.md",
+    "8._OOP_Continued/1._Relations_between_classes.md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/7_Liskov_Substitution_Principle 1.md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/7_Liskov_Substitution_Principle.md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/5_2_Types_of_Inheritance_(level).md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/6_Hybrid_Inheritance.md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/4_Overriding,_Overloading,_Delegation.md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/5_1_Types_of_Inheritance_(specifier).md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/3_Syntax.md",
+    "8._OOP_Continued/1._Relations_between_classes/1._Inheritance/2_Access_specifiers_in_inheritance.md"
   ]
 }
