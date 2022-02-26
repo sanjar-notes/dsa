@@ -242,7 +242,7 @@
 		* [2. Syntax](3_Syntax.md)
 		* [3. Order Of ConstructorsDestructors](5._Order_Of_ConstructorsDestructors.md)
 		* [4. Hybrid Inheritance](6_Hybrid_Inheritance.md)
-		* [5. Types of Inheritance](5_Types_of_Inheritance.md)
+		* [5. Types of Inheritance](5_2_Types_of_Inheritance_(level).md)
 	* [3. Polymorphism](./8._OOP_Continued/3._Polymorphism.md)
 		* [1. Compile Time Polymorphism](./8._OOP_Continued/3._Polymorphism/1._Compile_Time_Polymorphism.md)
 		* [2. Run Time Polymorphism](./8._OOP_Continued/3._Polymorphism/2._Run_Time_Polymorphism.md)

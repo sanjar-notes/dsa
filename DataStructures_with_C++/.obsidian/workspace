@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "8._OOP_Continued/2._Inheritance/7_Liskov_Substitution_Principle.md",
+            "file": "8._OOP_Continued/2._Inheritance/5_2_Types_of_Inheritance_(level).md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247
+    "width": 247,
+    "collapsed": true
   },
   "right": {
     "id": "495b23394330cc5d",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "8._OOP_Continued/2._Inheritance/7_Liskov_Substitution_Principle.md",
+                "file": "8._OOP_Continued/2._Inheritance/5_2_Types_of_Inheritance_(level).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +90,15 @@
   },
   "active": "d8c4556e9fd3dcdf",
   "lastOpenFiles": [
+    "8._OOP_Continued/2._Inheritance/5_2_Types_of_Inheritance_(level).md",
+    "8._OOP_Continued/2._Inheritance/5_1_Types_of_Inheritance_(specifier).md",
+    "8._OOP_Continued/2._Inheritance/3_Syntax.md",
     "8._OOP_Continued/2._Inheritance/7_Liskov_Substitution_Principle.md",
     "8._OOP_Continued/2._Inheritance/4_Overriding,_Overloading,_Delegation.md",
-    "8._OOP_Continued/2._Inheritance/5_Types_of_Inheritance.md",
     "8._OOP_Continued/2._Inheritance/6_Hybrid_Inheritance.md",
     "8._OOP_Continued/2._Inheritance/2_Access_specifiers_in_inheritance.md",
     "8._OOP_Continued/2._Inheritance/1_Inheritance_-_Concept.md",
-    "8._OOP_Continued/2._Inheritance/3_Syntax.md",
     "8._OOP_Continued/2._Inheritance/7_Hybrid_Inheritance 1.md",
-    "8._OOP_Continued/2._Inheritance.md",
-    "8._OOP_Continued/3._Polymorphism.md"
+    "8._OOP_Continued/2._Inheritance.md"
   ]
 }
