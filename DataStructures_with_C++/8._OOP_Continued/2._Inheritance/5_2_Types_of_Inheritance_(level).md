@@ -6,6 +6,9 @@ There are 3 kinds of inheritance here.
 2. Protected inheritance
 3. Private inheritance
 
+The coding effects are already seen. And are:
+![](inheritance_access_control.png)
+
 ## 1. Public Inheritance
 ### Why
 - This is done when we want to add something to the interface (which is public) of the superclass. 
