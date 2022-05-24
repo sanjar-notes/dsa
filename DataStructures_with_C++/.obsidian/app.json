@@ -1,8 +1,9 @@
 {
   "legacyEditor": false,
-  "livePreview": true,
+  "livePreview": false,
   "promptDelete": false,
   "showLineNumber": false,
   "readableLineLength": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "defaultViewMode": "source"
 }
