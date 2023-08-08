@@ -6,6 +6,3 @@ There are 3 notebooks:
 To use these notes: View here on GitHub or clone the repo (and open with Markdown friendly editor).
 
 These notes were created while doing a course from CodingNinjas.com.
-I've added many more topics since.
-
-Don't worry🤗️, the recent additions have been clearly demarcated.
