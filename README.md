@@ -6,6 +6,3 @@ There are 3 notebooks:
 To open a notebook, run the `notebook.zim` file with [zim-wiki](https://zim-wiki.org/) OR view/clone in Markdown format from [this branch](https://github.com/sanjar-notes/dsa_with_cpp/tree/markdownify).
 
 These notes were created while doing a course from CodingNinjas.com.
-I've added many more topics since.
-
-Don't worry🤗️, the recent additions have been clearly demarcated.
