@@ -1,0 +1,28 @@
+{
+  "legacyEditor": false,
+  "livePreview": true,
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "autoConvertHtml": false,
+  "spellcheck": true,
+  "showLineNumber": false,
+  "showFrontmatter": false,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "readableLineLength": true,
+  "fileSortOrder": "alphabetical",
+  "spellcheckLanguages": [
+    "en-US"
+  ],
+  "showUnsupportedFiles": true,
+  "attachmentFolderPath": "assets",
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "showInlineTitle": false,
+  "showIndentGuide": true,
+  "foldHeading": true
+}

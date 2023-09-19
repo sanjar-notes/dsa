@@ -1,0 +1,46 @@
+{
+  "enableAuto": true,
+  "excludedFolders": [],
+  "enableImage": true,
+  "imageExtensions": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "image": "image",
+  "enableAudio": true,
+  "audioExtensions": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "audio": "audio",
+  "enableVideo": true,
+  "videoExtensions": [
+    true,
+    true,
+    true,
+    true
+  ],
+  "video": "video",
+  "enablePdf": true,
+  "pdfExtensions": [
+    true
+  ],
+  "pdf": "pdf",
+  "connector": "-",
+  "exportCurrentRiboon": false,
+  "exportUnusedRiboon": false,
+  "exportCurrentDeletion": false,
+  "exportUnusedDeletion": false,
+  "copyPath": false,
+  "copyPathMode": "Relative",
+  "usingLog": false,
+  "logPath": "/"
+}
