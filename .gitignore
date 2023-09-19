@@ -1,2 +1,5 @@
 .DS_Store
-.obsidian/workspace
+.vscode
+.obsidian/workspace.json
+id_ed25519_temp
+id_ed25519_temp.pub
