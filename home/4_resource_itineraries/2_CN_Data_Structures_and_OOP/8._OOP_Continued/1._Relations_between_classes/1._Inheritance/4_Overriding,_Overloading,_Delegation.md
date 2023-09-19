@@ -89,6 +89,6 @@ class Car
 ###### DerivedDestructor before BaseDestructor
 
 - So, the way constructor and destructors are called is the reverse of each other.
-  ![[../../../../../../assets/4_Overriding,_Overloading,_Delegation-image-1.png]]
+  ![](/assets/4_Overriding,_Overloading,_Delegation-image-1.png)
 - This is because a derived class is more specific, so has more information. It's like cascading boxes, and can be visualized like so (outermost is child, innermost parent class):
   ![](/assets/4_Overriding,_Overloading,_Delegation-image-2.png)
