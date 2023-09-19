@@ -17,6 +17,6 @@ Some more examples are Shape <-- Circle, Person <-- Student.
 
 - Internally, the parent class's code is copied or made available to the specific class, except a few exceptions.
 - The derived class inherits **all** (with some exceptions) properties of the parent class, i.e. inheritance isn't selective. Additionally, we can override and add more stuff as needed.
-  ![[../../../../../../assets/1_Inheritance_-_Concept-image-2.png]]
+  ![[../../../../../../assets/1_Inheritance_-_Concept-image-1.png]]
 - The execptions (that are not inherited) are constructors, destructors and the copy assignment operator. The reason is that all these functions being general, don't have access to the added information in the derived class - the specific stuff (data members and member functions) of the derived class.
 - So they need to redefined. **Of course, they are still available to be called**, but they'll work on behalf of inherited stuff only, not the new stuff.

@@ -9,7 +9,7 @@ There are 3 kinds of inheritance here.
 3. Private inheritance
 
 The coding effects are already seen. And are:
-![](/assets/3_Syntax-image-1.png)
+![](../../../../../../assets/3_Syntax-image-1.png)
 
 ## 1. Public Inheritance
 
