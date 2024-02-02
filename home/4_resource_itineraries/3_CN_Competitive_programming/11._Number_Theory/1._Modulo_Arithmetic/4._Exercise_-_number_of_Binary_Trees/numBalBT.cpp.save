@@ -1,0 +1,21 @@
+#include <iostream>
+#include<cmath>
+using namespace std;
+
+int balancedBTs(int h)
+{
+    if (h <= 1)
+        return 1;
+    long long trees[h + 1] = {1, 1}; // for h=0 and h=1
+    long long k = int(1E9) + 7;
+    long long a, b;
+    for (int i = 2; i < h + 1; i++)
+    {
+        a = trees[i - 1] % k;
+        b = trees[i - 2] % k;
+        trees[i] = (a * ((a + (2 * b) % k) % k)) % k;
+    }
+
+    return trees[h]; // get f(h)
+}
+

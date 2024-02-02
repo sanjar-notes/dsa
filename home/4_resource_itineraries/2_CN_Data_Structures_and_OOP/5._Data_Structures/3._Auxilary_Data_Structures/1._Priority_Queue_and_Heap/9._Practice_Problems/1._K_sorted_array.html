@@ -1,0 +1,1747 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /*! ADAPTED
+    Typeplate : Starter Kit
+    URL ........... http://typeplate.com
+    Version ....... 3.0.2
+    Github ........ https://github.com/typeplate/starter-kit
+    Authors ....... Dennis Gaebel (@gryghostvisuals) & Zachary Kain (@zakkain)
+    License ....... Creative Commmons Attribution 3.0
+    License URL ... https://github.com/typeplate/starter-kit/blob/master/license.txt
+    */
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        text-rendering: optimizeLegibility;
+        line-height: 1;
+        margin-top: 0;
+        color: #222;
+      }
+
+      blockquote + figcaption cite {
+        display: block;
+        font-size: inherit;
+        text-align: right;
+      }
+
+      body {
+        word-wrap: break-word;
+      }
+
+      pre code {
+        word-wrap: normal;
+      }
+
+      body {
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        color: #444;
+      }
+
+      h1 {
+        font-size: 2em;
+        /* 2*16 = 32 */
+      }
+
+      h2 {
+        font-size: 1.5em;
+        /* 1.5*16 = 24 */
+      }
+
+      h3 {
+        font-size: 1.17em;
+        /* 1.17*16 = 18.72 */
+      }
+
+      h4 {
+        font-size: 1em;
+        /* 1*16 = 16 */
+      }
+
+      h5 {
+        font-size: 0.83em;
+        /* 0.83*16 = 13.28 */
+      }
+
+      h6 {
+        font-size: 0.75em;
+        /* 0.75*16 = 12 */
+      }
+
+      h1 {
+        margin: 2.42424rem 0 1.454544rem;
+      }
+
+      h2 {
+        margin: 2.0202rem 0 1.21212rem;
+      }
+
+      h3 {
+        margin: 1.61616rem 0 1rem;
+      }
+
+      h4 {
+        margin: 1.21212rem 0 1;
+      }
+
+      h5 {
+        margin: 0.80808rem 0;
+      }
+
+      h6 {
+        margin: 0.70707rem 0;
+      }
+
+      p {
+        margin: auto auto 1.5rem;
+      }
+
+      small {
+        font-size: 65%;
+      }
+
+      input,
+      abbr,
+      acronym,
+      blockquote,
+      code,
+      kbd,
+      q,
+      samp,
+      var {
+        -webkit-hyphens: none;
+        -ms-hyphens: none;
+        hyphens: none;
+      }
+
+      pre {
+        white-space: pre;
+      }
+
+      pre code {
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+      }
+
+      code {
+        white-space: pre;
+        font-family: SF Mono, Consolas, Dejavu Sans Mono, Menlo, monospace;
+      }
+
+      abbr {
+        -webkit-font-variant: small-caps;
+        -moz-font-variant: small-caps;
+        -ms-font-variant: small-caps;
+        font-variant: small-caps;
+        font-weight: 600;
+        text-transform: lowercase;
+        color: gray;
+      }
+
+      abbr[title]:hover {
+        cursor: help;
+      }
+
+      /* FROM http://purecss.io/layouts/side-menu/  adapted to remove pure classes*/
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+          "Segoe UI Symbol";
+        color: #444;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+      }
+
+      code,
+      pre {
+        background-color: #f5f5f5;
+        color: #444;
+        border-radius: 2px;
+        text-shadow: 0px 1px 0px white;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+      }
+
+      pre code {
+        border: none;
+        box-shadow: none;
+      }
+
+      pre {
+        padding: 0.5em;
+      }
+
+      code {
+        display: inline-block;
+        padding: 0 0.5em;
+        line-height: 1.4;
+        font-size: 0.9em;
+      }
+
+      table {
+        border-spacing: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      table th,
+      table td {
+        padding: 0.3em 0.7em;
+      }
+
+      table th {
+        background-color: #f4f4f4;
+        border-bottom: 2px solid #444;
+      }
+
+      table td {
+        border: 1px solid #f5f5f5;
+      }
+
+      /* Add transition to containers so they can push in and out. */
+
+      #layout,
+      #menu,
+      .menu-link {
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+      }
+
+      /* This is the parent `<div>` that contains the menu and the content area. */
+
+      #layout {
+        position: relative;
+        padding-left: 0;
+      }
+
+      #layout.active #menu {
+        left: 250px;
+        width: 250px;
+      }
+
+      #layout.active .menu-link {
+        left: 250px;
+      }
+
+      /* The content `<div>` is where all your content goes. */
+
+      .content {
+        margin: 50px auto;
+        padding: 0 2em;
+        max-width: 80ex;
+        line-height: 1.6em;
+      }
+
+      /*
+      The `#menu` `<div>` is the parent `<div>` that contains the menu that
+      appears on the left side of the page.
+      */
+
+      #menu {
+        margin-left: -250px;
+        /* "#menu" width */
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 1000;
+        /* so the menu or its navicon stays above all content */
+        background: #f4f4f4;
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        font-size: 0.9em;
+      }
+
+      @media print {
+        #menu,
+        .menu-link {
+          display: none !important;
+        }
+      }
+
+      a,
+      a * {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #2483cc;
+      }
+
+      /* All anchors inside the menu should be styled like this. */
+
+      #menu a {
+        display: block;
+        padding: 0.5em 0.5em;
+      }
+
+      #menu a:first-letter {
+        text-transform: capitalize;
+      }
+
+      #menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 1em 0.5em;
+      }
+
+      #menu ul ul {
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        border-left: 4px solid rgba(255, 255, 255, 0.5);
+      }
+
+      /* Change color of the anchor links on hover/focus. */
+
+      #menu li a:hover,
+      #menu li a:focus {
+        background: rgba(255, 255, 255, 0.4);
+      }
+
+      /* This styles the selected menu item `<li>`. */
+
+      #menu li a.active {
+        background: rgba(0, 0, 0, 0.05);
+      }
+
+      /* This styles a link within a selected menu item `<li>`. */
+
+      #menu li a.active {
+        color: #222;
+      }
+
+      /* This styles the menu heading. */
+
+      #menu li.heading {
+        font-size: 0.9em;
+        text-transform: uppercase;
+        color: #000;
+      }
+
+      #menu li.heading > * {
+        padding: 0.5em;
+        display: block;
+      }
+
+      #menu li.heading a {
+        color: #0c68af;
+      }
+
+      /* -- Dynamic Button For Responsive Menu -------------------------------------*/
+
+      /*
+      `.menu-link` represents the responsive menu toggle that shows/hides on
+      small screens.
+      */
+
+      .menu-link {
+        position: fixed;
+        display: block;
+        /* show this only on small screens */
+        top: 0;
+        left: 0;
+        /* "#menu width" */
+        font-size: 10px;
+        /* change this value to increase/decrease button size */
+        z-index: 10;
+        width: 2em;
+        height: auto;
+        padding: 1.6em 1.2em;
+        border-radius: 0 2px 2px 0;
+      }
+
+      .menu-link:hover {
+        background: #f4f4f4;
+      }
+
+      .menu-link span {
+        position: relative;
+        display: block;
+      }
+
+      .menu-link span,
+      .menu-link span:before,
+      .menu-link span:after {
+        background-color: #555;
+        width: 100%;
+        height: 0.2em;
+        border-radius: 1em;
+      }
+
+      .menu-link span:before,
+      .menu-link span:after {
+        position: absolute;
+        margin-top: -0.6em;
+        content: " ";
+      }
+
+      .menu-link span:after {
+        margin-top: 0.6em;
+      }
+
+      /* Hides the menu at `48em`, but modify this based on your app's needs. */
+
+      @media (min-width: 48em) {
+        .header,
+        .content {
+          padding-left: 2em;
+          padding-right: 2em;
+        }
+
+        #layout {
+          padding-left: 250px;
+          /* left col width "#menu" */
+          left: 0;
+        }
+        #menu {
+          left: 250px;
+        }
+
+        .menu-link {
+          position: fixed;
+          left: 250px;
+          display: none;
+        }
+
+        #layout.active .menu-link {
+          left: 250px;
+        }
+      }
+
+      @media (max-width: 48em) {
+        /* Only apply this when the window is small. Otherwise, the following case results in extra padding on the left:
+         * Make the window small.
+         * Tap the menu to trigger the active state.
+         * Make the window large again.
+         */
+        #layout.active {
+          position: relative;
+          left: 250px;
+        }
+      }
+
+      /* Heading anchors and permalinks */
+      h1[id],
+      h2[id],
+      h3[id],
+      h4[id],
+      h5[id],
+      h6[id] {
+        position: relative;
+      }
+      .heading-anchor-permalink {
+        /* Position the permalink to the left of the title */
+        position: absolute;
+        right: 100%;
+        /* Add some spacing as padding to not lose the hover */
+        padding-right: 0.6rem;
+        /* Make it only visible on heading hover, see below */
+        opacity: 0;
+      }
+      h1[id]:hover .heading-anchor-permalink,
+      h2[id]:hover .heading-anchor-permalink,
+      h3[id]:hover .heading-anchor-permalink,
+      h4[id]:hover .heading-anchor-permalink,
+      h5[id]:hover .heading-anchor-permalink,
+      h6[id]:hover .heading-anchor-permalink {
+        opacity: 0.5;
+      }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <div id="layout">
+      <!-- Menu toggle -->
+      <a href="#menu" id="menuLink" class="menu-link">
+        <!-- Hamburger icon -->
+        <span></span>
+      </a>
+      <nav id="menu">
+        <ul>
+<li><a class="" href="../../../../../../../README.html">README</a></li>
+<li class="heading"><span>home</span></li>
+<ul>
+<li><a class="" href="../../../../../../1_motivation.html">1 motivation</a></li>
+<li><a class="" href="../../../../../../2_resources.html">2 resources</a></li>
+<li><a class="" href="../../../../../../3_roadmap.html">3 roadmap</a></li>
+<li class="heading"><span>4 resource itineraries</span></li>
+<ul>
+<li class="heading"><span>1 CN Intro to Cpp</span></li>
+<ul>
+<li class="heading"><span>1. Flowcharts</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/1._Intro_to_flowcharts.html">1. Intro to flowcharts</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/2._Decision_Making.html">2. Decision Making</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/3._Loops.html">3. Loops</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/4._Largest_of_N_numbers.html">4. Largest of N numbers</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/5._Assignments.html">5. Assignments</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/1._Flowcharts/Conclusion.html">Conclusion</a></li>
+</ul>
+<li class="heading"><span>10. Multidimensional Arrays</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/10._Multidimensional_Arrays/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/10._Multidimensional_Arrays/Assignments.html">Assignments</a></li>
+</ul>
+<li class="heading"><span>2. C++, W2H</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/2._C++,_W2H/1._About_C++.html">1. About C++</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/2._C++,_W2H/2._Why_learn_C++.html">2. Why learn C++</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/2._C++,_W2H/3._C++_Setup.html">3. C++ Setup</a></li>
+</ul>
+<li class="heading"><span>3. main, Variables and Operators</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/1._First_Program.html">1. First Program</a></li>
+<li class="heading"><span>2. Variables and data types</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/2._Variables_and_data_types/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/2._Variables_and_data_types/2.1_Type_Aliases.html">2.1 Type Aliases</a></li>
+<li class="heading"><span>2.2 Automatic Type Deductions</span></li>
+<ul>
+<li class="heading"><span>1. auto</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/2._Variables_and_data_types/2.2_Automatic_Type_Deductions/1._auto/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/2._Variables_and_data_types/2.2_Automatic_Type_Deductions/2._decltype.html">2. decltype</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/4._How_is_the_data_stored.html">4. How is the data stored</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/5._How_are_negative_numbers_stored.html">5. How are negative numbers stored</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/3._main,_Variables_and_Operators/6._Operators.html">6. Operators</a></li>
+</ul>
+<li class="heading"><span>4. Conditionals and while loops</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/1._Conditionals.html">1. Conditionals</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/2._Farenheit_to_Celsius.html">2. Farenheit to Celsius</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/3._Patterns.html">3. Patterns</a></li>
+<li class="heading"><span>4. Pratice problems</span></li>
+<ul>
+<li class="heading"><span>1. Patterns 1</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/1._Patterns_1/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/1._Patterns_1/1._Pattern1.html">1. Pattern1</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/1._Patterns_1/2._Square_Patterns.html">2. Square Patterns</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/1._Patterns_1/3._Triangle_Patterns.html">3. Triangle Patterns</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/1._Patterns_1/4._Character_Pattern.html">4. Character Pattern</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/1._Patterns_1/5._Interesting_Alphabets.html">5. Interesting Alphabets</a></li>
+</ul>
+<li class="heading"><span>2. Patterns 2</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/2._Patterns_2/1._Mirror_Triangles.html">1. Mirror Triangles</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/2._Patterns_2/2._Isosceles_Triangle.html">2. Isosceles Triangle</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/4._Conditionals_and_while_loops/4._Pratice_problems/2._Patterns_2/3._More_Patterns.html">3. More Patterns</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>5. For loop and bitwise ops</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/1._Bitwise_Operator.html">1. Bitwise Operator</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/2._Increment_Operators.html">2. Increment Operators</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/3.0_For_loop.html">3.0 For loop</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/3.1_For_each_loop.html">3.1 For each loop</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/4._Break_and_continue.html">4. Break and continue</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/5._Scope_of_variables.html">5. Scope of variables</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/6._cin_vs_cin.get().html">6. cin vs cin.get()</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/5._For_loop_and_bitwise_ops/7._Assignments.html">7. Assignments</a></li>
+</ul>
+<li class="heading"><span>6. Functions</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/6._Functions/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/6._Functions/1._What_are_functions.html">1. What are functions</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/6._Functions/2._How_function_calling_works.html">2. How function calling works</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/6._Functions/3._Scope_of_variables_w.r.t_functions.html">3. Scope of variables w.r.t functions</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/6._Functions/4._Call_by_Value.html">4. Call by Value</a></li>
+</ul>
+<li class="heading"><span>7. Arrays</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/7._Arrays/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/7._Arrays/1._Why_arrays.html">1. Why arrays</a></li>
+<li class="heading"><span>2. More On Arrays</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/7._Arrays/2._More_On_Arrays/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/7._Arrays/3._Arrays_and_memory.html">3. Arrays and memory</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/7._Arrays/4._Arrays_as_function_parameters.html">4. Arrays as function parameters</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/7._Arrays/5._Assignments.html">5. Assignments</a></li>
+</ul>
+<li class="heading"><span>8. Searching and Sorting</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/1.Linear_Search.html">1.Linear Search</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/2._Binary_Search.html">2. Binary Search</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/3._Merging_two_sorted_arrays.html">3. Merging two sorted arrays</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/4._Bubble_Sort.html">4. Bubble Sort</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/5._Insertion_Sort.html">5. Insertion Sort</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/6._Selection_Sort.html">6. Selection Sort</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/Analyzing_sorting_algorithms.html">Analyzing sorting algorithms</a></li>
+<li class="heading"><span>Assignments</span></li>
+<ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/8._Searching_and_Sorting/Assignments/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/9._Stringsx.html">9. Stringsx</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/Home.html">Home</a></li>
+<li><a class="" href="../../../../../1_CN_Intro_to_Cpp/notebook.html">notebook</a></li>
+</ul>
+<li class="heading"><span>2 CN Data Structures and OOP</span></li>
+<ul>
+<li class="heading"><span>1. Memory and Pointers</span></li>
+<ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Pointers</span></li>
+<ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/1._Pointer_Intro.html">1. Pointer Intro</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/2._Pointer_Arithmetic.html">2. Pointer Arithmetic</a></li>
+<li class="heading"><span>3. Arrays and Pointers</span></li>
+<ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/3._Arrays_and_Pointers/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/3._Arrays_and_Pointers/Assignment_questions.html">Assignment questions</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/3._Arrays_and_Pointers/questionnaire1&2&3.html">questionnaire1&2&3</a></li>
+</ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/4._Characters_and_Pointers.html">4. Characters and Pointers</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/5._Function_and_Pointers.html">5. Function and Pointers</a></li>
+<li class="heading"><span>6. Nested pointer</span></li>
+<ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/6._Nested_pointer/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/6._Nested_pointer/questionnaire4&5&6.html">questionnaire4&5&6</a></li>
+</ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/7._Address_Typecasting.html">7. Address Typecasting</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/1._Pointers/8._References_and_Pass_by_Reference.html">8. References and Pass by Reference</a></li>
+</ul>
+<li class="heading"><span>2. Dynamic Memory Allocation</span></li>
+<ul>
+<li><a class="" href="../../../../1._Memory_and_Pointers/2._Dynamic_Memory_Allocation/1._Dynamic_Allocation.html">1. Dynamic Allocation</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/2._Dynamic_Memory_Allocation/2._Dynamic_Memory_Allocation_of_2D_arrays.html">2. Dynamic Memory Allocation of 2D arrays</a></li>
+<li><a class="" href="../../../../1._Memory_and_Pointers/2._Dynamic_Memory_Allocation/questionnaire1.html">questionnaire1</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Time and Space Analysis</span></li>
+<ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Time</span></li>
+<ul>
+<li class="heading"><span>1. Order Complexity Analysis</span></li>
+<ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/1._Time/1._Order_Complexity_Analysis/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/1._Time/2._Linear_Search_Time_Complexity.html">2. Linear Search Time Complexity</a></li>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/1._Time/3._Insertion_Sort.html">3. Insertion Sort</a></li>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/1._Time/4._Selection_Sort.html">4. Selection Sort</a></li>
+<li class="heading"><span>5. Time complexity for recursive algorithms</span></li>
+<ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/1._Time/5._Time_complexity_for_recursive_algorithms/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/1._Time/6._Fibonacci_is_bad.html">6. Fibonacci is bad</a></li>
+</ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/2._Space.html">2. Space</a></li>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/exerciseques.html">exerciseques</a></li>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/zAssignments/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../2._Time_and_Space_Analysis/zAssignments/after_assignments.html">after assignments</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Binary Search Trees</span></li>
+<ul>
+<li class="heading"><span>Quizzes&Exercises</span></li>
+<ul>
+<li><a class="" href="../../../../3._Binary_Search_Trees/Quizzes&Exercises/Exercises.html">Exercises</a></li>
+</ul>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../../3._Binary_Search_Trees/zAssignments/Assignments.html">Assignments</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Recursion</span></li>
+<ul>
+<li class="heading"><span>1. Recursion Basics</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/1._Intro_to_Recursion.html">1. Intro to Recursion</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/2._Recursion_and_PMI.html">2. Recursion and PMI</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/3._Fibonacci_Number.html">3. Fibonacci Number</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/4._Recursion_with_Arrays.html">4. Recursion with Arrays</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/5._Approach_for_recursive_problems.html">5. Approach for recursive problems</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/questionnare2.html">questionnare2</a></li>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/zAssignments/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/zAssignments/after_assignments.html">after assignments</a></li>
+<li><a class="" href="../../../../3._Recursion/1._Recursion_Basics/zAssignments/lect_assignments.html">lect assignments</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Recursion Practice</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/2._Recursion_Practice/assignments.html">assignments</a></li>
+</ul>
+<li class="heading"><span>3. Applications of Recursion</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Recursion and Strings</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/1._Recursion_and_Strings/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/1._Recursion_and_Strings/assignments.html">assignments</a></li>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/1._Recursion_and_Strings/ms_and_qs.html">ms and qs</a></li>
+</ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/2._Merge_Sort.html">2. Merge Sort</a></li>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/3._Quick_Sort.html">3. Quick Sort</a></li>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/4._Strings.html">4. Strings</a></li>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/zAssignments/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Subsequences of Strings</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/zAssignments/1._Subsequences_of_Strings/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/zAssignments/1._Subsequences_of_Strings/lectureCodes.html">lectureCodes</a></li>
+</ul>
+<li class="heading"><span>2. Printing subsequence</span></li>
+<ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/zAssignments/2._Printing_subsequence/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../3._Recursion/3._Applications_of_Recursion/zAssignments/after_assignments.html">after assignments</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../3._Recursion/Test1.html">Test1</a></li>
+</ul>
+<li class="heading"><span>4. OOP Basics</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Intro and syntax</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/1._Principles_of_OOP.html">1. Principles of OOP</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/2._Classes.html">2. Classes</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/3._Objects.html">3. Objects</a></li>
+<li class="heading"><span>4. Functions(in class)</span></li>
+<ul>
+<li class="heading"><span>1. Getters and Setters</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/4._Functions(in_class)/1._Getters_and_Setters/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/4._Functions(in_class)/2._Core_member_functions.html">2. Core member functions</a></li>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/5._this_keyword.html">5. this keyword</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/1._Intro_and_syntax/exercise_ques.html">exercise ques</a></li>
+</ul>
+<li class="heading"><span>2. Special Functions</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Constructor   idea and syntax</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/1._Constructor_-_idea_and_syntax/0_index.html">0 index</a></li>
+<li class="heading"><span>1. The Copy constructor</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/1._Constructor_-_idea_and_syntax/1._The_Copy_constructor/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/1._Constructor_-_idea_and_syntax/1._The_Copy_constructor/1._Shallow_and_Deep_copy.html">1. Shallow and Deep copy</a></li>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/1._Constructor_-_idea_and_syntax/2._Feature_-_Delegating_constructors.html">2. Feature   Delegating constructors</a></li>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/2._Destructor.html">2. Destructor</a></li>
+<li class="heading"><span>3. Special functions details</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/2._Special_Functions/3._Special_functions_details/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Member constraints</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/3._Member_constraints/0_index.html">0 index</a></li>
+<li class="heading"><span>1. const</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/3._Member_constraints/1._const/1._const_fields_-_Intialization_List.html">1. const fields   Intialization List</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/3._Member_constraints/1._const/2._const_member_functions.html">2. const member functions</a></li>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/3._Member_constraints/2._static.html">2. static</a></li>
+</ul>
+<li class="heading"><span>4. Operator overloading</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/4._Operator_overloading/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/4._Operator_overloading/1._Binary_operator.html">1. Binary operator</a></li>
+<li class="heading"><span>2. Unary post</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/4._Operator_overloading/2._Unary_post/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/4._Operator_overloading/3._Unary_pre.html">3. Unary pre</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/4._Operator_overloading/exercises.html">exercises</a></li>
+<li class="heading"><span>zAssignment   Polynomial class</span></li>
+<ul>
+<li><a class="" href="../../../../4._OOP_Basics/4._Operator_overloading/zAssignment_-_Polynomial_class/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../4._OOP_Basics/5._Separate_Compilation.html">5. Separate Compilation</a></li>
+<li><a class="" href="../../../../4._OOP_Basics/6._Approach_for_writing_a_class.html">6. Approach for writing a class</a></li>
+</ul>
+<li class="heading"><span>5. Data Structures</span></li>
+<ul>
+<li class="heading"><span>1. Linear Data Structures</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/1._Vector_aka_Dynamic_Array.html">1. Vector aka Dynamic Array</a></li>
+<li class="heading"><span>2. Linked List</span></li>
+<ul>
+<li class="heading"><span>1. Linked List Basics</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/0_index.html">0 index</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/1._What_are_data_structures_and_why_are_they_important.html">1. What are data structures and why are they important</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/2._What_is_a_linked_list.html">2. What is a linked list</a></li>
+<li class="heading"><span>3. Basic Operations on LL</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/3._Basic_Operations_on_LL/1._Length_of_LL_(recursive).html">1. Length of LL (recursive)</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/3._Basic_Operations_on_LL/2._Insert_node_at_the_ith_position.html">2. Insert node at the ith position</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/3._Basic_Operations_on_LL/3._Delete_Node.html">3. Delete Node</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/3._Basic_Operations_on_LL/4._Delete_Node_recursive.html">4. Delete Node recursive</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/3._Basic_Operations_on_LL/5._Insert_Node_recursive.html">5. Insert Node recursive</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/3._Basic_Operations_on_LL/6._Print_the_Linked_List.html">6. Print the Linked List</a></li>
+</ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/8._Variations_of_LL.html">8. Variations of LL</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/Exercises.html">Exercises</a></li>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/0_index.html">0 index</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/1._Linear_Search_in_LL.html">1. Linear Search in LL</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/2._AppendLastNToFirst.html">2. AppendLastNToFirst</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/3._Eliminate_dupicates_from_the_array.html">3. Eliminate dupicates from the array</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/4._Print_LL_in_reverse.html">4. Print LL in reverse</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/5._Palindrome_Linked_List.html">5. Palindrome Linked List</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/1._Linked_List_Basics/zAssignments/Assignments.html">Assignments</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Popular LL problems</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/0_index.html">0 index</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/1._Midpoint_of_the_LL.html">1. Midpoint of the LL</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/2._Merging_two_sorted_LLs.html">2. Merging two sorted LLs</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/3._Merge_Sort_on_LL.html">3. Merge Sort on LL</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/4._Reverse_LL(recursive).html">4. Reverse LL(recursive)</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/5._Reverse_LL_using_2_pointers.html">5. Reverse LL using 2 pointers</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/6._Reverse_LL_recursive_-_easiest.html">6. Reverse LL recursive   easiest</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/7._Reverse_LL_Iterative.html">7. Reverse LL Iterative</a></li>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/2._Linked_List/2._Popular_LL_problems/zAssignments/Assignments.html">Assignments</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>3. Stack</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/0_index.html">0 index</a></li>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/1._Introduction_to_Stacks.html">1. Introduction to Stacks</a></li>
+<li class="heading"><span>2. Stack using arrays</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/2._Stack_using_arrays/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Stack using dynamic arrays</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/3._Stack_using_dynamic_arrays/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Templates</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/4._Templates/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Stacks with templates</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/5._Stacks_with_templates/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Stack using LL</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/6._Stack_using_LL/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>7. Inbuilt stack STL</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/3._Stack/7._Inbuilt_stack_STL/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>4. Queue</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Queue Introduction</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/1._Queue_Introduction/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Queue using Array   Code</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/2._Queue_using_Array_-_Code/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Queue using Dynamic Array   Code</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/3._Queue_using_Dynamic_Array_-_Code/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/3._zNamespaces.html">3. zNamespaces</a></li>
+<li class="heading"><span>4. Queue using LL</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/4._Queue_using_LL/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Inbuilt queue STL</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/4._Queue/5._Inbuilt_queue_STL/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>zTest 2</span></li>
+<ul>
+<li><a class="" href="../../../1._Linear_Data_Structures/zTest_2/Test2.html">Test2</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Trees</span></li>
+<ul>
+<li class="heading"><span>1. Generic Trees</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/1._Introduction_to_trees.html">1. Introduction to trees</a></li>
+<li class="heading"><span>2. Coding a tree</span></li>
+<ul>
+<li class="heading"><span>1. TreeNode class</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/2._Coding_a_tree/1._TreeNode_class/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/2._Coding_a_tree/2._Destructor.html">2. Destructor</a></li>
+<li class="heading"><span>3. IO for trees</span></li>
+<ul>
+<li class="heading"><span>1. Take input and print recursive</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/2._Coding_a_tree/3._IO_for_trees/1._Take_input_and_print_recursive/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/2._Coding_a_tree/3._IO_for_trees/2._Take_input_levelwise.html">2. Take input levelwise</a></li>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/2._Coding_a_tree/3._IO_for_trees/3._Output_level_wise.html">3. Output level wise</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Tree params</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/3._Tree_params/1._Number_of_nodes.html">1. Number of nodes</a></li>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/3._Tree_params/2._Height_of_a_tree_Exercise.html">2. Height of a tree Exercise</a></li>
+<li class="heading"><span>3. Depth of a Node</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/3._Tree_params/3._Depth_of_a_Node/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Number of leaf nodes</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/3._Tree_params/4._Number_of_leaf_nodes/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>4. Tree Traversals</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/1._Generic_Trees/4._Tree_Traversals/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2 .Binary trees</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/1._Intro_to_Binary_trees.html">1. Intro to Binary trees</a></li>
+<li class="heading"><span>2. Coding a Binary Tree</span></li>
+<ul>
+<li class="heading"><span>2. Input</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/2._Coding_a_Binary_Tree/2._Input/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Printing a tree</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/2._Coding_a_Binary_Tree/3._Printing_a_tree/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Params</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/3._Params/1._Count_nodes.html">1. Count nodes</a></li>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/3._Params/2._Diameter_of_a_BInary_tree.html">2. Diameter of a BInary tree</a></li>
+</ul>
+<li class="heading"><span>4. Traversals</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/4._Traversals/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Construction from traversal</span></li>
+<ul>
+<li class="heading"><span>1. Pre and In</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/5._Construction_from_traversal/1._Pre_and_In/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/5._Construction_from_traversal/2._Post_and_In.html">2. Post and In</a></li>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/5._Construction_from_traversal/3._Level_and_In.html">3. Level and In</a></li>
+</ul>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/zAssignments/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2._Trees/2_.Binary_trees/zAssignments/Assignments.html">Assignments</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Binary Search Trees</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/0_index.html">0 index</a></li>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/1._Intro_to_BST.html">1. Intro to BST</a></li>
+<li class="heading"><span>2. Coding BST    BST Node class</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/2._Coding_BST__-_BST_Node_class/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/3._Search_Operation_in_BST.html">3. Search Operation in BST</a></li>
+<li class="heading"><span>4. Common BST questions</span></li>
+<ul>
+<li class="heading"><span>1. Check if BST</span></li>
+<ul>
+<li class="heading"><span>1. Check BST 1</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/1._Check_BST_1/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/2._Check_BST_2.html">2. Check BST 2</a></li>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/3._Check_BST_3.html">3. Check BST 3</a></li>
+</ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/2._Construct_BST_from_sorted_array.html">2. Construct BST from sorted array</a></li>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/3._BST_to_sorted_LL.html">3. BST to sorted LL</a></li>
+<li class="heading"><span>4. Find Path</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/4._Find_Path/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>5. Variations of BST</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/5._Variations_of_BST/0_index.html">0 index</a></li>
+<li class="heading"><span>1. AVL trees</span></li>
+<ul>
+<li><a class="" href="../../../2._Trees/3._Binary_Search_Trees/5._Variations_of_BST/1._AVL_trees/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>3. Auxilary Data Structures</span></li>
+<ul>
+<li><a class="" href="../../0_index.html">0 index</a></li>
+<li class="heading"><span>1. Priority Queue and Heap</span></li>
+<ul>
+<li><a class="" href="../0_index.html">0 index</a></li>
+<li><a class="" href="../1._Intro_to_priority_queue.html">1. Intro to priority queue</a></li>
+<li><a class="" href="../2._Intro_to_Heap.html">2. Intro to Heap</a></li>
+<li><a class="" href="../3._The_two_kinds_of_heaps.html">3. The two kinds of heaps</a></li>
+<li><a class="" href="../4._Complete_Binary_Trees.html">4. Complete Binary Trees</a></li>
+<li><a class="" href="../5._Heap_-_Insertion_and_Deletion.html">5. Heap   Insertion and Deletion</a></li>
+<li><a class="" href="../7._In-place_heap.html">7. In place heap</a></li>
+<li><a class="" href="../8._STL_priority_queue.html">8. STL priority queue</a></li>
+<li class="heading"><span>9. Practice Problems</span></li>
+<ul>
+<li><a class="active" href="1._K_sorted_array.html">1. K sorted array</a></li>
+<li><a class="" href="2._K_smallest_elements.html">2. K smallest elements</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Hashmaps</span></li>
+<ul>
+<li><a class="" href="../../2._Hashmaps/0_index.html">0 index</a></li>
+<li><a class="" href="../../2._Hashmaps/1._Intro_to_hashMaps.html">1. Intro to hashMaps</a></li>
+<li><a class="" href="../../2._Hashmaps/2._Bucket_Array_and_hash_functions.html">2. Bucket Array and hash functions</a></li>
+<li><a class="" href="../../2._Hashmaps/3._Collision_Handling.html">3. Collision Handling</a></li>
+<li><a class="" href="../../2._Hashmaps/4._Time_complexity_and_time_factor.html">4. Time complexity and time factor</a></li>
+<li><a class="" href="../../2._Hashmaps/5._Coding_a_hashMap.html">5. Coding a hashMap</a></li>
+<li><a class="" href="../../2._Hashmaps/7._Question_-_Infinite_Stream.html">7. Question   Infinite Stream</a></li>
+<li class="heading"><span>8. STL map and set</span></li>
+<ul>
+<li class="heading"><span>1. map and unordered map</span></li>
+<ul>
+<li><a class="" href="../../2._Hashmaps/8._STL_map_and_set/1._map_and_unordered_map/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../2._Hashmaps/8._STL_map_and_set/2._set_and_unordered_set.html">2. set and unordered set</a></li>
+<li><a class="" href="../../2._Hashmaps/8._STL_map_and_set/3._Iterators_-_C++_Feature.html">3. Iterators   C++ Feature</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Tries</span></li>
+<ul>
+<li><a class="" href="../../3._Tries/0_index.html">0 index</a></li>
+<li><a class="" href="../../3._Tries/1._Introduction_to_Tries.html">1. Introduction to Tries</a></li>
+<li class="heading"><span>2. Coding a Trie</span></li>
+<ul>
+<li><a class="" href="../../3._Tries/2._Coding_a_Trie/1._TrieNode_class.html">1. TrieNode class</a></li>
+<li><a class="" href="../../3._Tries/2._Coding_a_Trie/2._Trie_basic_API.html">2. Trie basic API</a></li>
+</ul>
+<li class="heading"><span>3. Types of Tries</span></li>
+<ul>
+<li><a class="" href="../../3._Tries/3._Types_of_Tries/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../3._Tries/4._Huffman_Encoding.html">4. Huffman Encoding</a></li>
+</ul>
+</ul>
+<li class="heading"><span>4. Graphs</span></li>
+<ul>
+<li class="heading"><span>1. Graphs   Basics</span></li>
+<ul>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/1._Intro_to_graphs.html">1. Intro to graphs</a></li>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/2._Graph_Terminology.html">2. Graph Terminology</a></li>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/3._Graph_varieties.html">3. Graph varieties</a></li>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/4._Coding_a_Graph.html">4. Coding a Graph</a></li>
+<li class="heading"><span>5. Basic Traversals</span></li>
+<ul>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/5._Basic_Traversals/1._DFS.html">1. DFS</a></li>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/5._Basic_Traversals/2._BFS.html">2. BFS</a></li>
+</ul>
+<li class="heading"><span>6. Basic path operations</span></li>
+<ul>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/6._Basic_path_operations/1._Has_Path.html">1. Has Path</a></li>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/6._Basic_path_operations/2._Get_Path.html">2. Get Path</a></li>
+</ul>
+<li><a class="" href="../../../4._Graphs/1._Graphs_-_Basics/7._Problem_-_get_connected_components.html">7. Problem   get connected components</a></li>
+</ul>
+<li class="heading"><span>2. Graphs 2</span></li>
+<ul>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/0_index.html">0 index</a></li>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/1._Intro_to_MST.html">1. Intro to MST</a></li>
+<li class="heading"><span>2. Cycle Detection</span></li>
+<ul>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/2._Cycle_Detection/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. MST algorithms</span></li>
+<ul>
+<li class="heading"><span>1. Kruskal's Algo Complexity</span></li>
+<ul>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/2._MST_algorithms/1._Kruskal's_Algo_Complexity/0._Sorting_w.r.t_a_data_member_of_a_class.html">0. Sorting w.r.t a data member of a class</a></li>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/2._MST_algorithms/1._Kruskal's_Algo_Complexity/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/5._Prim's_Algorithm.html">5. Prim's Algorithm</a></li>
+<li><a class="" href="../../../4._Graphs/2._Graphs_2/6._Dijkstra's_Algorithm.html">6. Dijkstra's Algorithm</a></li>
+</ul>
+</ul>
+<li class="heading"><span>5. C++ STL</span></li>
+<ul>
+<li><a class="" href="../../../5._C++_STL/0_index.html">0 index</a></li>
+<li><a class="" href="../../../5._C++_STL/1._pair.html">1. pair</a></li>
+<li><a class="" href="../../../5._C++_STL/2._tuple.html">2. tuple</a></li>
+<li><a class="" href="../../../5._C++_STL/3._Bitset.html">3. Bitset</a></li>
+</ul>
+</ul>
+<li class="heading"><span>6. Algorithm Design</span></li>
+<ul>
+<li><a class="" href="../../../../6._Algorithm_Design/0._Brute_force.html">0. Brute force</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/0_index.html">0 index</a></li>
+<li class="heading"><span>3. Design Techniques</span></li>
+<ul>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/1._Divide_and_Conquer.html">1. Divide and Conquer</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/2._Greedy.html">2. Greedy</a></li>
+<li class="heading"><span>3. Dynamic Programming</span></li>
+<ul>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Fibonacci   1</span></li>
+<ul>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/1._Fibonacci_-_1/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/2._Fibonacci_-_2.html">2. Fibonacci   2</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/3._Min_Steps_to_1.html">3. Min Steps to 1</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/4._DP_summary.html">4. DP summary</a></li>
+<li class="heading"><span>5. Practice Problems</span></li>
+<ul>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/5._Practice_Problems/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/5._Practice_Problems/1._Min_Cost_Path.html">1. Min Cost Path</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/5._Practice_Problems/2._Largest_Common_Subsequence.html">2. Largest Common Subsequence</a></li>
+<li><a class="" href="../../../../6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/5._Practice_Problems/3._Edit_Distance.html">3. Edit Distance</a></li>
+</ul>
+</ul>
+</ul>
+<li><a class="" href="../../../../6._Algorithm_Design/4._NP_Completeness.html">4. NP Completeness</a></li>
+</ul>
+<li class="heading"><span>7. C++ Continued</span></li>
+<ul>
+<li><a class="" href="../../../../7._C++_Continued/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Macros and Global Variables</span></li>
+<ul>
+<li><a class="" href="../../../../7._C++_Continued/1._Macros_and_Global_Variables/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../7._C++_Continued/1._Macros_and_Global_Variables/questionnaire5_6_7.html">questionnaire5 6 7</a></li>
+</ul>
+<li><a class="" href="../../../../7._C++_Continued/2._Inline_and_Default_Arguments.html">2. Inline and Default Arguments</a></li>
+<li><a class="" href="../../../../7._C++_Continued/3._const_and_constexpr.html">3. const and constexpr</a></li>
+<li class="heading"><span>4. Exception Handling</span></li>
+<ul>
+<li><a class="" href="../../../../7._C++_Continued/4._Exception_Handling/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>8. OOP Continued</span></li>
+<ul>
+<li><a class="" href="../../../../8._OOP_Continued/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Relations between classes</span></li>
+<ul>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Inheritance</span></li>
+<ul>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/1_Inheritance_-_Concept.html">1 Inheritance   Concept</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/2_Access_specifiers_in_inheritance.html">2 Access specifiers in inheritance</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/3_Syntax.html">3 Syntax</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/4_Overriding,_Overloading,_Delegation.html">4 Overriding, Overloading, Delegation</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/5_1_Types_of_Inheritance_(specifier).html">5 1 Types of Inheritance (specifier)</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/5_2_Types_of_Inheritance_(level).html">5 2 Types of Inheritance (level)</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/5_Types_of_Inheritance.html">5 Types of Inheritance</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/6_Hybrid_Inheritance.html">6 Hybrid Inheritance</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/7_Liskov_Substitution_Principle 1.html">7 Liskov Substitution Principle 1</a></li>
+<li><a class="" href="../../../../8._OOP_Continued/1._Relations_between_classes/1._Inheritance/7_Liskov_Substitution_Principle.html">7 Liskov Substitution Principle</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>Codes</span></li>
+<ul>
+<li><a class="" href="../../../../Codes/DFS.cpp.html">DFS.cpp</a></li>
+</ul>
+<li><a class="" href="../../../../Home.html">Home</a></li>
+<li><a class="" href="../../../../notebook.html">notebook</a></li>
+</ul>
+<li class="heading"><span>3 CN Competitive programming</span></li>
+<ul>
+<li class="heading"><span>1. CP   intro and tools</span></li>
+<ul>
+<li class="heading"><span>1. Intro to Competitive Programming</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/1._What_is_CP.html">1. What is CP</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/2._Why_CP.html">2. Why CP</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/3._Various_Types_of_Errors.html">3. Various Types of Errors</a></li>
+<li class="heading"><span>4. How to approach a problem in a competitive programming contest</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/4._How_to_approach_a_problem_in_a_competitive_programming_contest/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/4._How_to_approach_a_problem_in_a_competitive_programming_contest/a._Reading_problem_statements.html">a. Reading problem statements</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/4._How_to_approach_a_problem_in_a_competitive_programming_contest/b._IO_Format.html">b. IO Format</a></li>
+<li class="heading"><span>c. Constraints</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/1._Intro_to_Competitive_Programming/4._How_to_approach_a_problem_in_a_competitive_programming_contest/c._Constraints/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>2. Time and Space Complexity</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/2._Time_and_Space_Complexity/0_index.html">0 index</a></li>
+<li class="heading"><span>Problems</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/2._Time_and_Space_Complexity/Problems/1._Kadane's_Algorithm.html">1. Kadane's Algorithm</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/2._Time_and_Space_Complexity/Problems/2._LeftRight_Sum.html">2. LeftRight Sum</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. IO Techniques</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/1._Console_streams.html">1. Console streams</a></li>
+<li class="heading"><span>2. C++ File streams</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/2._C++_File_streams/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/2._C++_File_streams/1._Writing_to_a_file.html">1. Writing to a file</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/2._C++_File_streams/2._Reading_from_a_file.html">2. Reading from a file</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/2._C++_File_streams/3._Serialization.html">3. Serialization</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/3._IO_Techniques/3._General_tricks.html">3. General tricks</a></li>
+</ul>
+<li class="heading"><span>4. Language Tools</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/0_index.html">0 index</a></li>
+<li class="heading"><span>1. STL   Data Structures</span></li>
+<ul>
+<li class="heading"><span>0. Conveniences</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/0._Conveniences/1._pair.html">1. pair</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/0._Conveniences/2._tuple.html">2. tuple</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Physical Data Structures</span></li>
+<ul>
+<li class="heading"><span>1. Vector</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/1._Physical_Data_Structures/1._Vector/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/1._Physical_Data_Structures/2._List.html">2. List</a></li>
+</ul>
+<li class="heading"><span>2. ADTs</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/2._String.html">2. String</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/4._Stack.html">4. Stack</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/5._Queue.html">5. Queue</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/6._Map.html">6. Map</a></li>
+<li class="heading"><span>7. Set</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/7._Set/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/8._Prioirty_Queue.html">8. Prioirty Queue</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Functions</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/2._Functions/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/2._Functions/1._Sorting.html">1. Sorting</a></li>
+<li class="heading"><span>2. Searching</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/2._Functions/2._Searching/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/2._Functions/3._Math_functions.html">3. Math functions</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/2._Functions/4._Utility_functions.html">4. Utility functions</a></li>
+</ul>
+<li class="heading"><span>3. Hussain Set</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/3._Hussain_Set/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>10. TreesX</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Tries</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/1._Tries/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/1._Tries/1._Tries_and_XOR.html">1. Tries and XOR</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/1._Tries/2._Maximum_XOR_value_of_subarray.html">2. Maximum XOR value of subarray</a></li>
+</ul>
+<li class="heading"><span>2. Segment Tree</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/1._Introduction_To_Segment_Tree.html">1. Introduction To Segment Tree</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/2._Building_a_segment_tree.html">2. Building a segment tree</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/3._Update_on_a_segment_tree.html">3. Update on a segment tree</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/4._Query_on_a_Segment_Tree.html">4. Query on a Segment Tree</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/5._Size_of_a_segment_tree.html">5. Size of a segment tree</a></li>
+<li class="heading"><span>Assignments</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/Assignments/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>zAssignments</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/2._Segment_Tree/zAssignments/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/10._TreesX/3._Fenwick_Tree.html">3. Fenwick Tree</a></li>
+</ul>
+<li class="heading"><span>11. Number Theory</span></li>
+<ul>
+<li class="heading"><span>1. Modulo Arithmetic</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/1._Modulo_Arithmetic/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Modulo operation</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/1._Modulo_Arithmetic/1._Modulo_operation/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/1._Modulo_Arithmetic/2._Modulo_properties.html">2. Modulo properties</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/1._Modulo_Arithmetic/3._Modulo_properties_continued.html">3. Modulo properties continued</a></li>
+<li class="heading"><span>4. Exercise   number of Binary Trees</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/1._Modulo_Arithmetic/4._Exercise_-_number_of_Binary_Trees/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Prime generator and GCD</span></li>
+<ul>
+<li class="heading"><span>1. Primes</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/1._Primes/1._Find_prime_numbers_between_1_and_N.html">1. Find prime numbers between 1 and N</a></li>
+<li class="heading"><span>2. Sieve of Eratosthenes</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/1._Primes/2._Sieve_of_Eratosthenes/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/1._Primes/3._Complexity_of_Sieve_of_Eratosthenes.html">3. Complexity of Sieve of Eratosthenes</a></li>
+</ul>
+<li class="heading"><span>2. Euclid's Algo</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/2._Euclid's_Algo/1._GCD_-_Euclid's_Algorithm.html">1. GCD   Euclid's Algorithm</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/2._Euclid's_Algo/2._Complexity_of_Euclid's_GCD_algorithm.html">2. Complexity of Euclid's GCD algorithm</a></li>
+<li class="heading"><span>3. Diophantine Equations</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/2._Euclid's_Algo/3._Diophantine_Equations/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Extended Euclidean Algorithm</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/2._Euclid's_Algo/4._Extended_Euclidean_Algorithm/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/3._Multiplicative_Modulo_Inverse.html">3. Multiplicative Modulo Inverse</a></li>
+<li class="heading"><span>4. Applications Of NT   1</span></li>
+<ul>
+<li class="heading"><span>1. Sachin and Varun</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/4._Applications_Of_NT_-_1/1._Sachin_and_Varun/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/2._Prime_generator_and_GCD/4._Applications_Of_NT_-_1/2._Advanced_GCD.html">2. Advanced GCD</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. Totient Function</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/3._Totient_Function/1._Euler's_Totient_Function.html">1. Euler's Totient Function</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/3._Totient_Function/2._LCM_Sum.html">2. LCM Sum</a></li>
+</ul>
+<li class="heading"><span>4. Solving equations using NT</span></li>
+<ul>
+<li class="heading"><span>1. Optimized Power Function</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/1._Optimized_Power_Function/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Modular exponentiation</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/2._Modular_exponentiation/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Matrix Exponentiation</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/3._Matrix_Exponentiation/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/3._Matrix_Exponentiation/1._Matrix_Exponentiation_-_More_Recurrence_Relation.html">1. Matrix Exponentiation   More Recurrence Relation</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/3._Matrix_Exponentiation/2._Matrix_Expo_Fibonacci_Sum.html">2. Matrix Expo Fibonacci Sum</a></li>
+</ul>
+<li class="heading"><span>4. Fermat's Little Theorem</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/4._Fermat's_Little_Theorem/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/5._Wilson's_Theorem.html">5. Wilson's Theorem</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/11._Number_Theory/4._Solving_equations_using_NT/6._Income_on_the_Nth_day.html">6. Income on the Nth day</a></li>
+</ul>
+</ul>
+<li class="heading"><span>12. Game Theory</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/12._Game_Theory/1._Intro_to_Game_Theory.html">1. Intro to Game Theory</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/12._Game_Theory/2._Game_of_Nim.html">2. Game of Nim</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/12._Game_Theory/3._Proof_of_Nim_Formula.html">3. Proof of Nim Formula</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/12._Game_Theory/4._Grundy_Numbers.html">4. Grundy Numbers</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/12._Game_Theory/5._Sprague-Grundy_Theorem.html">5. Sprague Grundy Theorem</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/12._Game_Theory/6._MinMax_Algorithm.html">6. MinMax Algorithm</a></li>
+</ul>
+<li class="heading"><span>13. Computational Geometry</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/13._Computational_Geometry/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/13._Computational_Geometry/1._Intro_to_Computational_Geometry.html">1. Intro to Computational Geometry</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/13._Computational_Geometry/2._Distance_betwn_point_and_line.html">2. Distance betwn point and line</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/13._Computational_Geometry/3._Area_of_a_polygon.html">3. Area of a polygon</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/13._Computational_Geometry/4._Intersection_of_two_lines.html">4. Intersection of two lines</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/13._Computational_Geometry/5._Convex_Hull.html">5. Convex Hull</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/14._FFT.html">14. FFT</a></li>
+<li class="heading"><span>15. HLD</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/15._HLD/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/15._HLD/1._Intro_to_HLD.html">1. Intro to HLD</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/15._HLD/2._Basics_of_HLD.html">2. Basics of HLD</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/15._HLD/3._Importance_of_HLD.html">3. Importance of HLD</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/15._HLD/4._Complexity_of_operations.html">4. Complexity of operations</a></li>
+</ul>
+<li class="heading"><span>2. Unconventional use of Searching And Sorting</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/1._Aggressive_Cows.html">1. Aggressive Cows</a></li>
+<li class="heading"><span>2. Inversion Count</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/2._Inversion_Count/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. chef</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/3._chef/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Variation</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/4._Variation/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Murder</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/5._Murder/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Momos Market</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/6._Momos_Market/type.html">type</a></li>
+</ul>
+<li class="heading"><span>7. Distribute Candies</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/7._Distribute_Candies/distribute_candies.html">distribute candies</a></li>
+</ul>
+<li class="heading"><span>8. Taj Mahal Entry</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/8._Taj_Mahal_Entry/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. RecursionX</span></li>
+<ul>
+<li class="heading"><span>1. BackTracking</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/1._BackTracking/0_index.html">0 index</a></li>
+<li class="heading"><span>1. N Queens Problem   Exercise</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/1._BackTracking/1._N_Queens_Problem_-_Exercise/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Rat And Maze problem</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/1._BackTracking/2._Rat_And_Maze_problem/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Sudoku Puzzle</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/1._BackTracking/3._Sudoku_Puzzle/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Crossword Problem</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/1._BackTracking/4._Crossword_Problem/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. BackTracking Assignment   BackTracking, Binary Search And Merge Sort Problems</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/2._BackTracking_Assignment_-_BackTracking,_Binary_Search_And_Merge_Sort_Problems/1._Find_Power_of_number.html">1. Find Power of number</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/2._BackTracking_Assignment_-_BackTracking,_Binary_Search_And_Merge_Sort_Problems/2._Sorting_the_Skills.html">2. Sorting the Skills</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/2._BackTracking_Assignment_-_BackTracking,_Binary_Search_And_Merge_Sort_Problems/3._Collecing_the_balls.html">3. Collecing the balls</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/3._RecursionX/2._BackTracking_Assignment_-_BackTracking,_Binary_Search_And_Merge_Sort_Problems/4._Sudoku_Solver.html">4. Sudoku Solver</a></li>
+</ul>
+</ul>
+<li class="heading"><span>4. Bit Manipulation</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Shift Operators</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/1._Shift_Operators/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Remaining Bitwise Operators</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/2._Remaining_Bitwise_Operators/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. ith bit</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/3._ith_bit/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/4._Flipping_a_specific_bit.html">4. Flipping a specific bit</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/5._Check_if_oddeven.html">5. Check if oddeven</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/6._Check_if_number_is_power_of_2.html">6. Check if number is power of 2</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/7._First_Set_bit.html">7. First Set bit</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/4._Bit_Manipulation/8._Clear_all_bits_from_the_LSB.html">8. Clear all bits from the LSB</a></li>
+</ul>
+<li class="heading"><span>5. Adhoc Problems</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Equalize CodeForces</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/1._Equalize_CodeForces/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. Rectangular Area</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/2._Rectangular_Area/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Light up the bulbs</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/3._Light_up_the_bulbs/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Circular List of students</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/4._Circular_List_of_students/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Interesting Sequences</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/5._Interesting_Sequences/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Winning Strategy</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/5._Adhoc_Problems/6._Winning_Strategy/0_index.html">0 index</a></li>
+</ul>
+</ul>
+<li class="heading"><span>6. Dynamic ProgrammingX</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/0_index.html">0 index</a></li>
+<li class="heading"><span>1. Classic problems</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/0_index.html">0 index</a></li>
+<li class="heading"><span>1. DP Basics   Fibonacci Number</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/1._DP_Basics_-_Fibonacci_Number/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>2. AlphaCode</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/2._AlphaCode/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>3. Longest Increasing subsequence</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/3._Longest_Increasing_subsequence/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>4. Largest Bitonic Subsequence</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/4._Largest_Bitonic_Subsequence/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>5. Coin change and stair case</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/5._Coin_change_and_stair_case/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>6. Minimum Cost</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/6._Minimum_Cost/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>7. Magic Grid</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/7._Magic_Grid/0_index.html">0 index</a></li>
+</ul>
+<li class="heading"><span>Assignments 1</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_1/1._Loot_Houses_-_80.html">1. Loot Houses   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_1/2._Maximum_Square_Matrix_With_All_Zeros_-_80.html">2. Maximum Square Matrix With All Zeros   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_1/3._Count_BSTs_-_80.html">3. Count BSTs   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_1/4._Boredom_-_80.html">4. Boredom   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_1/5._Minimum_Number_of_Chocolates_-_80.html">5. Minimum Number of Chocolates   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_1/6._Minimum_Count_-_80.html">6. Minimum Count   80</a></li>
+</ul>
+<li class="heading"><span>Assignments 2</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/1._Hasan_and_Trip_-_40.html">1. Hasan and Trip   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/2._Vanya_and_GCD_-_40.html">2. Vanya and GCD   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/3._Adjacent_Bit_Counts_-_80.html">3. Adjacent Bit Counts   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/4._Roy_and_Coin_Boxes_-_80.html">4. Roy and Coin Boxes   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/5._Jon_Snow_and_his_favourite_number_-_80.html">5. Jon Snow and his favourite number   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/6._Alyona_and_Spreadsheet_-_80.html">6. Alyona and Spreadsheet   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/Assignments_2/7._Angry_Children_-_80.html">7. Angry Children   80</a></li>
+</ul>
+</ul>
+<li class="heading"><span>2. Practice Problems</span></li>
+<ul>
+<li class="heading"><span>Assignment 1</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_1/1._LCS_-_Problem_-_80.html">1. LCS   Problem   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_1/2._Edit_Distance_-_Problem_-_80.html">2. Edit Distance   Problem   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_1/3._Balika_Vadhu-_Problem_-_120.html">3. Balika Vadhu  Problem   120</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_1/4._Knapsnack_-_Problem_-_120.html">4. Knapsnack   Problem   120</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_1/5._PARTY_-_Problem_-_80.html">5. PARTY   Problem   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_1/6._Subset_Sum_-_Problem_-_40.html">6. Subset Sum   Problem   40</a></li>
+</ul>
+<li class="heading"><span>Assignment 2</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/1._Miser_Man_-_40.html">1. Miser Man   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/2._Trader_Profit_-_80.html">2. Trader Profit   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/3._Charlie_and_Pilots_-_80.html">3. Charlie and Pilots   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/4._Square_Brackets_-_80.html">4. Square Brackets   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/5._Distinct_Subsequences_-_120.html">5. Distinct Subsequences   120</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/6._Smallest_Super-Sequence_-_80.html">6. Smallest Super Sequence   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/2._Practice_Problems/Assignment_2/7._Shortest_Subsequence_-_80.html">7. Shortest Subsequence   80</a></li>
+</ul>
+</ul>
+<li class="heading"><span>3. DP & Bitmasking</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/3._DP_&_Bitmasking/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/3._DP_&_Bitmasking/1._What_is_bitmasking.html">1. What is bitmasking</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/3._DP_&_Bitmasking/2._More_about_Bitmasking.html">2. More about Bitmasking</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/3._DP_&_Bitmasking/3._Dynamic_Programming_with_Bitmasking.html">3. Dynamic Programming with Bitmasking</a></li>
+<li class="heading"><span>4. Code Memoization and Recursion</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/6._Dynamic_ProgrammingX/3._DP_&_Bitmasking/4._Code_Memoization_and_Recursion/0_index.html">0 index</a></li>
+</ul>
+</ul>
+</ul>
+<li class="heading"><span>7. Greedy Method</span></li>
+<ul>
+<li class="heading"><span>1. Introduction to Greedy technique</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/1._Introduction_to_Greedy_technique/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/2._Minimum_Absolute_difference_in_an_array.html">2. Minimum Absolute difference in an array</a></li>
+<li class="heading"><span>Assignment 1</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_1/1._Min._Absolute_Difference_In_Array_-_40.html">1. Min. Absolute Difference In Array   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_1/2._Nikunj_and_Donuts_-_40.html">2. Nikunj and Donuts   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_1/3._Activity_Selection_-_80.html">3. Activity Selection   80</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_1/4._Fractional_Knapsack_-_40.html">4. Fractional Knapsack   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_1/5._Weighted_Job_Scheduling_-_80.html">5. Weighted Job Scheduling   80</a></li>
+</ul>
+<li class="heading"><span>Assignment 2</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_2/1._Perimeter_with_conditions_-_40.html">1. Perimeter with conditions   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_2/2._Problem_discussion_-_40.html">2. Problem discussion   40</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/7._Greedy_Method/Assignment_2/3._Winning_Lottery_-_40.html">3. Winning Lottery   40</a></li>
+</ul>
+</ul>
+<li class="heading"><span>8. GraphsX</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/1._Connected_Components.html">1. Connected Components</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/2._Permutation_Swaps.html">2. Permutation Swaps</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/3._Connected_Horses.html">3. Connected Horses</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/4._Strongly_connected_components.html">4. Strongly connected components</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/5._Bottom_of_the_graph.html">5. Bottom of the graph</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/6._Bipartite_Graph.html">6. Bipartite Graph</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/8._GraphsX/7._Fill_Matrix.html">7. Fill Matrix</a></li>
+</ul>
+<li class="heading"><span>9. String Algorithms</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/9._String_Algorithms/1._Pattern_Matching_Basics.html">1. Pattern Matching Basics</a></li>
+<li class="heading"><span>2. KMP algorithm</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/9._String_Algorithms/2._KMP_algorithm/0_index.html">0 index</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/9._String_Algorithms/3._Z-algorithm_for_pattern_matching.html">3. Z algorithm for pattern matching</a></li>
+</ul>
+<li class="heading"><span>Home</span></li>
+<ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/Home/0_index.html">0 index</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/Home/3._Resources.html">3. Resources</a></li>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/Home/cpbook.net.html">cpbook.net</a></li>
+</ul>
+<li><a class="" href="../../../../../3_CN_Competitive_programming/notebook.html">notebook</a></li>
+</ul>
+</ul>
+<li><a class="" href="../../../../../../5_projects.html">5 projects</a></li>
+<li><a class="" href="../../../../../../6_setup.html">6 setup</a></li>
+</ul>
+</ul>
+      </nav>
+      <article id="main" class="content">
+        <h1 id="1.-k-sorted-array">1. K sorted array <a class="heading-anchor-permalink" href="#1.-k-sorted-array">#</a></h1>
+<p>Created Sunday 16 February 2020</p>
+<p>What does k sorted array mean?
+Ans: An array in which after being sort, all the elements are at most k-1 positions away from the original position.</p>
+<ul>
+<li>Remember an element is 0 away from itself.</li>
+<li>Talking of index, for given i, we can go, i-k+1 or k-1+i.</li>
+</ul>
+<p>e.g This is not a k=2 sorted array, because 15 moves by two places, whereas maximum moves allowed are k-1.
+<img src="/assets/1._K_sorted_array-image-1.png" alt="">
+Q) Sort a k sorted array:
+A) To do this, we can do the following.For every index i, we can give a range. e.g for the zerowth index, we have posssibilties from index 0 to k-1. So we seek the minimum of them and put it at its place. We keep on doing this.</p>
+<ul>
+<li>The left part is always being sorted.</li>
+<li>We can swap elements to ensure in-place sort.</li>
+</ul>
+<p>Suppose we have size = multiple of k</p>
+<ol>
+<li>For one pass, we have T.C = k + k-1 + k-2 + … +1 = k(k+1)/2</li>
+<li>We need to make n/k passed.</li>
+<li>Total time = n/k * k(k+1)/2 = n(k+1)/2</li>
+</ol>
+<p>How is this related to priority queue?
+We need <strong>maximum</strong> elements at each instance.
+So we do heapify for the k stack. Then we say getMax(or pop).
+T.C for 1 pass: k.logk + logk.k = klogk.
+Total passes: n/k.
+T.C = 2<em>klogk</em>n/k = 2*k log(n) = O(nlog(k)) ~ O(n)</p>
+<p>Note: When you here maximum or minimum, flash heap.</p>
+
+      </article>
+    </div>
+    <script>
+      // Load contents.json if you need it
+    </script>
+    <script>
+      // FROM http://purecss.io/js/ui.js
+      (function(window, document) {
+        var layout = document.getElementById("layout"),
+          menu = document.getElementById("menu"),
+          menuLink = document.getElementById("menuLink");
+
+        function toggleClass(element, className) {
+          var classes = element.className.split(/\s+/),
+            length = classes.length,
+            i = 0;
+
+          for (; i < length; i++) {
+            if (classes[i] === className) {
+              classes.splice(i, 1);
+              break;
+            }
+          }
+          // The className is not found
+          if (length === classes.length) {
+            classes.push(className);
+          }
+
+          element.className = classes.join(" ");
+        }
+
+        menuLink.onclick = function(e) {
+          var active = "active";
+
+          e.preventDefault();
+          toggleClass(layout, active);
+          toggleClass(menu, active);
+          toggleClass(menuLink, active);
+        };
+      })(this, this.document);
+    </script>
+  </body>
+</html>
