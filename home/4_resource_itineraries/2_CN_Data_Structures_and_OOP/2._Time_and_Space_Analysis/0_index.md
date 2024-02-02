@@ -1,6 +1,0 @@
-# 2. Time and Space Analysis
-Created Sunday 05 January 2020
-
-[Exercise Questions](2._Time_and_Space_Analysis/exerciseques.md)
-[Excellent and pragmatic notes on time complexity](2._Time_and_Space_Analysis/TimeComplexity_Excellent_Notes.pdf)
-
