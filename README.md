@@ -1,3 +1,6 @@
+# dsa
+> previously (dsa_with_cpp)
+
 There are 3 notebooks:
 1. **Introduction to C++** - For beginners
 2. **Data Structures with C++** - covers basic algorithms also - search, sort
