@@ -177,3 +177,16 @@ Properties>>
 [Go to quote](#^quote-of-the-day)
 [Go to heading](#markdown-header-my-paragraph-title)
 [Go to heading](#^some-id)
+
+
+
+```mermaid
+graph RL
+
+Biology --> Chemistry
+Math <--> Chemistry
+A-.-B
+A-->|text|B
+
+id1[This is the text in the box]-->Math
+```
