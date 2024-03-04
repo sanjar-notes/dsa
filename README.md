@@ -25,11 +25,14 @@ Obsidian can automatically update internal links in your vault when you rename a
 Supported formats for internal links
 Obsidian supports the following link formats:
 
+Hello Destination ^some-id
+
 Wikilink: [[Three laws of motion]]
 Markdown: [Three laws of motion](Three%20laws%20of%20motion.md)
 The examples above are equivalent—they appear the same way in the editor, and links to the same note.
 
 Note
+# markdown-header-my-paragraph-title
 When using the Markdown format, make sure to URL encode the link destination. For example, blank spaces become %20.
 
 By default, due to its more compact format, Obsidian generates links using the Wikilink format. If interoperability is important to you, you can disable Wikilinks and use Markdown links instead.
@@ -172,3 +175,5 @@ Properties>>
 
 
 [Go to quote](#^quote-of-the-day)
+[Go to heading](#markdown-header-my-paragraph-title)
+[Go to heading](#^some-id)
