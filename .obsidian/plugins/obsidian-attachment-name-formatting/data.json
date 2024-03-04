@@ -1,8 +1,19 @@
 {
-  "enableAuto": true,
-  "excludedFolders": [],
+  "connectorOption": "Single",
+  "connector": "-",
+  "multipleConnectors": [
+    "_",
+    "_",
+    "_"
+  ],
+  "multipleConnectorsEnabled": [
+    true,
+    true,
+    true
+  ],
   "enableImage": true,
   "imageExtensions": [
+    true,
     true,
     true,
     true,
@@ -34,7 +45,18 @@
     true
   ],
   "pdf": "pdf",
-  "connector": "-",
+  "oneInMany": "Default",
+  "enableAuto": true,
+  "enableTime": false,
+  "enablePathHash": true,
+  "enableExcludeFileName": false,
+  "excludedFolders": [],
+  "subfolders": [
+    "",
+    "",
+    "",
+    ""
+  ],
   "exportCurrentRiboon": false,
   "exportUnusedRiboon": false,
   "exportCurrentDeletion": false,

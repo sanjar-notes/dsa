@@ -1,0 +1,35 @@
+/* Works fine with https://github.com/polyipseity/obsidian-terminal/releases/tag/3.14.0 */
+/* padding and margins */
+.view-content {
+  padding: 0px !important;
+  margin: 0px !important;
+  border-radius: 16px;
+}
+
+.terminal {
+  padding: 4px !important;
+  margin: 4px !important;
+  margin-top: 0 !important;
+}
+
+/* text */
+span.xterm-bold {
+  font-weight: 100 !important;
+}
+
+.xterm-rows {
+  font-weight: thin !important;
+  font-family: Monaco !important;
+  font-size: 13px !important;
+  color: #c7c7c7 !important;
+}
+
+/* block cursor replaced */
+.xterm-cursor {
+  width: 0.5px;
+}
+
+/* hide top bar of terminal */
+.workspace-tab-header-container:has(div[aria-label*="terminal" i]) {
+  /* display: none !important; */
+}

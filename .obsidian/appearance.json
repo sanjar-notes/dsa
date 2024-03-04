@@ -3,5 +3,8 @@
   "accentColor": "",
   "showViewHeader": false,
   "nativeMenus": false,
-  "theme": "system"
+  "theme": "system",
+  "enabledCssSnippets": [
+    "terminal"
+  ]
 }

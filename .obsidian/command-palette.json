@@ -1,8 +1,8 @@
 {
   "pinned": [
-    "file-explorer:reveal-active-file",
     "templater-obsidian:tooling/obsidian-templates/templater/title_and_date.md",
     "templater-obsidian:tooling/obsidian-templates/templater/w2h.md",
+    "file-explorer:reveal-active-file",
     "app:open-vault"
   ]
 }

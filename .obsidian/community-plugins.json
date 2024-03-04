@@ -2,9 +2,10 @@
   "obsidian-banners",
   "obsidian-linter",
   "obsidian-diagrams-net",
-  "obsidian-attachment-name-formatting",
-  "obsidian-hider",
   "table-editor-obsidian",
   "url-into-selection",
-  "templater-obsidian"
+  "templater-obsidian",
+  "terminal",
+  "obsidian-hider",
+  "obsidian-attachment-name-formatting"
 ]

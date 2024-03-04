@@ -2779,8 +2779,8 @@ var extensions = {
 var DEFAULT_SETTINGS = {
   connectorOption: "Single",
   connector: "_",
-  multipleConnectors: ["_", "_", "_"],
-  multipleConnectorsEnabled: [true, true, true],
+  multipleConnectors: ["_", "_", "_", "_"],
+  multipleConnectorsEnabled: [true, true, true, true],
   enableImage: true,
   imageExtensions: [true, true, true, true, true, true, true],
   image: "image",
@@ -2796,6 +2796,7 @@ var DEFAULT_SETTINGS = {
   oneInMany: "Default",
   enableAuto: true,
   enableTime: false,
+  enablePathHash: false,
   enableExcludeFileName: false,
   excludedFolders: [],
   subfolders: ["", "", "", ""],
@@ -2881,37 +2882,42 @@ var MultiConnectorModal = class extends import_obsidian.Modal {
     this.plugin = plugin;
   }
   checkValidity(value) {
-    const fileNamepatn = /\||<|>|\?|\*|:|\/|\\|#|\^|\[|\]"/;
+    const fileNamepatn = /\||<|>|\?|\*|:|\/|\\|#|\^|\[|\]"|%/;
     if (fileNamepatn.test(value)) {
       new WarningModal(this.app, "Invalid character for filename, will remove the character!").open();
       value = value.replace(fileNamepatn, "");
-      this.plugin.settings.multipleConnectors[0] = value;
       this.onClose();
       this.onOpen();
     }
+    return value;
   }
   onOpen() {
     const { contentEl } = this;
     contentEl.createEl("h2", {
       text: `Connectors`
     });
-    let optionLength;
     const optionNames = [
-      "File name and attachment type",
-      "Attachment type and index number",
-      "Index number and time"
+      "Connector before attachment type",
+      "Connector before index number",
+      "Connector before time suffix",
+      "Connector before path hash"
     ];
-    if (this.plugin.settings.enableExcludeFileName || this.plugin.settings.enableTime) {
-      optionLength = 3;
-    } else {
-      optionLength = 2;
+    let optionIndex = [1];
+    if (this.plugin.settings.enableTime && !this.plugin.settings.enablePathHash) {
+      optionIndex.push(2);
+    } else if (!this.plugin.settings.enableTime && this.plugin.settings.enablePathHash) {
+      optionIndex.push(3);
+    } else if (this.plugin.settings.enableTime && this.plugin.settings.enablePathHash) {
+      optionIndex.push(2, 3);
     }
-    const startPonit = this.plugin.settings.enableExcludeFileName ? 1 : 0;
-    for (let i = startPonit; i < optionLength; i++) {
+    if (!this.plugin.settings.enableExcludeFileName) {
+      optionIndex.unshift(0);
+    }
+    for (let i of optionIndex) {
       const connectorSetting = new import_obsidian.Setting(contentEl).setName(optionNames[i]);
       if (this.plugin.settings.multipleConnectorsEnabled[i]) {
         connectorSetting.addText((text) => text.setPlaceholder("_").setValue(this.plugin.settings.multipleConnectors[i] === "_" ? "" : this.plugin.settings.multipleConnectors[i]).onChange((value) => __async(this, null, function* () {
-          this.checkValidity(value);
+          value = this.checkValidity(value);
           this.plugin.settings.multipleConnectors[i] = value === "" ? DEFAULT_SETTINGS.multipleConnectors[i] : value;
           yield this.plugin.saveSettings();
         })));
@@ -3137,7 +3143,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
       const attachmentEnable = "enable" + attachmentType.slice(0, 1).toUpperCase() + attachmentType.slice(1);
       if (this.plugin.settings[attachmentEnable]) {
         typeSetting.addText((text) => text.setPlaceholder(attachmentType).setValue(this.plugin.settings[attachmentType] === attachmentType ? "" : this.plugin.settings[attachmentType]).onChange((value) => __async(this, null, function* () {
-          const fileNamepatn = /\||<|>|\?|\*|:|\/|\\|"/;
+          const fileNamepatn = /\||<|>|\?|\*|:|\/|\\|#|\^|\[|\]"|%/;
           if (fileNamepatn.test(value)) {
             new WarningModal(this.app, "Invalid character for filename, will remove the character!").open();
             value = value.replace(fileNamepatn, "");
@@ -3167,7 +3173,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
         yield this.plugin.saveSettings();
       }));
     });
-    new import_obsidian2.Setting(containerEl).setName("Automic formatting").setDesc("Automic formatting the attachments' name when changing note content").addToggle((toggle) => {
+    new import_obsidian2.Setting(containerEl).setName("Automatic formatting").setDesc("Automatic formatting the attachments' name when changing note content").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.enableAuto).onChange((value) => __async(this, null, function* () {
         this.plugin.settings.enableAuto = value;
         yield this.plugin.saveSettings();
@@ -3175,11 +3181,23 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
     });
     new import_obsidian2.Setting(containerEl).setName("Add modify time after index").setDesc("Add modify time after index to track the change time in file name").addToggle((toggle) => {
       toggle.setValue(this.plugin.settings.enableTime).onChange((value) => __async(this, null, function* () {
-        if (this.plugin.settings.enableExcludeFileName) {
-          new WarningModal(app, "Cannot exclude time suffix when enable exclude the note name!").open();
+        if (this.plugin.settings.enableExcludeFileName && !this.plugin.settings.enablePathHash) {
+          new WarningModal(app, "At least enable time suffix or path hash when enable exclude the note name!").open();
           this.plugin.settings.enableTime = true;
         } else {
           this.plugin.settings.enableTime = value;
+        }
+        yield this.plugin.saveSettings();
+        this.display();
+      }));
+    });
+    new import_obsidian2.Setting(containerEl).setName("Add path hash at end of attachment name").setDesc("For uniqueness in attachment names if there are note files with the same name (but at different levels)").addToggle((toggle) => {
+      toggle.setValue(this.plugin.settings.enablePathHash).onChange((value) => __async(this, null, function* () {
+        if (this.plugin.settings.enableExcludeFileName && !this.plugin.settings.enableTime) {
+          new WarningModal(app, "At least enable time suffix or path hash when enable exclude the note name!").open();
+          this.plugin.settings.enablePathHash = true;
+        } else {
+          this.plugin.settings.enablePathHash = value;
         }
         yield this.plugin.saveSettings();
         this.display();
@@ -3255,7 +3273,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
       });
     }
     containerEl.createEl("h2", { text: "Log Setting" });
-    new import_obsidian2.Setting(containerEl).setName("Logging Attahment Name Changes").setDesc("Logging the attachmnet name changes into file.").addToggle((toggle) => toggle.setValue(this.plugin.settings.usingLog).onChange((value) => __async(this, null, function* () {
+    new import_obsidian2.Setting(containerEl).setName("Logging Attachment Name Changes").setDesc("Logging the attachmnet name changes into file.").addToggle((toggle) => toggle.setValue(this.plugin.settings.usingLog).onChange((value) => __async(this, null, function* () {
       this.plugin.settings.usingLog = value;
       yield this.plugin.saveSettings();
       this.display();
@@ -3285,6 +3303,7 @@ var ANFSettingTab = class extends import_obsidian2.PluginSettingTab {
 // src/main.ts
 var path = __toModule(require("path"));
 var fs = require("fs");
+var crypto = require("crypto");
 var JSZip = require_jszip_min();
 var timeInterval = new Date();
 var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
@@ -3375,7 +3394,8 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
         name: "Scan Files in the Folder",
         callback: () => {
           new FolderScanModal(this.app, this, (folder) => {
-            console.log(folder);
+            console.log(`Will scan the folder: ${folder}`);
+            this.handleLog(`Will scan the folder: ${folder}`);
             new FolderRenameWarningModal(this.app, (result) => __async(this, null, function* () {
               if (result) {
                 const fileList = this.app.vault.getFiles().filter((file) => file.path.includes(folder));
@@ -3414,6 +3434,13 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
       }
     }
   }
+  getVaultAttachmentFolderPath() {
+    return __async(this, null, function* () {
+      yield this.app.vault.adapter.read(this.app.vault.configDir + "/app.json").then((config) => {
+        this.vaultAttachmentFolderPath = JSON.parse(config).attachmentFolderPath;
+      });
+    });
+  }
   handleAttachmentNameFormatting(file, check = false) {
     return __async(this, null, function* () {
       if (this.app.workspace.getActiveFile() !== file && !check || this.renaming) {
@@ -3421,6 +3448,7 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
       }
       this.renaming = true;
       timeInterval = new Date();
+      yield this.getVaultAttachmentFolderPath();
       console.log("Formatting attachments...");
       const attachments = this.app.metadataCache.getFileCache(file);
       console.log("Getting attachments list...");
@@ -3472,7 +3500,7 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
           let num = 1;
           for (const attachmentFile of attachmentFiles) {
             if (attachmentFile instanceof import_obsidian3.TFile) {
-              let parent_path = this.app.vault.config.attachmentFolderPath;
+              let parent_path = this.vaultAttachmentFolderPath;
               if (parent_path.startsWith("./")) {
                 parent_path = path.join(file.parent.path, parent_path);
               }
@@ -3489,14 +3517,30 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
                 const date_String = "" + timeInterval.getFullYear() + ("0" + (timeInterval.getMonth() + 1)).slice(-2) + ("0" + timeInterval.getDate()).slice(-2) + ("0" + timeInterval.getHours()).slice(-2) + ("0" + timeInterval.getMinutes()).slice(-2) + ("0" + timeInterval.getSeconds()).slice(-2);
                 baseNameComponent.push(date_String);
               }
+              if (this.settings.enablePathHash) {
+                const appendPathHashValue = crypto.createHash("md5").update(file.parent.path).digest("hex").slice(0, 8);
+                baseNameComponent.push(appendPathHashValue);
+              }
               let newName = "";
               if (this.settings.connectorOption === "Multiple") {
                 newName += baseNameComponent[0];
-                const connectorShift = this.settings.enableExcludeFileName ? 0 : 1;
+                let optionIndex = [1];
+                if (this.settings.enableTime && !this.settings.enablePathHash) {
+                  optionIndex.push(2);
+                } else if (!this.settings.enableTime && this.settings.enablePathHash) {
+                  optionIndex.push(3);
+                } else if (this.settings.enableTime && this.settings.enablePathHash) {
+                  optionIndex.push(2, 3);
+                }
+                if (!this.settings.enableExcludeFileName) {
+                  optionIndex.unshift(0);
+                }
+                let connectors = [];
+                for (let i of optionIndex) {
+                  connectors.push(this.settings.multipleConnectors[i]);
+                }
                 for (let i = 1; i < baseNameComponent.length; i++) {
-                  if (this.settings.multipleConnectorsEnabled[i - connectorShift]) {
-                    newName += this.settings.multipleConnectors[i - connectorShift];
-                  }
+                  newName += connectors[i - 1];
                   newName += baseNameComponent[i];
                 }
                 newName += "." + attachmentFile.extension;
@@ -3508,7 +3552,10 @@ var AttachmentNameFormatting = class extends import_obsidian3.Plugin {
                   yield this.app.vault.createFolder(path.join(parent_path, subfolder));
                 }
               }));
-              const fullName = path.join(parent_path, subfolder, newName).replaceAll("\\", "/");
+              let fullName = path.join(parent_path, subfolder, newName).replaceAll("\\", "/");
+              if (fullName.startsWith("/")) {
+                fullName = fullName.slice(1);
+              }
               const destinationFile = this.app.vault.getAbstractFileByPath(fullName);
               if (destinationFile && destinationFile !== attachmentFile) {
                 const destinationFile_path = destinationFile.path.substring(0, destinationFile.path.length - destinationFile.name.length);
