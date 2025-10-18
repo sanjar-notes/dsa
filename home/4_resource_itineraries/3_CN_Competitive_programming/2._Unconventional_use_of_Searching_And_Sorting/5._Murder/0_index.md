@@ -37,5 +37,5 @@ Hence the sum is 15 (0+1+1+9+4).
 *****
 
 This is nothing but counting anti inversion - nlogn time. Using the idea of Divide and Conquer.
-[murder.cpp](5._Murder/murder.cpp)
+[murder.cpp](/assets/murder.cpp)
 

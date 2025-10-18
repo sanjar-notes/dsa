@@ -19,6 +19,6 @@ Given an array find the longest increasing subsequence.
    - A caveat here: It can happen that a sequence is reset. And the big memo values lie far to the left. To capture these large values, we should search the whole array to the left, updating only if arr[left] < arr[i] && (1+val[left]) < val[i]. Do set val[i] = 1 before the inner loop starts.
    - O(n^2^) time, O(n) space.
 
-[LIS.cpp](3._Longest_Increasing_subsequence/LIS.cpp)
+[LIS.cpp](/assets/LIS.cpp)
 
 Note: We skipped a step, i.e we directly used bottom-up approach.

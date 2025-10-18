@@ -51,7 +51,7 @@ CALIFORNIA
 * Then we'll try to place them one by one.
 * We have to also take into account that multiple words can cross each other. An intersection must be the same letter.
 
-[./crossword.cpp](crossword.cpp)
+[./crossword.cpp](/assets/crossword.cpp)
 
 *****
 
