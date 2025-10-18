@@ -22,5 +22,5 @@ If we flipped = 2
 
 *****
 
-[equalize.cpp](1._Equalize_CodeForces/equalize.cpp)
+[equalize.cpp](/assets/equalize.cpp)
 

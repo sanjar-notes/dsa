@@ -16,7 +16,7 @@ Created Wednesday 01 July 2020
    - Order of steps matter here.
 
 ![](../../../../../../assets/0_index-image-1-b729fa54.png)
-[staircase.cpp](5._Coin_change_and_stair_case/staircase.cpp)
+[staircase.cpp](/assets/staircase.cpp)
 
 2. Coin change problem: Given denominations D~0~, D~1~, D~2~ ... and a value n. Count the number of ways to make up n using the denominations.
    - Ending with coin denomination and solving like Staircase - wrong, order does not matter here.
@@ -27,4 +27,4 @@ Created Wednesday 01 July 2020
    - We can see that each denom can at max occupy n/denarr[i] space. So we can create an array of array. Space complexity will still be the same. n^2^ to n^2^/2.
 
 ![](../../../../../../assets/0_index-image-2-b729fa54.png) ![](../../../../../../assets/0_index-image-3-b729fa54.png)
-[coinchange.cpp](5._Coin_change_and_stair_case/coinchange.cpp)
+[coinchange.cpp](/assets/coinchange.cpp)

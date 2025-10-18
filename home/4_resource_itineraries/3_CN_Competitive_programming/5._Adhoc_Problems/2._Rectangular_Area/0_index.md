@@ -45,4 +45,4 @@ Code:
 5. Traverse neff from right to left. area+=(p.x-p~left~.x)\*p.y
 6. We don't need to multiply 4. As we never subtracted the input by 4. No floats required, easy.
 
-[rect_area.cpp](2._Rectangular_Area/rect_area.cpp)
+[rect_area.cpp](/assets/rect_area.cpp)
