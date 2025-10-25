@@ -65,6 +65,7 @@ Note:
 - Handling deduplication: 
 	- Requirement: we must make sure each configuration is processed only once (especially if order of decisions does not matter).
 	- How to do it: by creating a structure that solves dedup automatically. Bottom-up and top-down arent always equivalent, for example.
+- Seen list required or not? Some problems don't require it. Some do. And the ones that do, should reset seen during the backtracking phase (so that portion of the problem can be checked again). i.e. seen is only used for current_path marking. And a boolean is enough here.
 
 
 ## Subsets
