@@ -517,3 +517,24 @@ Note:
 - `unordered_map` - syntax same as set. not sorted. unique.
 - `unordered_multimap` - syntax same as set. non-sorted, non-unique. USP: keyed, fast access, insert, deletion
 - Satellite data is already covered in all map types, they support `<int, T>` by default.
+
+## Bitset
+Useful in fast solving of problems
+```cpp
+bitset<32> my_set; // clear constructor all 0s
+bitset<32> my_set (13); // stores bit representation of the number
+bitset<sizeof(int) * 8> my_set; // dynamic size without experimenation
+
+my_set.test(i); // access bit
+my_set.set(i, val=1); // set value, default 1
+my_set.reset(i); // set to 0
+my_set.flip(i);
+
+my_set.to_ulong(); // set to long, convert to int if needed
+my_set.to_string();
+
+my_set.any(); // true if no bit is 0
+my_set.all(); // true if all bits 1
+my_set.none(); // true if all bits 0
+my_set.count(); // number of set bits
+```
