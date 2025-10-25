@@ -55,6 +55,9 @@ The common thing in all backtracking problems is the "decision you make".
 
 
 Note:
+- Define the decision transition function early on based on problem:
+	- Subsets - to include or not to include.
+	- Permutations - what will be the next element (and swap it with current head). *it can get a bit involved like this*.
 - Storage - Usually, we want to traverse over all possible decisions, instead of storing them. This may mean keeping a max size array (i.e. max candidate size) and doing operations on it as we traverse through the decision
 - Efficient - Backtracking means enumeration, but it should be efficient - we should backtrack as soon as we know forward decisions in the current path are doomed to fail, or have already been seen. i.e. *early backtrack and avoid duplicate is important in backtracking*.
 - Order of output - Another thing in backtracking is the order of output - so if the answer needs to be in sorted order, we must use recursion instead of bitwise-gen (suppose problem is subset gen), since recursion maintains sorted order by default.
