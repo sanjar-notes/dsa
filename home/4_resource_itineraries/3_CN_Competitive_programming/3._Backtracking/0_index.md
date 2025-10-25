@@ -58,7 +58,9 @@ Note:
 - Storage - Usually, we want to traverse over all possible decisions, instead of storing them. This may mean keeping a max size array (i.e. max candidate size) and doing operations on it as we traverse through the decision
 - Efficient - Backtracking means enumeration, but it should be efficient - we should backtrack as soon as we know forward decisions in the current path are doomed to fail, or have already been seen. i.e. *early backtrack and avoid duplicate is important in backtracking*.
 - Order of output - Another thing in backtracking is the order of output - so if the answer needs to be in sorted order, we must use recursion instead of bitwise-gen (suppose problem is subset gen), since recursion maintains sorted order by default.
-- Handling deduplication: we must make sure each configuration is processed only once (especially if order of decisions does not matter).
+- Handling deduplication: 
+	- Requirement: we must make sure each configuration is processed only once (especially if order of decisions does not matter).
+	- How to do it: by creating a structure that solves dedup automatically. Bottom-up and top-down arent always equivalent, for example.
 
 
 ## Subsets
