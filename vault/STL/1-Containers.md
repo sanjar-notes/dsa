@@ -66,14 +66,14 @@ s.pop_back(); // O(1)
 s.clear(); // delete all elements
 
 // find substring (or single character)
-s.find(s2); // first occurrence of s2, -1 if not found, // O(n)
+s.find(s2); // returns index of first occurrence of s2, (string::npos) if not found, // O(n)
 	s.find(s2, len); // first occurence of s2 looking from `len` index onwards
 	s.rfind(s2); // last occurrence of s2
 
 // existence - // O(n)
 s.starts_with();
 s.ends_with();
-s.find() != -1; // check existence
+s.find() != string::npos; // check existence
 	s.contains(); // c++23 (CLI c++2b)
 
 // iterator
