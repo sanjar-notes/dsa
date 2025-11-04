@@ -125,11 +125,16 @@ bool isSorted = is_sorted(v.begin(), v.end());
 
 ## Comparison
 ### Equality
-Compare two ranges.
+Compare two ranges (of any data structure)
 ```cpp
 equal(startIt1, endIt1, startIt2, endIt2);
 	equal(startIt1, endIt1, startIt2, endIt2, customFunctor); // [](a, b){ return a==b; }
 ```
+
+For comparing whole containers that are "stable", just check `==`. 
+So works for `vector`, `unordered_set`, `unordered_map`, `queue`, `stack`, `deque`.
+Doesn't work for `priority_queue`, `multimap`, `multiset`.
+
 ## Alphabetic order
 ```cpp
 lexicographic_compare(startIt1, endIt1, startIt2, endIt2);
