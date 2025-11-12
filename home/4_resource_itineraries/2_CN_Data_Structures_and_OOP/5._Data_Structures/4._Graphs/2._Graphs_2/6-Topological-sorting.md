@@ -58,3 +58,60 @@ w.r.t to a DAG this means a node that's at the end of a trail (long DFS trail). 
 Lets take example of satisfying dependencies.
 - To check feasibility - determine if the graph is DAG or not.
 - Doing order (i.e. find an order) - Do work in the topological ordering (left to right). This works because when we arrive at a node, we its dependencies (that would have been to the left) have surely been completed.
+
+## Code
+https://leetcode.com/problems/course-schedule-ii/
+Note that both cycle detect and topological sort can be done in one go.
+```cpp
+class Solution {
+public:
+    bool detectCycleAndCollect(int node, vector<vector<int>>& adj,
+                               vector<int>& seen, vector<int>& bag) {
+        if (seen[node] == 2) {
+            // edge going to stable island is fine
+            return false;
+        }
+
+        if (seen[node] == 1) {
+            return true; // cycle (in current path)
+        }
+
+        seen[node] = 1; // current path
+
+        for (auto nbr : adj[node]) {
+            // parent is also a cycle so no check needed
+            if (detectCycleAndCollect(nbr, adj, seen, bag))
+                return true;
+        }
+
+        seen[node] = 2; // stable down the tree, so mark this too as stable
+        bag.push_back(node);
+
+        return false; // no cycles
+    }
+    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
+        vector<int> bag;
+        vector<vector<int>> adj(numCourses, vector<int>());
+        vector<int> seen(numCourses,
+                         0); // for cycle detect on a directed graph
+        // we need to check if there's a seen element on the current trail
+        // and also handle envelopes. so marking current trail is important
+        // we can use a boolean definitely, but using a (0, 1, 2) will help
+        // avoid unnecessary island traversal
+
+        for (auto pair_ : prerequisites) {
+            adj[pair_[0]].push_back(pair_[1]); // 0 needs 1
+        }
+
+        for (int i = 0; i < numCourses; i++) {
+            // seen[i] == 2 can happen here, and that says its a stable island,
+            // ignore seen[i] == 1 never happens, since we'd already ended the
+            // algorithm
+            if (seen[i] == 0 && detectCycleAndCollect(i, adj, seen, bag))
+                return {}; // cycle found so return
+        }
+
+        return bag;
+    }
+};
+```
