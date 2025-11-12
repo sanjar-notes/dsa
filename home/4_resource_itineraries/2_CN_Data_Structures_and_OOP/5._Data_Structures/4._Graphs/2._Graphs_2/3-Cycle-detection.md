@@ -22,47 +22,69 @@ Implementation wise, we can just keep an extra array called pathVisited. We will
 
 Note: 
 - parent check is not needed for undirected graphs, as cycle with a parent is possible (2 edges going either ways from node to parent).
-- If specified, would need to check for self cycles too.
+- If specified, would need to check for self cycles topog.
+- Cases
+	1. Boolean seen. Works but slow.
+		- When you encounter a node, mark it true, and when you backtrack from it, mark it false. Note that this works in both cases, if there was a cycle down the line or not.
+		- What about islands? In the case above where you backtrack to report answer, and don't set the node to false. DOESNT MATTER, as you'd be returning true in the island loop too.
+		- Con: will travel repeated islands for each node. Even if you set stuff to false (above) this'd still happen.
+	2. Numbers. Work and are fast.
+		- Use numbers (0 = unseen, 1 = seen, 2 = stable).
+		- Case: one side of a tree has no cycle, and other just points to this side. Still it's not a cycle. Yes there's a common ancestor but its a directed graph so its fine. This is the case when you encounter a 2 when you begin the DFS. `return false`.
+		- Case (and there is a cycle is the worst case): envelop return is fine in case of quick reporting. In this case, part of an island may have 2's and part of it may contain a cycle. But in this case, the envelop loop will report true and not continue forward. So this works.
+		- Case (there is no cycle is the worst case): early check in envelop iteration start is possible. You'll have only ever have 2's. Encountering a 1 isnt possible, because if something was stuck at 1, it means it had a cycle, and we'd have returned the result, and not continued the loop.
 
 ## Code
 [Problem](https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1)
 
 ```cpp
 class Solution {
-  public:
-    // Function to detect cycle in a directed graph.
-    // returns true if find a cycle
-    // DFS
-    bool helper(int start, int V, vector<int> adj[], vector<int>& vis, int parent) {
-        vis[start] = 2; // add self to trail
+public:
+    bool isCycle(int node, vector<vector<int>>& adj, vector<int>& seen,
+                 int label) {
+        if (seen[node] == 2)
+            return false; // connecting to a sibling subgraph that has no
+                          // cycles, is fine. (there's a common ancestor, but
+                          // they're directed, so no net cycle)
 
-        bool isCycle = false;
-        for(auto nbr: adj[start]) {
-            // if(nbr == parent) continue; // false cycle.
-            // WRONG, parent means a valid cycle node
-            // ... in directed (nodes have both ways connection)
-
-            if (vis[nbr] == 2 || nbr == start || (!vis[nbr] && helper(nbr, V, adj, vis, start))) {
-                // true cycle and on same path
-                // self cycle
-                // new node discover
-                isCycle = true;
-                break;
-            }
+        if (seen[node] == 1) {
+            return true;
         }
 
-        vis[start] = 1; // leave trail, but remain visited
+        seen[node] = 1; // mark current trail
 
-        return isCycle;
-    }
-    bool isCyclic(int V, vector<int> adj[]) {
-        // can be unconnected, so check all graphs (whole forest)
-        vector<int> vis (V, 0);
-        for(int i = 0; i < V; i++) {
-            if(!vis[i] && helper(i, V, adj, vis, -1)) return true;
+        for (auto nbr : adj[node]) {
+            // the parent will automatically be ignored in a directed graph
+            if (isCycle(nbr, adj, seen, label))
+                return true;
         }
+
+        seen[node] =
+            2; // if you reached this point, means every edge that could reach
+               // here, from this side's (tree analogy) graph is checked.
 
         return false;
+    }
+
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        // adjacency lists are fine for DFS
+        vector<vector<int>> adj(numCourses, vector<int>());
+        vector<int> seen(numCourses, 0); // 0-unseen, 1-current-trail, 2 - part
+                                         // of noncycle island, so fine.
+
+        for (auto pair_ : prerequisites) {
+            adj[pair_[0]].push_back(pair_[1]);
+        }
+
+        for (int i = 0; i < numCourses; i++) {
+            // seen[i] = 2 means no cycle
+            // seen[i] = 1 (won't ever happen), because if there was a cycle in
+            // an island, we won't continue the envelope
+            if (seen[i] == 0 && isCycle(i, adj, seen, i))
+                return false;
+        }
+
+        return true;
     }
 };
 ```
