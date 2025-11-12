@@ -23,6 +23,8 @@ Implementation wise, we can just keep an extra array called pathVisited. We will
 Note: 
 - parent check is not needed for undirected graphs, as cycle with a parent is possible (2 edges going either ways from node to parent).
 - If specified, would need to check for self cycles topog.
+- The framing of "stable", "islands" is very useful. In all directed graphs.
+- 
 - Cases
 	1. Boolean seen. Works but slow.
 		- When you encounter a node, mark it true, and when you backtrack from it, mark it false. Note that this works in both cases, if there was a cycle down the line or not.
