@@ -23,7 +23,6 @@ Note:
 - Q: Why can't there be two (or more) equal sized subsequences ending at an index?
 	- A: Suppose there were two sequences of equal length. What about their ending elements, if they are different, then one can accept the other, making it longer by one. if the last elements are the same, similar logic applies to the prefixes (ignore the last element). So, there can only be one longest-increasing-subsequence at a given index. If two are not possible, more with same length are also not possible.
 
-
 ## War Story - Text Compression for Bar Codes
 A company was using a greedy algorithm to do something, under the assumption that assessing all possibilities was not possible. It turns out a DP solution was possible.
 

@@ -6,6 +6,7 @@ tags:
 # 10. Dynamic Programming
 Created Tue Aug 6, 2024 at 8:46 PM
 
+#dp
 ## Context
 - The most challenging algorithmic problems involve optimization
 - Optimization problem (algorithms) should:
