@@ -5,6 +5,8 @@ tags:
 # 16. Greedy Algorithms
 Created Tue Aug 13, 2024 at 1:08 AM
 
+#greedy
+
 ## Context
 Dynamic programming (when applicable) considers all possibilities when solving the problem.
 

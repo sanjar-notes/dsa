@@ -1,6 +1,7 @@
 # 3. Sorting
 Created Sat May 18, 2024 at 11:14 AM
 
+#sorting
 ## Why sorting
 Sorting is an important subroutine in many algorithms.
 Even big data stuff like MapReduce keeps stuff sorted just because it makes operations faster.

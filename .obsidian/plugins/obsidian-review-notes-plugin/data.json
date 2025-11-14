@@ -571,6 +571,30 @@
     {
       "path": "vault/Untitled.base",
       "filename": "Untitled"
+    },
+    {
+      "path": "home/4_resource_itineraries/5-CLRS/4-Advanced-Design-and-Analysis-Techniques/16-Greedy-Algorithms.md",
+      "filename": "16-Greedy-Algorithms"
+    },
+    {
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/5-Divide-and-Conquer/index.md",
+      "filename": "index"
+    },
+    {
+      "path": "vault/Algorithms/3-Sorting.md",
+      "filename": "3-Sorting"
+    },
+    {
+      "path": "vault/Algorithms/2-Merging.md",
+      "filename": "2-Merging"
+    },
+    {
+      "path": "vault/Algorithms/1-Searching.md",
+      "filename": "1-Searching"
+    },
+    {
+      "path": "vault/Data-Structures/1-String.md",
+      "filename": "1-String"
     }
   ]
 }
