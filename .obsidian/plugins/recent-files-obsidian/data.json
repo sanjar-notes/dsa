@@ -1,16 +1,40 @@
 {
   "recentFiles": [
     {
+      "basename": "index",
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/index.md"
+    },
+    {
       "basename": "5-DP",
       "path": "vault/Algorithms/5-DP.md"
+    },
+    {
+      "basename": "1-Searching",
+      "path": "vault/Algorithms/1-Searching.md"
+    },
+    {
+      "basename": "2-Merging",
+      "path": "vault/Algorithms/2-Merging.md"
+    },
+    {
+      "basename": "3-Sorting",
+      "path": "vault/Algorithms/3-Sorting.md"
+    },
+    {
+      "basename": "4-Divide-n-Conquer",
+      "path": "vault/Algorithms/4-Divide-n-Conquer.md"
+    },
+    {
+      "basename": "16-Greedy-Algorithms",
+      "path": "home/4_resource_itineraries/5-CLRS/4-Advanced-Design-and-Analysis-Techniques/16-Greedy-Algorithms.md"
     },
     {
       "basename": "6-Greedy",
       "path": "vault/Algorithms/6-Greedy.md"
     },
     {
-      "basename": "16-Greedy-Algorithms",
-      "path": "home/4_resource_itineraries/5-CLRS/4-Advanced-Design-and-Analysis-Techniques/16-Greedy-Algorithms.md"
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/7._Greedy_Method/1._Introduction_to_Greedy_technique/0_index.md"
     },
     {
       "basename": "index",
@@ -85,10 +109,6 @@
       "path": "vault/Data-Structures/8-Hashmap.md"
     },
     {
-      "basename": "3-Sorting",
-      "path": "vault/Algorithms/3-Sorting.md"
-    },
-    {
       "basename": "7-Heap",
       "path": "vault/Data-Structures/7-Heap.md"
     },
@@ -129,10 +149,6 @@
       "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/3._Stack/0_index.md"
     },
     {
-      "basename": "2._Linked_List",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/2._Linked_List.md"
-    },
-    {
       "basename": "3-LL",
       "path": "vault/Data-Structures/3-LL.md"
     },
@@ -163,10 +179,6 @@
     {
       "basename": "5._Assignments",
       "path": "home/4_resource_itineraries/1_CN_Intro_to_Cpp/7._Arrays/5._Assignments.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/index.md"
     },
     {
       "basename": "3-Knapsack-or-subset-sum",
