@@ -1,0 +1,213 @@
+{
+  "main": {
+    "id": "db7a6f5691cb98e8",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ae1771be7880071",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "92f1c0a037fc7230",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ad25c2dce7d3dd44",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a35cc95976fcf1e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a52ece31455c6370",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "981026d3b9bda7a5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "greedy",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "00fdc5fa44c957bd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "949f3ce0ac048244",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {},
+              "icon": "clock",
+              "title": "Recent Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 615.5
+  },
+  "right": {
+    "id": "4c7c9a858ca33103",
+    "type": "split",
+    "children": [
+      {
+        "id": "5073b1c93b35e8ca",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a3f9ccc6e414c460",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "07ea79c8723107b3",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "7030ca0fa7dd774e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-review-notes-plugin:View Recent Notes": false,
+      "custom-sort:Toggle custom sorting": false,
+      "webpage-html-export:Export as HTML": false
+    }
+  },
+  "active": "92f1c0a037fc7230",
+  "lastOpenFiles": [
+    "zignore/a.txt",
+    "zignore",
+    "vault/STL/index.html",
+    "vault/STL/2-Algorithms.html",
+    "vault/STL/1-Containers.html",
+    "vault/Data-Structures/1-String.html",
+    "vault/Algorithms/4-Divide-n-Conquer.html",
+    "vault/Algorithms/3-Sorting.html",
+    "vault/Algorithms/2-Merging.html",
+    "vault/Algorithms/1-Searching.html",
+    "tooling/obsidian-templates/templater/w2h.html",
+    "vault/STL/1-Containers.md",
+    "home/4_resource_itineraries/3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/5._Coin_change_and_stair_case/pasted_image002.png",
+    "home/4_resource_itineraries/3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/1._DP_Basics_-_Fibonacci_Number/pasted_image.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/6._Algorithm_Design/3._Design_Techniques/3._Dynamic_Programming/1._Fibonacci_-_1/equation.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2._Cycle_Detection/screenshot_2020-04-20-185129.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2._Cycle_Detection/screenshot_2020-04-20-185107.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2._Cycle_Detection/screenshot_2020-04-20-185053.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2._Cycle_Detection/screenshot_2020-04-20-185044.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2._Cycle_Detection/screenshot_2020-04-20-185022.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/5._Variations_of_BST/1._AVL_trees/avl_proof.jpg",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/3._Recursion/2._Recursion_Practice/Screenshot from 2019-12-17 03-31-38.png",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/2._Coding_a_Binary_Tree/3._Printing_a_tree/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/2._Coding_a_Binary_Tree/2._Input/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/zAssignments/Assignments.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/zAssignments/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/5._Variations_of_BST/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/5-Find-in-BST.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/4._Find_Path/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/3._BST_to_sorted_LL.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/2._Construct_BST_from_sorted_array.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/3._Check_BST_3-best.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/2._Check_BST_2.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/1._Check_BST_1/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/3._Search_Operation_in_BST.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/2._Coding_BST__-_BST_Node_class/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/1._Intro_to_BST.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/8._STL_priority_queue.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/7._In-place_heap.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/5._Heap_-_Insertion_and_Deletion.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/4._Complete_Binary_Trees.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/3._The_two_kinds_of_heaps.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/2._Intro_to_Heap.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/1._Intro_to_priority_queue.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/0_index.md",
+    "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/0_index.md"
+  ]
+}
