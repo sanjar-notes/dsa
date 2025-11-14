@@ -1,132 +1,96 @@
 {
   "recentFiles": [
     {
-      "basename": "2-Array",
-      "path": "vault/Data-Structures/2-Array.md"
-    },
-    {
-      "basename": "1._Vector_aka_Dynamic_Array",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/1._Vector_aka_Dynamic_Array.md"
-    },
-    {
-      "basename": "1-String",
-      "path": "vault/Data-Structures/1-String.md"
-    },
-    {
-      "basename": "2-Merging",
-      "path": "vault/Algorithms/2-Merging.md"
-    },
-    {
-      "basename": "1-Searching",
-      "path": "vault/Algorithms/1-Searching.md"
-    },
-    {
-      "basename": "3-Sorting",
-      "path": "vault/Algorithms/3-Sorting.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/5-Divide-and-Conquer/index.md"
-    },
-    {
-      "basename": "4-Divide-n-Conquer",
-      "path": "vault/Algorithms/4-Divide-n-Conquer.md"
-    },
-    {
-      "basename": "16-Greedy-Algorithms",
-      "path": "home/4_resource_itineraries/5-CLRS/4-Advanced-Design-and-Analysis-Techniques/16-Greedy-Algorithms.md"
-    },
-    {
-      "basename": "6-Greedy",
-      "path": "vault/Algorithms/6-Greedy.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/index.md"
-    },
-    {
-      "basename": "5-DP",
-      "path": "vault/Algorithms/5-DP.md"
-    },
-    {
-      "basename": "9-Graphs",
-      "path": "vault/Data-Structures/9-Graphs.md"
-    },
-    {
-      "basename": "8-Hashmap",
-      "path": "vault/Data-Structures/8-Hashmap.md"
+      "basename": "1-Containers",
+      "path": "vault/STL/1-Containers.md"
     },
     {
       "basename": "0_index",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/7._Greedy_Method/1._Introduction_to_Greedy_technique/0_index.md"
-    },
-    {
-      "basename": "index",
-      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/index.md"
-    },
-    {
-      "basename": "1._Intro_to_graphs",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/1._Graphs_-_Basics/1._Intro_to_graphs.md"
-    },
-    {
-      "basename": "5-Strongly-Connected-components",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/5-Strongly-Connected-components.md"
-    },
-    {
-      "basename": "6-Topological-sorting",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/6-Topological-sorting.md"
-    },
-    {
-      "basename": "2-Check-bipartite",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2-Check-bipartite.md"
-    },
-    {
-      "basename": "4-Articulation-vertex",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/4-Articulation-vertex.md"
-    },
-    {
-      "basename": "3-Cycle-detection",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/3-Cycle-detection.md"
-    },
-    {
-      "basename": "6._Bipartite_Graph",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/6._Bipartite_Graph.md"
-    },
-    {
-      "basename": "7._Fill_Matrix",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/7._Fill_Matrix.md"
-    },
-    {
-      "basename": "5._Bottom_of_the_graph",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/5._Bottom_of_the_graph.md"
-    },
-    {
-      "basename": "4._Strongly_connected_components",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/4._Strongly_connected_components.md"
-    },
-    {
-      "basename": "3._Connected_Horses",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/3._Connected_Horses.md"
-    },
-    {
-      "basename": "2._Permutation_Swaps",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/2._Permutation_Swaps.md"
-    },
-    {
-      "basename": "1._Connected_Components",
-      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/1._Connected_Components.md"
-    },
-    {
-      "basename": "2-Algorithms",
-      "path": "vault/STL/2-Algorithms.md"
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/2._Coding_a_Binary_Tree/3._Printing_a_tree/0_index.md"
     },
     {
       "basename": "0_index",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/0_index.md"
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/2._Coding_a_Binary_Tree/2._Input/0_index.md"
     },
     {
-      "basename": "7-Heap",
-      "path": "vault/Data-Structures/7-Heap.md"
+      "basename": "Assignments",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/zAssignments/Assignments.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/2_.Binary_trees/zAssignments/0_index.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/5._Variations_of_BST/0_index.md"
+    },
+    {
+      "basename": "5-Find-in-BST",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/5-Find-in-BST.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/4._Find_Path/0_index.md"
+    },
+    {
+      "basename": "3._BST_to_sorted_LL",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/3._BST_to_sorted_LL.md"
+    },
+    {
+      "basename": "2._Construct_BST_from_sorted_array",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/2._Construct_BST_from_sorted_array.md"
+    },
+    {
+      "basename": "3._Check_BST_3-best",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/3._Check_BST_3-best.md"
+    },
+    {
+      "basename": "2._Check_BST_2",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/2._Check_BST_2.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/4._Common_BST_questions/1._Check_if_BST/1._Check_BST_1/0_index.md"
+    },
+    {
+      "basename": "3._Search_Operation_in_BST",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/3._Search_Operation_in_BST.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/2._Coding_BST__-_BST_Node_class/0_index.md"
+    },
+    {
+      "basename": "1._Intro_to_BST",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/1._Intro_to_BST.md"
+    },
+    {
+      "basename": "8._STL_priority_queue",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/8._STL_priority_queue.md"
+    },
+    {
+      "basename": "7._In-place_heap",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/7._In-place_heap.md"
+    },
+    {
+      "basename": "5._Heap_-_Insertion_and_Deletion",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/5._Heap_-_Insertion_and_Deletion.md"
+    },
+    {
+      "basename": "4._Complete_Binary_Trees",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/4._Complete_Binary_Trees.md"
+    },
+    {
+      "basename": "3._The_two_kinds_of_heaps",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/3._The_two_kinds_of_heaps.md"
+    },
+    {
+      "basename": "2._Intro_to_Heap",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/2._Intro_to_Heap.md"
+    },
+    {
+      "basename": "1._Intro_to_priority_queue",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/1._Intro_to_priority_queue.md"
     },
     {
       "basename": "0_index",
@@ -134,59 +98,107 @@
     },
     {
       "basename": "0_index",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/0_index.md"
-    },
-    {
-      "basename": "6-Trees",
-      "path": "vault/Data-Structures/6-Trees.md"
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/0_index.md"
     },
     {
       "basename": "0_index",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/4._Queue/0_index.md"
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/5._Variations_of_BST/1._AVL_trees/0_index.md"
     },
     {
-      "basename": "5-Queue",
-      "path": "vault/Data-Structures/5-Queue.md"
+      "basename": "5._Coding_a_hashMap",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/5._Coding_a_hashMap.md"
     },
     {
-      "basename": "4-Stack",
-      "path": "vault/Data-Structures/4-Stack.md"
+      "basename": "4._Time_complexity_and_time_factor",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/4._Time_complexity_and_time_factor.md"
     },
     {
-      "basename": "1._Introduction_to_Stacks",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/3._Stack/1._Introduction_to_Stacks.md"
+      "basename": "3._Collision_Handling",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/3._Collision_Handling.md"
     },
     {
-      "basename": "0_index",
-      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/3._Stack/0_index.md"
+      "basename": "2._Bucket_Array_and_hash_functions",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/2._Bucket_Array_and_hash_functions.md"
     },
     {
-      "basename": "3-LL",
-      "path": "vault/Data-Structures/3-LL.md"
-    },
-    {
-      "basename": "Recurrence-equations-image-1-b7432b59",
-      "path": "assets/Recurrence-equations-image-1-b7432b59.png"
-    },
-    {
-      "basename": "1-Containers",
-      "path": "vault/STL/1-Containers.md"
-    },
-    {
-      "basename": "README",
-      "path": "README.md"
+      "basename": "1._Intro_to_hashMaps",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/1._Intro_to_hashMaps.md"
     },
     {
       "basename": "0_index",
-      "path": "home/4_resource_itineraries/1_CN_Intro_to_Cpp/8._Searching_and_Sorting/Assignments/0_index.md"
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/0_index.md"
     },
     {
-      "basename": "5._Assignments",
-      "path": "home/4_resource_itineraries/1_CN_Intro_to_Cpp/7._Arrays/5._Assignments.md"
+      "basename": "4-Check-if-CBT",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/9._Practice_Problems/4-Check-if-CBT.md"
     },
     {
-      "basename": "3-Knapsack-or-subset-sum",
-      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/3-Knapsack-or-subset-sum.md"
+      "basename": "3-Find-last-node",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/9._Practice_Problems/3-Find-last-node.md"
+    },
+    {
+      "basename": "2._K_smallest_elements",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/9._Practice_Problems/2._K_smallest_elements.md"
+    },
+    {
+      "basename": "1._K_sorted_array",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/9._Practice_Problems/1._K_sorted_array.md"
+    },
+    {
+      "basename": "4._Huffman_Encoding",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/4._Huffman_Encoding.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/3._Types_of_Tries/0_index.md"
+    },
+    {
+      "basename": "4-Dot-matching",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/2._Coding_a_Trie/4-Dot-matching.md"
+    },
+    {
+      "basename": "3-Simple-leetcode-based",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/2._Coding_a_Trie/3-Simple-leetcode-based.md"
+    },
+    {
+      "basename": "2._Trie_basic_API",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/2._Coding_a_Trie/2._Trie_basic_API.md"
+    },
+    {
+      "basename": "1._TrieNode_class",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/2._Coding_a_Trie/1._TrieNode_class.md"
+    },
+    {
+      "basename": "1._Introduction_to_Tries",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/1._Introduction_to_Tries.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/3._Tries/0_index.md"
+    },
+    {
+      "basename": "3._Iterators_-_C++_Feature",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/8._STL_map_and_set/3._Iterators_-_C++_Feature.md"
+    },
+    {
+      "basename": "2._set_and_unordered_set",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/8._STL_map_and_set/2._set_and_unordered_set.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/8._STL_map_and_set/1._map_and_unordered_map/0_index.md"
+    },
+    {
+      "basename": "7._Question_-_Infinite_Stream",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/7._Question_-_Infinite_Stream.md"
+    },
+    {
+      "basename": "2._Get_Path",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/1._Graphs_-_Basics/6._Basic_path_operations/2._Get_Path.md"
+    },
+    {
+      "basename": "1._Has_Path",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/1._Graphs_-_Basics/6._Basic_path_operations/1._Has_Path.md"
     }
   ],
   "omittedPaths": [],
