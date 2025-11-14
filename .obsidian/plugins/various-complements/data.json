@@ -6,6 +6,7 @@
   "minFuzzyMatchScore": 0.5,
   "matchingWithoutEmoji": true,
   "treatAccentDiacriticsAsAlphabeticCharacters": false,
+  "treatUnderscoreAsPartOfWord": false,
   "maxNumberOfSuggestions": 5,
   "maxNumberOfWordsAsPhrase": 3,
   "minNumberOfCharactersTriggered": 0,
@@ -13,21 +14,52 @@
   "complementAutomatically": true,
   "delayMilliSeconds": 0,
   "disableSuggestionsDuringImeOn": false,
+  "disableSuggestionsInMathBlock": false,
   "insertAfterCompletion": true,
   "firstCharactersDisableSuggestions": ":/^",
-  "useCommonPrefixCompletionOfSuggestion": false,
   "patternsToSuppressTrigger": [
     "^~~~.*",
     "^```.*"
   ],
+  "phrasePatternsToSuppressTrigger": [],
+  "noAutoFocusUntilCycle": false,
   "showMatchStrategy": true,
   "showComplementAutomatically": true,
   "showIndexingStatus": true,
   "descriptionOnSuggestion": "Short",
-  "selectSuggestionKeys": "Tab",
-  "additionalCycleThroughSuggestionsKeys": "None",
-  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
-  "openSourceFileKey": "None",
+  "hotkeys": {
+    "select": [
+      {
+        "modifiers": [],
+        "key": "Enter"
+      }
+    ],
+    "select with custom alias": [],
+    "up": [
+      {
+        "modifiers": [],
+        "key": "ArrowUp"
+      }
+    ],
+    "down": [
+      {
+        "modifiers": [],
+        "key": "ArrowDown"
+      }
+    ],
+    "select 1st": [],
+    "select 2nd": [],
+    "select 3rd": [],
+    "select 4th": [],
+    "select 5th": [],
+    "select 6th": [],
+    "select 7th": [],
+    "select 8th": [],
+    "select 9th": [],
+    "open": [],
+    "completion": [],
+    "insert as text": []
+  },
   "propagateEsc": false,
   "enableCurrentFileComplement": true,
   "currentFileMinNumberOfCharacters": 0,
@@ -59,11 +91,17 @@
   "frontMatterComplementMatchStrategy": "inherit",
   "insertCommaAfterFrontMatterCompletion": false,
   "intelligentSuggestionPrioritization": {
+    "enabled": true,
     "historyFilePath": "",
     "maxDaysToKeepHistory": 30,
     "maxNumberOfHistoryToKeep": 0
   },
   "disableOnMobile": false,
   "showLogAboutPerformanceInConsole": false,
-  "selectionHistoryTree": {}
+  "selectionHistoryTree": {},
+  "useCommonPrefixCompletionOfSuggestion": false,
+  "selectSuggestionKeys": "Tab",
+  "additionalCycleThroughSuggestionsKeys": "None",
+  "disableUpDownKeysForCycleThroughSuggestionsKeys": false,
+  "openSourceFileKey": "None"
 }
