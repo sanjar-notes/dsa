@@ -1,5 +1,178 @@
 {
-  "recentFiles": [],
+  "recentFiles": [
+    {
+      "basename": "5-DP",
+      "path": "vault/Algorithms/5-DP.md"
+    },
+    {
+      "basename": "6-Greedy",
+      "path": "vault/Algorithms/6-Greedy.md"
+    },
+    {
+      "basename": "16-Greedy-Algorithms",
+      "path": "home/4_resource_itineraries/5-CLRS/4-Advanced-Design-and-Analysis-Techniques/16-Greedy-Algorithms.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/index.md"
+    },
+    {
+      "basename": "9-Graphs",
+      "path": "vault/Data-Structures/9-Graphs.md"
+    },
+    {
+      "basename": "1._Intro_to_graphs",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/1._Graphs_-_Basics/1._Intro_to_graphs.md"
+    },
+    {
+      "basename": "5-Strongly-Connected-components",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/5-Strongly-Connected-components.md"
+    },
+    {
+      "basename": "6-Topological-sorting",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/6-Topological-sorting.md"
+    },
+    {
+      "basename": "2-Check-bipartite",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/2-Check-bipartite.md"
+    },
+    {
+      "basename": "4-Articulation-vertex",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/4-Articulation-vertex.md"
+    },
+    {
+      "basename": "3-Cycle-detection",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/3-Cycle-detection.md"
+    },
+    {
+      "basename": "6._Bipartite_Graph",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/6._Bipartite_Graph.md"
+    },
+    {
+      "basename": "7._Fill_Matrix",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/7._Fill_Matrix.md"
+    },
+    {
+      "basename": "5._Bottom_of_the_graph",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/5._Bottom_of_the_graph.md"
+    },
+    {
+      "basename": "4._Strongly_connected_components",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/4._Strongly_connected_components.md"
+    },
+    {
+      "basename": "3._Connected_Horses",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/3._Connected_Horses.md"
+    },
+    {
+      "basename": "2._Permutation_Swaps",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/2._Permutation_Swaps.md"
+    },
+    {
+      "basename": "1._Connected_Components",
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/8._GraphsX/1._Connected_Components.md"
+    },
+    {
+      "basename": "2-Algorithms",
+      "path": "vault/STL/2-Algorithms.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/2._Hashmaps/0_index.md"
+    },
+    {
+      "basename": "8-Hashmap",
+      "path": "vault/Data-Structures/8-Hashmap.md"
+    },
+    {
+      "basename": "3-Sorting",
+      "path": "vault/Algorithms/3-Sorting.md"
+    },
+    {
+      "basename": "7-Heap",
+      "path": "vault/Data-Structures/7-Heap.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/0_index.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/0_index.md"
+    },
+    {
+      "basename": "6-Trees",
+      "path": "vault/Data-Structures/6-Trees.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/4._Queue/0_index.md"
+    },
+    {
+      "basename": "1._Vector_aka_Dynamic_Array",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/1._Vector_aka_Dynamic_Array.md"
+    },
+    {
+      "basename": "5-Queue",
+      "path": "vault/Data-Structures/5-Queue.md"
+    },
+    {
+      "basename": "4-Stack",
+      "path": "vault/Data-Structures/4-Stack.md"
+    },
+    {
+      "basename": "1._Introduction_to_Stacks",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/3._Stack/1._Introduction_to_Stacks.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/3._Stack/0_index.md"
+    },
+    {
+      "basename": "2._Linked_List",
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/1._Linear_Data_Structures/2._Linked_List.md"
+    },
+    {
+      "basename": "3-LL",
+      "path": "vault/Data-Structures/3-LL.md"
+    },
+    {
+      "basename": "Recurrence-equations-image-1-b7432b59",
+      "path": "assets/Recurrence-equations-image-1-b7432b59.png"
+    },
+    {
+      "basename": "2-Array",
+      "path": "vault/Data-Structures/2-Array.md"
+    },
+    {
+      "basename": "1-String",
+      "path": "vault/Data-Structures/1-String.md"
+    },
+    {
+      "basename": "1-Containers",
+      "path": "vault/STL/1-Containers.md"
+    },
+    {
+      "basename": "README",
+      "path": "README.md"
+    },
+    {
+      "basename": "0_index",
+      "path": "home/4_resource_itineraries/1_CN_Intro_to_Cpp/8._Searching_and_Sorting/Assignments/0_index.md"
+    },
+    {
+      "basename": "5._Assignments",
+      "path": "home/4_resource_itineraries/1_CN_Intro_to_Cpp/7._Arrays/5._Assignments.md"
+    },
+    {
+      "basename": "index",
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/index.md"
+    },
+    {
+      "basename": "3-Knapsack-or-subset-sum",
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/3-Knapsack-or-subset-sum.md"
+    }
+  ],
   "omittedPaths": [],
   "maxLength": null,
   "openType": "tab"

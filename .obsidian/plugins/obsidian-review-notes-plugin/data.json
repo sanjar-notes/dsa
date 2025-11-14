@@ -447,6 +447,130 @@
     {
       "path": "home/4_resource_itineraries/3-scaler-dbms-free/12-SQL-Data-Control-Language/1-Data-Control-Language-GRANT-REVOKE.md",
       "filename": "1-Data-Control-Language-GRANT-REVOKE"
+    },
+    {
+      "path": "vault/STL/2-Algorithms.md",
+      "filename": "2-Algorithms"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/1._CP_-_intro_and_tools/4._Language_Tools/1._STL_-_Data_Structures/2._ADTs/4._Stack.md",
+      "filename": "4._Stack"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/10._TreesX/1._Tries/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/10._TreesX/1._Tries/1._Tries_and_XOR.md",
+      "filename": "1._Tries_and_XOR"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/3._chef/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/4._Variation/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/2._Unconventional_use_of_Searching_And_Sorting/5._Murder/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/3._Backtracking/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/3._Backtracking/2-Problems/1._N_Queens_Problem_-_Exercise/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/3._Backtracking/2-Problems/4._Crossword_Problem/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/3._Backtracking/2-Problems/5-More-problems/1._Find_Power_of_number.md",
+      "filename": "1._Find_Power_of_number"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/5._Adhoc_Problems/1._Equalize_CodeForces/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/5._Adhoc_Problems/2._Rectangular_Area/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/3._Longest_Increasing_subsequence/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/5._Coin_change_and_stair_case/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "home/4_resource_itineraries/3_CN_Competitive_programming/6._Dynamic_ProgrammingX/1._Classic_problems/7._Magic_Grid/0_index.md",
+      "filename": "0_index"
+    },
+    {
+      "path": "vault/STL/1-Containers.md",
+      "filename": "1-Containers"
+    },
+    {
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/3-Cycle-detection.md",
+      "filename": "3-Cycle-detection"
+    },
+    {
+      "path": "home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/4._Graphs/2._Graphs_2/6-Topological-sorting.md",
+      "filename": "6-Topological-sorting"
+    },
+    {
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/2-Longest-Increasing-Subsequence.md",
+      "filename": "2-Longest-Increasing-Subsequence"
+    },
+    {
+      "path": "home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/index.md",
+      "filename": "index"
+    },
+    {
+      "path": "vault/Data-Structures/2-Array.md",
+      "filename": "2-Array"
+    },
+    {
+      "path": "vault/Data-Structures/3-LL.md",
+      "filename": "3-LL"
+    },
+    {
+      "path": "vault/Data-Structures/4-Stack.md",
+      "filename": "4-Stack"
+    },
+    {
+      "path": "vault/Data-Structures/5-Queue.md",
+      "filename": "5-Queue"
+    },
+    {
+      "path": "vault/Data-Structures/6-Trees.md",
+      "filename": "6-Trees"
+    },
+    {
+      "path": "vault/Data-Structures/7-Heap.md",
+      "filename": "7-Heap"
+    },
+    {
+      "path": "vault/Data-Structures/9-Graphs.md",
+      "filename": "9-Graphs"
+    },
+    {
+      "path": "vault/Algorithms/5-DP.md",
+      "filename": "5-DP"
+    },
+    {
+      "path": "vault/Algorithms/6-Greedy.md",
+      "filename": "6-Greedy"
+    },
+    {
+      "path": "vault/Untitled.base",
+      "filename": "Untitled"
     }
   ]
 }
