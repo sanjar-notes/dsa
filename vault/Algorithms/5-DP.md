@@ -1,0 +1,1 @@
+[notes](home/4_resource_itineraries/4-The-Algorithm-Design-Manual-Skiena/10-Dynamic-Programming/index.md)

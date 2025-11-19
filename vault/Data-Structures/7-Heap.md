@@ -1,0 +1,1 @@
+[notes](home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/3._Auxilary_Data_Structures/1._Priority_Queue_and_Heap/0_index.md)

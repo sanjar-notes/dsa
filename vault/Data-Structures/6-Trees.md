@@ -1,0 +1,1 @@
+[notes](home/4_resource_itineraries/2_CN_Data_Structures_and_OOP/5._Data_Structures/2._Trees/3._Binary_Search_Trees/0_index.md)

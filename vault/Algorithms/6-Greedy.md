@@ -1,0 +1,1 @@
+[notes greedy](home/4_resource_itineraries/5-CLRS/4-Advanced-Design-and-Analysis-Techniques/16-Greedy-Algorithms.md)

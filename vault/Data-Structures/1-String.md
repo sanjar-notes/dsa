@@ -1,6 +1,7 @@
 # 1. String
 Created Tue May 14, 2024 at 9:38 PM
 
+#string
 ## API
 See [1-Containers](../STL/1-Containers.md#String)
 

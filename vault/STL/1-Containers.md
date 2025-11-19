@@ -226,7 +226,7 @@ for(auto a: ll) { cout << a; }
 ## Deque (double sided vector)
 USP: double sided vector.
 ```cpp
-deque<int> v; // vector with both front, back ops
+**deque**<int> v; // vector with both front, back ops
 // all other things same as vector, swap
 ```
 

@@ -1,6 +1,7 @@
 # 5. Divide and Conquer
 Created Mon Jul 29, 2024 at 9:39 PM
 
+#dnc
 ## Main idea
 One of the most powerful techniques for solving problems is to break them down into smaller, more easily solved pieces. 
 
