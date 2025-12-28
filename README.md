@@ -1,11 +1,6 @@
 # dsa
 > previously (dsa_with_cpp)
 
-There are 3 notebooks:
-1. **Introduction to C++** - For beginners
+1. **Introduction to C++**
 2. **Data Structures with C++** - covers basic algorithms also - search, sort
-3. **Competitive Programming tips** - C++ is used
-
-To use these notes: View here on GitHub or clone the repo (and open with Markdown friendly editor).
-
-These notes were created while doing a course from CodingNinjas.com.
+3. **Competitive Programming tips**
