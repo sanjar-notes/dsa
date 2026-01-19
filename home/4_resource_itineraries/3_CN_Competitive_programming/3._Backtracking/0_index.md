@@ -29,15 +29,15 @@ Note:
 
 
 ## Backtrack maid
-1. We Consider all possibilities.
-2. We traverse instead of storing.
+1. Initialize a `decisions` array. (array of bools/integers etc). It should be linear fixed size.
+2. Traverse the `decisions` array flipping values such that all possibilities are tried out.
 3. Define a decision space (array of bools/integers etc). It should be linear fixed size.
-4. We maintain read/write mapping between decision space and app's data structure. *Linear (array) is the simplest to advance and backtrack*.
-5. On each decision position, generate valid possibilities.
+4. On recursion base cases (i.e. all decisions have been taken), populate the return bag.
 6. Since decision space is shared, we have to do forward (write) and backward (reset) operations for each candidate decision, so the next candidate is unhindered.
 7. Backtracking enumerates all possible decision sequences. Cycles are avoided because each path is uniquely represented by its decisions.
 
 Note (non trivial):
+- Focus on `decisions` not `bag`.
 - We maintain a linear decision space irrespective of the app's data structure.
 - Shared decision space.
 - Simple: there may be many (distinct) valid decisions. If you only need one decision stop early.
