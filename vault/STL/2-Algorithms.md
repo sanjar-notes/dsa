@@ -57,13 +57,13 @@ auto it = upper_bound(v.begin(), v.end(), 20); // v is a vector
 ### Range (range from left to right side)
 Get "equivalent" range.
 ```cpp
-// left side >=, right side >
+// left side >=, right side >=
 auto it_pair = equal_range(startIt, endIt, key);
 auto startIt = it_pair.first;
 auto endIt   = it_pair.second;
 
 // e.g 10 10 10 20 20 20 30 30, key=20
-// range is [20, 20, 20, 30]
+// range is [20, 20, 20]
 ```
 
 ## Min and max
