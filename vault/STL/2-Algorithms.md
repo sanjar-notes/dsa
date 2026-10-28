@@ -222,7 +222,8 @@ auto firstItemOfRightGroupIt
 ```
 ### Merge
 ```cpp
-merge(startIt1, endIt1, startIt2, endIt2, writerIt);
+vector<int> op;
+merge(startIt1, endIt1, startIt2, endIt2, back_inserter(op));
 	// for vector
 	decltype(v1) output (v1.size() + v2.size(), 0);
 	merge(v1.begin(), v1.end(), v2.begin(), v2.end(), output.begin());
@@ -232,7 +233,8 @@ merge(startIt1, endIt1, startIt2, endIt2, writerIt);
 General set operations - do not exist. ❌
 STL has functions only for sorted sets. All 4 supported:
 ```cpp
-set_union(startIt1, endIt1, startIt2, endIt2, writerIt);
+vector<int> op;
+set_union(startIt1, endIt1, startIt2, endIt2, back_inserter(op));
 set_intersection (/* same as above */)
 set_difference (/* same as above */)
 set_symmetric_difference (/* same as above */);
