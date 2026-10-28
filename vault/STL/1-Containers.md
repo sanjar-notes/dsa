@@ -6,6 +6,7 @@ tags:
 # 1. Containers
 Created Sun May 12, 2024 at 7:34 PM
 
+# Simple
 ## String
 `strings` are a huge practically improvement over C-style strings.
 They are dynamic, mutable. Each element is still a char.
@@ -276,6 +277,9 @@ while(!q.empty()) { cout << q.front(); q.pop(); }
 // utils - swap
 ```
 
+
+
+# Most useful
 ## priority-queue/Heap (strict ADT)
 USP: quick extrema access, quick insertion/deletion. Compared to sorted array.
 ```cpp
