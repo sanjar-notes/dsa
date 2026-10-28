@@ -442,7 +442,7 @@ Keyed data structure.
 { sorted, unique }. Other 3 related structures are combinations of this.
 ```cpp
 map<int, int> mp;
-map<int, int> mp { {1: 10}, {2, 20}, {3, 30} }; // initialization list is allowed
+map<int, int> mp { {1, 10}, {2, 20}, {3, 30} }; // initialization list is allowed
 map<int, int> mp (mp2.begin(), mp2.end()); // deep clone
 map<int, T, greater<int>> rmp; // reversed (higher on the left)
 // key can be any trivial combination, int x string x pair
