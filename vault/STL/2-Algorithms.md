@@ -31,6 +31,7 @@ bool e = binary_search(v.begin(), v.end(), 20);
 // key=21 => false
 ```
 ### Lower bound (left side = || >)
+Used for "binary search" (with an equality check).
 ```cpp
 // Lower bound means "left side" (<=)
 lower_bound (startIt, endIt, key);
