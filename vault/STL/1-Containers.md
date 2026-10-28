@@ -475,8 +475,14 @@ mp.begin(); // moves in sorted order
 mp.end();
 
 // looping
-for(auto it = s.begin(); it != s.end(); it++) { cout << *it; }
-for(auto a: mp) { cout << a.first << a.second << endl; } // internally behaves like a collection of pairs
+for(auto it = s.begin(); it != s.end(); it++) 
+{ 
+	cout << (it -> first) << " " << (it -> second) << endl;
+}
+for(auto a: mp)
+{ 
+	cout << a.first << a.second << endl;  // internally behaves like a collection of pairs
+} 
 
 // utils - swap
 
