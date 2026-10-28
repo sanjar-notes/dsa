@@ -458,8 +458,8 @@ mp.erase(it); // remove - O(lgn)
 
 mp.count(23);// exists? - 1 means true, 0 means false - O(lgn)
 auto it = mp.find(1); // get iterator to element - O(lgn), returns mp.end() if not found
-auto it = mp.lower_bound(2); // first occurrence of key
-auto it = mp.upper_bound(23); // last occurrence of key
+auto it = mp.lower_bound(2); // greater or equal key
+auto it = mp.upper_bound(23); // greater
 (*it).first; // read key
 (*it).second, (*it).second = 4; // read/write value
 
