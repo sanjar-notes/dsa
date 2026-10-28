@@ -99,7 +99,7 @@ sort(startI, endI) // natural sort, i.e. increasing order, alphabetical order
 	sort(startI, endI, greater<int>()) // decreasing order.
 	// Remember: greater is a call here, min PriorityQueue declaration is not a call.
 	
-	sort(starI, endI, [] -> bool (auto a, auto b){ return is_should_keep; }); // custom
+	sort(starI, endI, [](auto a, auto b){ return is_should_keep; }); // custom
 
 // Satellite data - sorts based on int if element type is pair<int, T>
 ```
@@ -108,7 +108,7 @@ sort(startI, endI) // natural sort, i.e. increasing order, alphabetical order
 ```cpp
 stable_sort(startIt, endIt);
 	stable_sort(startIt, endIt, greater<int>()); // decreasing order
-	stable_sort(starI, endI, [] -> bool (auto a, auto b){ return is_should_keep; }); // custom
+	stable_sort(starI, endI, [](auto a, auto b){ return is_should_keep; }); // custom
 
 // Satellite data - sorts based on int if element type is pair<int, T>
 ```
