@@ -2,7 +2,7 @@
 Created Sun May 12, 2024 at 7:35 PM
 
 ## Why STL
-It's essential for practically facing online problems
+It's essential for practically facing online problems (you can't implement stuff).
 - https://www.reddit.com/r/cpp/comments/18u505o/dsa/
 - STL standard. ICPC is OK with 20, https://docs.icpc.global/worldfinals-programming-environment/#:~:text=c%2B%2B%20(g%2B%2B%2011.3.0%20(ubuntu%2011.3.0-1ubuntu1~22.04))
 ## Whats in STL
