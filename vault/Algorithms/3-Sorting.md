@@ -10,9 +10,9 @@ Even big data stuff like MapReduce keeps stuff sorted just because it makes oper
 [2-Algorithms](../STL/2-Algorithms.md#Sorting)
 
 ## Solving use
-- Searching - Binary search becomes possible after sorting.
-- Closest-pair: Given n number find closest pair. Sort and traverse (and count min difference).
-- Element uniqueness - are there any duplicates. Sort and traverse (for all unique). Can check if given element us unique too - using low and upper bound.
+- Searching - Binary search becomes possible only after sorting.
+- Closest-pair: Given array of numbers, find closest pair. Sort and traverse (and count min difference).
+- Element uniqueness - are there any duplicates. Sort and traverse (for all unique). Can check if given element is unique too - using low and upper bound.
 - Find the mode (most occurring) - sort and traverse (linear). If already sorted, use low and upper bound (logn).
 - Selection (kth largest/smallest) - assuming duplicate answer is fine, this is just the k th element. Median is also simple thing way (k/2th element).
 - Convex hulls - Skiena 111.
@@ -31,7 +31,7 @@ Sure, here's a list of common sorting algorithms, including both those with O(N^
 
 ### Comparative
 1. **Bubble Sort** (O(N^2)): aka *bubble to the right while swapping*, compares adjacent elements and swaps them if they are in the wrong order, repeating this process until the list is sorted. Also keeps a is_sorted flag in each loop for early return. Complexity same on linked list.
-2. **Insertion Sort** (O(N^2)) *insert at the correct position, forms sorted array at the end*: Builds the final sorted list one item at a time by repeatedly taking elements from the input list and inserting them into their correct positions in the sorted list. Only online algorithm (since its general insert, can accommodate for new data). *We can use binary search to find the spot, but shifting would still cause squared complexity.*
+2. **Insertion Sort** (O(N^2)) *insert at the correct position, forms a sorted array at the beginning*: Builds the final sorted list one item at a time by repeatedly taking elements from the input list and inserting them into their correct positions in the sorted list. Only online algorithm (since its general insert, can accommodate for new data). *We can use binary search to find the spot, but shifting would still cause squared complexity.*
 3. **Selection Sort** (O(N^2)): *min select and swap, form sorted array*. Divides the input list into a sorted sublist and an unsorted sublist, repeatedly finding the smallest (or largest) element from the unsorted sublist and moving it to the end of the sorted sublist.
 4. **Merge Sort** (O(N log N), O(N) space): Divides the input list into two halves, recursively sorts each half, and then merges the sorted halves to produce the final sorted list. It's a divide-and-conquer algorithm and typically faster than the quadratic-time sorting algorithms for large datasets.
 5. **Quick Sort** (O(N log N) average, O(N^2) worst-case, O(N) space): Randomly selects a "pivot" element from the list and partitions the other elements into two sublists according to whether they are less than or greater than the pivot. It then recursively sorts the sublists.

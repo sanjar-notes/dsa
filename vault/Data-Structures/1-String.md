@@ -15,6 +15,9 @@ See [1-Containers](../STL/1-Containers.md#String)
  - Internet search engines also use them to find Web pages relevant to queries.
 
 ## Notable info
+n = corpus
+m =  query
+
 ### String matching
 Text-editing programs frequently need to find all occurrences of a pattern in the text.
 
