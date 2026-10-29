@@ -11,6 +11,7 @@ Back edges are the key to finding a cycle in an undirected graph. Cycle detectio
 
 Note:
 - If specified, would need to check for self cycles too.
+- Don't forget to have a forest envelope.
 
 ## Directed graphs - DFS with extra array
 Cycle detect using DFS on a undirected graph just checks if it encounters an already visited node (not a parent). But it will incorrectly detect a cycle for the below directed graph as well, at node '2'.

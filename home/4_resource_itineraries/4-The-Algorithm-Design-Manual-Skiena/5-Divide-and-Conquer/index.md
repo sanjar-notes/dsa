@@ -12,6 +12,7 @@ One of the most powerful techniques for solving problems is to break them down i
   1. Divide (express it into smaller problems of the same type)
   2. Conquer (solve the instances)
   3. Combine (combine the solutions to form the complete solution)
+
 ## Breaking down problems
 Two important algorithm design paradigms are based on breaking problems down into smaller problems. 
 - Dynamic programming (DP) - typically removes one element from the problem, solves the smaller problem, and then adds back the element to the solution of this smaller problem in the proper way.
